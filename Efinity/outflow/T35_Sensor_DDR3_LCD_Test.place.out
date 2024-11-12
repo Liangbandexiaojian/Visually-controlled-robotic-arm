@@ -1,0 +1,1098 @@
+
+Efinix FPGA Placement and Routing.
+Version: 2023.2.307.5.10 
+Compiled: May 19 2024.
+
+Copyright (C) 2013 - 2023 Efinix, Inc. All rights reserved.
+
+
+The Tool Is Based on VPR of University of Toronto,
+a free open source code under MIT license.
+
+
+Running Placement and Routing for Family "Trion", Device "T35F324" ...
+
+***** Beginning stage netlist pre-processing ... *****
+Successfully Read in Verific binary Netlist dump file "D:/code/learning/a241111_03/Efinity/outflow/T35_Sensor_DDR3_LCD_Test.dbg.vdb".
+***** Beginning VDB Netlist Checker ... *****
+VDB Netlist Checker took 0.0934154 seconds.
+	VDB Netlist Checker took 0.015625 seconds (approximately) in total CPU time.
+VDB Netlist Checker virtual memory usage: begin = 33.692 MB, end = 33.712 MB, delta = 0.02 MB
+	VDB Netlist Checker peak virtual memory usage = 53.072 MB
+VDB Netlist Checker resident set memory usage: begin = 45.448 MB, end = 45.736 MB, delta = 0.288 MB
+	VDB Netlist Checker peak resident set memory usage = 64.652 MB
+***** Ending VDB Netlist Checker ... *****
+Reading core interface constraints from 'D:/code/learning/a241111_03/Efinity/outflow/T35_Sensor_DDR3_LCD_Test.interface.csv'.
+Successfully processed interface constraints file "D:/code/learning/a241111_03/Efinity/outflow/T35_Sensor_DDR3_LCD_Test.interface.csv".
+Creating interface clock buffer clk_cmos~CLKBUF.
+Creating interface clock buffer hdmi_clk5x_i~CLKBUF.
+Creating interface clock buffer mipi_clkcal_i~CLKBUF.
+Creating interface clock buffer mipi_pixclk_i~CLKBUF.
+Creating interface clock buffer tx_fastclk~CLKBUF.
+Creating interface clock buffer tx_slowclk~CLKBUF.
+Found 0 constant generator nets.
+Pass 0: Swept away 0 nets with no fanout.
+logical_block #0(AxiPllClkIn) has no fanout.
+Removing input.
+logical_block #1(DdrPllClkIn) has no fanout.
+Removing input.
+logical_block #6(mipi_clkesc_i) has no fanout.
+Removing input.
+logical_block #16(hdmi_lock_i) has no fanout.
+Removing input.
+logical_block #17(mipi_lock_i) has no fanout.
+Removing input.
+logical_block #234(DdrCtrl_RID_0[7]) has no fanout.
+Removing input.
+logical_block #235(DdrCtrl_RID_0[6]) has no fanout.
+Removing input.
+logical_block #236(DdrCtrl_RID_0[5]) has no fanout.
+Removing input.
+logical_block #237(DdrCtrl_RID_0[4]) has no fanout.
+Removing input.
+logical_block #238(DdrCtrl_RID_0[3]) has no fanout.
+Removing input.
+logical_block #239(DdrCtrl_RID_0[2]) has no fanout.
+Removing input.
+logical_block #240(DdrCtrl_RID_0[1]) has no fanout.
+Removing input.
+logical_block #241(DdrCtrl_RID_0[0]) has no fanout.
+Removing input.
+logical_block #373(DdrCtrl_RRESP_0[1]) has no fanout.
+Removing input.
+logical_block #374(DdrCtrl_RRESP_0[0]) has no fanout.
+Removing input.
+logical_block #375(DdrCtrl_BID_0[7]) has no fanout.
+Removing input.
+logical_block #376(DdrCtrl_BID_0[6]) has no fanout.
+Removing input.
+logical_block #377(DdrCtrl_BID_0[5]) has no fanout.
+Removing input.
+logical_block #378(DdrCtrl_BID_0[4]) has no fanout.
+Removing input.
+logical_block #379(DdrCtrl_BID_0[3]) has no fanout.
+Removing input.
+logical_block #380(DdrCtrl_BID_0[2]) has no fanout.
+Removing input.
+logical_block #381(DdrCtrl_BID_0[1]) has no fanout.
+Removing input.
+logical_block #382(DdrCtrl_BID_0[0]) has no fanout.
+Removing input.
+logical_block #383(DdrCtrl_BVALID_0) has no fanout.
+Removing input.
+logical_block #465(cmos_sdat_IN) has no fanout.
+Removing input.
+logical_block #468(mipi0_scl_i) has no fanout.
+Removing input.
+logical_block #471(mipi0_sda_i) has no fanout.
+Removing input.
+logical_block #474(mipi1_scl_i) has no fanout.
+Removing input.
+logical_block #477(mipi1_sda_i) has no fanout.
+Removing input.
+logical_block #498(mipi_rx_0_VC_i[1]) has no fanout.
+Removing input.
+logical_block #499(mipi_rx_0_VC_i[0]) has no fanout.
+Removing input.
+logical_block #500(mipi_rx_0_VSYNC_i[3]) has no fanout.
+Removing input.
+logical_block #501(mipi_rx_0_VSYNC_i[2]) has no fanout.
+Removing input.
+logical_block #502(mipi_rx_0_VSYNC_i[1]) has no fanout.
+Removing input.
+logical_block #503(mipi_rx_0_VSYNC_i[0]) has no fanout.
+Removing input.
+logical_block #504(mipi_rx_0_HSYNC_i[3]) has no fanout.
+Removing input.
+logical_block #505(mipi_rx_0_HSYNC_i[2]) has no fanout.
+Removing input.
+logical_block #506(mipi_rx_0_HSYNC_i[1]) has no fanout.
+Removing input.
+logical_block #507(mipi_rx_0_HSYNC_i[0]) has no fanout.
+Removing input.
+logical_block #508(mipi_rx_0_DATA_i[63]) has no fanout.
+Removing input.
+logical_block #509(mipi_rx_0_DATA_i[62]) has no fanout.
+Removing input.
+logical_block #510(mipi_rx_0_DATA_i[61]) has no fanout.
+Removing input.
+logical_block #511(mipi_rx_0_DATA_i[60]) has no fanout.
+Removing input.
+logical_block #512(mipi_rx_0_DATA_i[59]) has no fanout.
+Removing input.
+logical_block #513(mipi_rx_0_DATA_i[58]) has no fanout.
+Removing input.
+logical_block #514(mipi_rx_0_DATA_i[57]) has no fanout.
+Removing input.
+logical_block #515(mipi_rx_0_DATA_i[56]) has no fanout.
+Removing input.
+logical_block #516(mipi_rx_0_DATA_i[55]) has no fanout.
+Removing input.
+logical_block #517(mipi_rx_0_DATA_i[54]) has no fanout.
+Removing input.
+logical_block #518(mipi_rx_0_DATA_i[53]) has no fanout.
+Removing input.
+logical_block #519(mipi_rx_0_DATA_i[52]) has no fanout.
+Removing input.
+logical_block #520(mipi_rx_0_DATA_i[51]) has no fanout.
+Removing input.
+logical_block #521(mipi_rx_0_DATA_i[50]) has no fanout.
+Removing input.
+logical_block #522(mipi_rx_0_DATA_i[49]) has no fanout.
+Removing input.
+logical_block #523(mipi_rx_0_DATA_i[48]) has no fanout.
+Removing input.
+logical_block #524(mipi_rx_0_DATA_i[47]) has no fanout.
+Removing input.
+logical_block #525(mipi_rx_0_DATA_i[46]) has no fanout.
+Removing input.
+logical_block #526(mipi_rx_0_DATA_i[45]) has no fanout.
+Removing input.
+logical_block #527(mipi_rx_0_DATA_i[44]) has no fanout.
+Removing input.
+logical_block #528(mipi_rx_0_DATA_i[43]) has no fanout.
+Removing input.
+logical_block #529(mipi_rx_0_DATA_i[42]) has no fanout.
+Removing input.
+logical_block #530(mipi_rx_0_DATA_i[41]) has no fanout.
+Removing input.
+logical_block #531(mipi_rx_0_DATA_i[40]) has no fanout.
+Removing input.
+logical_block #532(mipi_rx_0_DATA_i[39]) has no fanout.
+Removing input.
+logical_block #533(mipi_rx_0_DATA_i[38]) has no fanout.
+Removing input.
+logical_block #534(mipi_rx_0_DATA_i[37]) has no fanout.
+Removing input.
+logical_block #535(mipi_rx_0_DATA_i[36]) has no fanout.
+Removing input.
+logical_block #536(mipi_rx_0_DATA_i[35]) has no fanout.
+Removing input.
+logical_block #537(mipi_rx_0_DATA_i[34]) has no fanout.
+Removing input.
+logical_block #538(mipi_rx_0_DATA_i[33]) has no fanout.
+Removing input.
+logical_block #539(mipi_rx_0_DATA_i[32]) has no fanout.
+Removing input.
+logical_block #540(mipi_rx_0_DATA_i[31]) has no fanout.
+Removing input.
+logical_block #541(mipi_rx_0_DATA_i[30]) has no fanout.
+Removing input.
+logical_block #542(mipi_rx_0_DATA_i[29]) has no fanout.
+Removing input.
+logical_block #543(mipi_rx_0_DATA_i[28]) has no fanout.
+Removing input.
+logical_block #544(mipi_rx_0_DATA_i[27]) has no fanout.
+Removing input.
+logical_block #545(mipi_rx_0_DATA_i[26]) has no fanout.
+Removing input.
+logical_block #546(mipi_rx_0_DATA_i[25]) has no fanout.
+Removing input.
+logical_block #547(mipi_rx_0_DATA_i[24]) has no fanout.
+Removing input.
+logical_block #548(mipi_rx_0_DATA_i[23]) has no fanout.
+Removing input.
+logical_block #549(mipi_rx_0_DATA_i[22]) has no fanout.
+Removing input.
+logical_block #550(mipi_rx_0_DATA_i[21]) has no fanout.
+Removing input.
+logical_block #551(mipi_rx_0_DATA_i[20]) has no fanout.
+Removing input.
+logical_block #552(mipi_rx_0_DATA_i[19]) has no fanout.
+Removing input.
+logical_block #553(mipi_rx_0_DATA_i[18]) has no fanout.
+Removing input.
+logical_block #554(mipi_rx_0_DATA_i[17]) has no fanout.
+Removing input.
+logical_block #555(mipi_rx_0_DATA_i[16]) has no fanout.
+Removing input.
+logical_block #556(mipi_rx_0_DATA_i[15]) has no fanout.
+Removing input.
+logical_block #557(mipi_rx_0_DATA_i[14]) has no fanout.
+Removing input.
+logical_block #558(mipi_rx_0_DATA_i[13]) has no fanout.
+Removing input.
+logical_block #559(mipi_rx_0_DATA_i[12]) has no fanout.
+Removing input.
+logical_block #560(mipi_rx_0_DATA_i[11]) has no fanout.
+Removing input.
+logical_block #561(mipi_rx_0_DATA_i[10]) has no fanout.
+Removing input.
+logical_block #562(mipi_rx_0_DATA_i[9]) has no fanout.
+Removing input.
+logical_block #563(mipi_rx_0_DATA_i[8]) has no fanout.
+Removing input.
+logical_block #564(mipi_rx_0_DATA_i[7]) has no fanout.
+Removing input.
+logical_block #565(mipi_rx_0_DATA_i[6]) has no fanout.
+Removing input.
+logical_block #566(mipi_rx_0_DATA_i[5]) has no fanout.
+Removing input.
+logical_block #567(mipi_rx_0_DATA_i[4]) has no fanout.
+Removing input.
+logical_block #568(mipi_rx_0_DATA_i[3]) has no fanout.
+Removing input.
+logical_block #569(mipi_rx_0_DATA_i[2]) has no fanout.
+Removing input.
+logical_block #570(mipi_rx_0_DATA_i[1]) has no fanout.
+Removing input.
+logical_block #571(mipi_rx_0_DATA_i[0]) has no fanout.
+Removing input.
+logical_block #572(mipi_rx_0_CNT_i[3]) has no fanout.
+Removing input.
+logical_block #573(mipi_rx_0_CNT_i[2]) has no fanout.
+Removing input.
+logical_block #574(mipi_rx_0_CNT_i[1]) has no fanout.
+Removing input.
+logical_block #575(mipi_rx_0_CNT_i[0]) has no fanout.
+Removing input.
+logical_block #576(mipi_rx_0_TYPE_i[5]) has no fanout.
+Removing input.
+logical_block #577(mipi_rx_0_TYPE_i[4]) has no fanout.
+Removing input.
+logical_block #578(mipi_rx_0_TYPE_i[3]) has no fanout.
+Removing input.
+logical_block #579(mipi_rx_0_TYPE_i[2]) has no fanout.
+Removing input.
+logical_block #580(mipi_rx_0_TYPE_i[1]) has no fanout.
+Removing input.
+logical_block #581(mipi_rx_0_TYPE_i[0]) has no fanout.
+Removing input.
+logical_block #582(mipi_rx_0_VALID_i) has no fanout.
+Removing input.
+logical_block #583(mipi_rx_1_VC_i[1]) has no fanout.
+Removing input.
+logical_block #584(mipi_rx_1_VC_i[0]) has no fanout.
+Removing input.
+logical_block #585(mipi_rx_1_VSYNC_i[3]) has no fanout.
+Removing input.
+logical_block #586(mipi_rx_1_VSYNC_i[2]) has no fanout.
+Removing input.
+logical_block #587(mipi_rx_1_VSYNC_i[1]) has no fanout.
+Removing input.
+logical_block #588(mipi_rx_1_VSYNC_i[0]) has no fanout.
+Removing input.
+logical_block #589(mipi_rx_1_HSYNC_i[3]) has no fanout.
+Removing input.
+logical_block #590(mipi_rx_1_HSYNC_i[2]) has no fanout.
+Removing input.
+logical_block #591(mipi_rx_1_HSYNC_i[1]) has no fanout.
+Removing input.
+logical_block #592(mipi_rx_1_HSYNC_i[0]) has no fanout.
+Removing input.
+logical_block #593(mipi_rx_1_DATA_i[63]) has no fanout.
+Removing input.
+logical_block #594(mipi_rx_1_DATA_i[62]) has no fanout.
+Removing input.
+logical_block #595(mipi_rx_1_DATA_i[61]) has no fanout.
+Removing input.
+logical_block #596(mipi_rx_1_DATA_i[60]) has no fanout.
+Removing input.
+logical_block #597(mipi_rx_1_DATA_i[59]) has no fanout.
+Removing input.
+logical_block #598(mipi_rx_1_DATA_i[58]) has no fanout.
+Removing input.
+logical_block #599(mipi_rx_1_DATA_i[57]) has no fanout.
+Removing input.
+logical_block #600(mipi_rx_1_DATA_i[56]) has no fanout.
+Removing input.
+logical_block #601(mipi_rx_1_DATA_i[55]) has no fanout.
+Removing input.
+logical_block #602(mipi_rx_1_DATA_i[54]) has no fanout.
+Removing input.
+logical_block #603(mipi_rx_1_DATA_i[53]) has no fanout.
+Removing input.
+logical_block #604(mipi_rx_1_DATA_i[52]) has no fanout.
+Removing input.
+logical_block #605(mipi_rx_1_DATA_i[51]) has no fanout.
+Removing input.
+logical_block #606(mipi_rx_1_DATA_i[50]) has no fanout.
+Removing input.
+logical_block #607(mipi_rx_1_DATA_i[49]) has no fanout.
+Removing input.
+logical_block #608(mipi_rx_1_DATA_i[48]) has no fanout.
+Removing input.
+logical_block #609(mipi_rx_1_DATA_i[47]) has no fanout.
+Removing input.
+logical_block #610(mipi_rx_1_DATA_i[46]) has no fanout.
+Removing input.
+logical_block #611(mipi_rx_1_DATA_i[45]) has no fanout.
+Removing input.
+logical_block #612(mipi_rx_1_DATA_i[44]) has no fanout.
+Removing input.
+logical_block #613(mipi_rx_1_DATA_i[43]) has no fanout.
+Removing input.
+logical_block #614(mipi_rx_1_DATA_i[42]) has no fanout.
+Removing input.
+logical_block #615(mipi_rx_1_DATA_i[41]) has no fanout.
+Removing input.
+logical_block #616(mipi_rx_1_DATA_i[40]) has no fanout.
+Removing input.
+logical_block #617(mipi_rx_1_DATA_i[39]) has no fanout.
+Removing input.
+logical_block #618(mipi_rx_1_DATA_i[38]) has no fanout.
+Removing input.
+logical_block #619(mipi_rx_1_DATA_i[37]) has no fanout.
+Removing input.
+logical_block #620(mipi_rx_1_DATA_i[36]) has no fanout.
+Removing input.
+logical_block #621(mipi_rx_1_DATA_i[35]) has no fanout.
+Removing input.
+logical_block #622(mipi_rx_1_DATA_i[34]) has no fanout.
+Removing input.
+logical_block #623(mipi_rx_1_DATA_i[33]) has no fanout.
+Removing input.
+logical_block #624(mipi_rx_1_DATA_i[32]) has no fanout.
+Removing input.
+logical_block #625(mipi_rx_1_DATA_i[31]) has no fanout.
+Removing input.
+logical_block #626(mipi_rx_1_DATA_i[30]) has no fanout.
+Removing input.
+logical_block #627(mipi_rx_1_DATA_i[29]) has no fanout.
+Removing input.
+logical_block #628(mipi_rx_1_DATA_i[28]) has no fanout.
+Removing input.
+logical_block #629(mipi_rx_1_DATA_i[27]) has no fanout.
+Removing input.
+logical_block #630(mipi_rx_1_DATA_i[26]) has no fanout.
+Removing input.
+logical_block #631(mipi_rx_1_DATA_i[25]) has no fanout.
+Removing input.
+logical_block #632(mipi_rx_1_DATA_i[24]) has no fanout.
+Removing input.
+logical_block #633(mipi_rx_1_DATA_i[23]) has no fanout.
+Removing input.
+logical_block #634(mipi_rx_1_DATA_i[22]) has no fanout.
+Removing input.
+logical_block #635(mipi_rx_1_DATA_i[21]) has no fanout.
+Removing input.
+logical_block #636(mipi_rx_1_DATA_i[20]) has no fanout.
+Removing input.
+logical_block #637(mipi_rx_1_DATA_i[19]) has no fanout.
+Removing input.
+logical_block #638(mipi_rx_1_DATA_i[18]) has no fanout.
+Removing input.
+logical_block #639(mipi_rx_1_DATA_i[17]) has no fanout.
+Removing input.
+logical_block #640(mipi_rx_1_DATA_i[16]) has no fanout.
+Removing input.
+logical_block #641(mipi_rx_1_DATA_i[15]) has no fanout.
+Removing input.
+logical_block #642(mipi_rx_1_DATA_i[14]) has no fanout.
+Removing input.
+logical_block #643(mipi_rx_1_DATA_i[13]) has no fanout.
+Removing input.
+logical_block #644(mipi_rx_1_DATA_i[12]) has no fanout.
+Removing input.
+logical_block #645(mipi_rx_1_DATA_i[11]) has no fanout.
+Removing input.
+logical_block #646(mipi_rx_1_DATA_i[10]) has no fanout.
+Removing input.
+logical_block #647(mipi_rx_1_DATA_i[9]) has no fanout.
+Removing input.
+logical_block #648(mipi_rx_1_DATA_i[8]) has no fanout.
+Removing input.
+logical_block #649(mipi_rx_1_DATA_i[7]) has no fanout.
+Removing input.
+logical_block #650(mipi_rx_1_DATA_i[6]) has no fanout.
+Removing input.
+logical_block #651(mipi_rx_1_DATA_i[5]) has no fanout.
+Removing input.
+logical_block #652(mipi_rx_1_DATA_i[4]) has no fanout.
+Removing input.
+logical_block #653(mipi_rx_1_DATA_i[3]) has no fanout.
+Removing input.
+logical_block #654(mipi_rx_1_DATA_i[2]) has no fanout.
+Removing input.
+logical_block #655(mipi_rx_1_DATA_i[1]) has no fanout.
+Removing input.
+logical_block #656(mipi_rx_1_DATA_i[0]) has no fanout.
+Removing input.
+logical_block #657(mipi_rx_1_CNT_i[3]) has no fanout.
+Removing input.
+logical_block #658(mipi_rx_1_CNT_i[2]) has no fanout.
+Removing input.
+logical_block #659(mipi_rx_1_CNT_i[1]) has no fanout.
+Removing input.
+logical_block #660(mipi_rx_1_CNT_i[0]) has no fanout.
+Removing input.
+logical_block #661(mipi_rx_1_TYPE_i[5]) has no fanout.
+Removing input.
+logical_block #662(mipi_rx_1_TYPE_i[4]) has no fanout.
+Removing input.
+logical_block #663(mipi_rx_1_TYPE_i[3]) has no fanout.
+Removing input.
+logical_block #664(mipi_rx_1_TYPE_i[2]) has no fanout.
+Removing input.
+logical_block #665(mipi_rx_1_TYPE_i[1]) has no fanout.
+Removing input.
+logical_block #666(mipi_rx_1_TYPE_i[0]) has no fanout.
+Removing input.
+logical_block #667(mipi_rx_1_VALID_i) has no fanout.
+Removing input.
+logical_block #668(mipi_rx_0_ULPS[3]) has no fanout.
+Removing input.
+logical_block #669(mipi_rx_0_ULPS[2]) has no fanout.
+Removing input.
+logical_block #670(mipi_rx_0_ULPS[1]) has no fanout.
+Removing input.
+logical_block #671(mipi_rx_0_ULPS[0]) has no fanout.
+Removing input.
+logical_block #672(mipi_rx_0_ULPS_CLK) has no fanout.
+Removing input.
+logical_block #674(mipi_rx_0_ERROR[17]) has no fanout.
+Removing input.
+logical_block #675(mipi_rx_0_ERROR[16]) has no fanout.
+Removing input.
+logical_block #676(mipi_rx_0_ERROR[15]) has no fanout.
+Removing input.
+logical_block #677(mipi_rx_0_ERROR[14]) has no fanout.
+Removing input.
+logical_block #678(mipi_rx_0_ERROR[13]) has no fanout.
+Removing input.
+logical_block #679(mipi_rx_0_ERROR[12]) has no fanout.
+Removing input.
+logical_block #680(mipi_rx_0_ERROR[11]) has no fanout.
+Removing input.
+logical_block #681(mipi_rx_0_ERROR[10]) has no fanout.
+Removing input.
+logical_block #682(mipi_rx_0_ERROR[9]) has no fanout.
+Removing input.
+logical_block #683(mipi_rx_0_ERROR[8]) has no fanout.
+Removing input.
+logical_block #684(mipi_rx_0_ERROR[7]) has no fanout.
+Removing input.
+logical_block #685(mipi_rx_0_ERROR[6]) has no fanout.
+Removing input.
+logical_block #686(mipi_rx_0_ERROR[5]) has no fanout.
+Removing input.
+logical_block #687(mipi_rx_0_ERROR[4]) has no fanout.
+Removing input.
+logical_block #688(mipi_rx_0_ERROR[3]) has no fanout.
+Removing input.
+logical_block #689(mipi_rx_0_ERROR[2]) has no fanout.
+Removing input.
+logical_block #690(mipi_rx_0_ERROR[1]) has no fanout.
+Removing input.
+logical_block #691(mipi_rx_0_ERROR[0]) has no fanout.
+Removing input.
+logical_block #692(mipi_rx_1_ULPS[3]) has no fanout.
+Removing input.
+logical_block #693(mipi_rx_1_ULPS[2]) has no fanout.
+Removing input.
+logical_block #694(mipi_rx_1_ULPS[1]) has no fanout.
+Removing input.
+logical_block #695(mipi_rx_1_ULPS[0]) has no fanout.
+Removing input.
+logical_block #696(mipi_rx_1_ULPS_CLK) has no fanout.
+Removing input.
+logical_block #698(mipi_rx_1_ERROR[17]) has no fanout.
+Removing input.
+logical_block #699(mipi_rx_1_ERROR[16]) has no fanout.
+Removing input.
+logical_block #700(mipi_rx_1_ERROR[15]) has no fanout.
+Removing input.
+logical_block #701(mipi_rx_1_ERROR[14]) has no fanout.
+Removing input.
+logical_block #702(mipi_rx_1_ERROR[13]) has no fanout.
+Removing input.
+logical_block #703(mipi_rx_1_ERROR[12]) has no fanout.
+Removing input.
+logical_block #704(mipi_rx_1_ERROR[11]) has no fanout.
+Removing input.
+logical_block #705(mipi_rx_1_ERROR[10]) has no fanout.
+Removing input.
+logical_block #706(mipi_rx_1_ERROR[9]) has no fanout.
+Removing input.
+logical_block #707(mipi_rx_1_ERROR[8]) has no fanout.
+Removing input.
+logical_block #708(mipi_rx_1_ERROR[7]) has no fanout.
+Removing input.
+logical_block #709(mipi_rx_1_ERROR[6]) has no fanout.
+Removing input.
+logical_block #710(mipi_rx_1_ERROR[5]) has no fanout.
+Removing input.
+logical_block #711(mipi_rx_1_ERROR[4]) has no fanout.
+Removing input.
+logical_block #712(mipi_rx_1_ERROR[3]) has no fanout.
+Removing input.
+logical_block #713(mipi_rx_1_ERROR[2]) has no fanout.
+Removing input.
+logical_block #714(mipi_rx_1_ERROR[1]) has no fanout.
+Removing input.
+logical_block #715(mipi_rx_1_ERROR[0]) has no fanout.
+Removing input.
+logical_block #717(jtag_inst1_DRCK) has no fanout.
+Removing input.
+logical_block #719(jtag_inst1_RUNTEST) has no fanout.
+Removing input.
+logical_block #724(jtag_inst1_TMS) has no fanout.
+Removing input.
+Pass 0: Swept away 248 blocks with no fanout.
+Pass 1: Swept away 0 nets with no fanout.
+Pass 1: Swept away 0 blocks with no fanout.
+Swept away 0 nets and 248 blocks in total.
+Removed 0 LUT buffers.
+Sweeped away 248 nodes.
+Successfully created VPR logical netlist from Verific binary DataBase file "D:/code/learning/a241111_03/Efinity/outflow/T35_Sensor_DDR3_LCD_Test.dbg.vdb".
+Netlist pre-processing took 0.255587 seconds.
+	Netlist pre-processing took 0.046875 seconds (approximately) in total CPU time.
+Netlist pre-processing virtual memory usage: begin = 13.936 MB, end = 50.908 MB, delta = 36.972 MB
+	Netlist pre-processing peak virtual memory usage = 53.072 MB
+Netlist pre-processing resident set memory usage: begin = 25.768 MB, end = 62.648 MB, delta = 36.88 MB
+	Netlist pre-processing peak resident set memory usage = 64.652 MB
+***** Ending stage netlist pre-processing *****
+
+***** Beginning stage pre-packing ... *****
+***** Ending stage pre-packing *****
+
+***** Beginning stage packing ... *****
+Generate proto netlist for file "D:/code/learning/a241111_03/Efinity/work_pnr\T35_Sensor_DDR3_LCD_Test.net_proto" took 0.01 seconds
+Creating IO constraints file 'D:/code/learning/a241111_03/Efinity/work_pnr\T35_Sensor_DDR3_LCD_Test.io_place'
+Packing took 0.0526521 seconds.
+	Packing took 0.015625 seconds (approximately) in total CPU time.
+Packing virtual memory usage: begin = 36.724 MB, end = 47.112 MB, delta = 10.388 MB
+	Packing peak virtual memory usage = 53.072 MB
+Packing resident set memory usage: begin = 48.924 MB, end = 59.356 MB, delta = 10.432 MB
+	Packing peak resident set memory usage = 64.652 MB
+***** Ending stage packing *****
+
+***** Beginning stage packed netlist loading ... *****
+Read proto netlist file D:/code/learning/a241111_03/Efinity/work_pnr\T35_Sensor_DDR3_LCD_Test.net_proto
+Read proto netlist for file "D:/code/learning/a241111_03/Efinity/work_pnr\T35_Sensor_DDR3_LCD_Test.net_proto" took 0.003 seconds
+Setup net and block data structure took 0.291 seconds
+Packed netlist loading took 1.50197 seconds.
+	Packed netlist loading took 0.515625 seconds (approximately) in total CPU time.
+Packed netlist loading virtual memory usage: begin = 47.112 MB, end = 139.6 MB, delta = 92.488 MB
+	Packed netlist loading peak virtual memory usage = 178.656 MB
+Packed netlist loading resident set memory usage: begin = 59.364 MB, end = 148.084 MB, delta = 88.72 MB
+	Packed netlist loading peak resident set memory usage = 187.1 MB
+***** Ending stage packed netlist loading *****
+
+***** Beginning stage pre-placement ... *****
+
+***** Ending stage pre-placement *****
+
+WARNING(1): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:14] set_clock_groups: Defaulting to -exclusive since none of the required option was specified
+WARNING(2): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:14] No clocks matched 'mipi_clkesc_i'
+WARNING(3): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:14] No clocks matched 'mipi_clkcal_i'
+WARNING(4): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:14] set_clock_groups: No valid clock(s) found for -group 'mipi_clkesc_i mipi_clkcal_i'
+WARNING(5): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:14] set_clock_groups: No valid clock group(s) specified
+WARNING(6): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:14] Unable to run 'set_clock_groups' constraint due to warnings found
+WARNING(7): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:15] set_clock_groups: Defaulting to -exclusive since none of the required option was specified
+WARNING(8): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:15] No clocks matched 'mipi_pixclk_i'
+WARNING(9): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:15] set_clock_groups: No valid clock(s) found for -group 'mipi_pixclk_i'
+WARNING(10): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:15] set_clock_groups: No valid clock group(s) specified
+WARNING(11): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:15] Unable to run 'set_clock_groups' constraint due to warnings found
+WARNING(12): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:16] set_clock_groups: Defaulting to -exclusive since none of the required option was specified
+WARNING(13): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:16] No clocks matched 'Axi0Clk'
+WARNING(14): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:16] set_clock_groups: No valid clock(s) found for -group 'Axi0Clk'
+WARNING(15): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:16] set_clock_groups: No valid clock group(s) specified
+WARNING(16): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:16] Unable to run 'set_clock_groups' constraint due to warnings found
+WARNING(17): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:17] set_clock_groups: Defaulting to -exclusive since none of the required option was specified
+WARNING(18): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:17] No clocks matched 'clk_cmos'
+WARNING(19): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:17] set_clock_groups: No valid clock(s) found for -group 'clk_cmos'
+WARNING(20): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:17] set_clock_groups: No valid clock group(s) specified
+WARNING(21): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:17] Unable to run 'set_clock_groups' constraint due to warnings found
+WARNING(22): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:18] set_clock_groups: Defaulting to -exclusive since none of the required option was specified
+WARNING(23): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:18] No clocks matched 'hdmi_clk1x_i'
+WARNING(24): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:18] No clocks matched 'hdmi_clk2x_i'
+WARNING(25): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:18] No clocks matched 'hdmi_clk5x_i'
+WARNING(26): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:18] set_clock_groups: No valid clock(s) found for -group 'hdmi_clk1x_i hdmi_clk2x_i hdmi_clk5x_i'
+WARNING(27): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:18] set_clock_groups: No valid clock group(s) specified
+WARNING(28): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:18] Unable to run 'set_clock_groups' constraint due to warnings found
+WARNING(29): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:19] set_clock_groups: Defaulting to -exclusive since none of the required option was specified
+WARNING(30): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:19] No clocks matched 'tx_slowclk'
+WARNING(31): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:19] No clocks matched 'tx_fastclk'
+WARNING(32): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:19] set_clock_groups: No valid clock(s) found for -group 'tx_slowclk tx_fastclk'
+WARNING(33): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:19] set_clock_groups: No valid clock group(s) specified
+WARNING(34): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:19] Unable to run 'set_clock_groups' constraint due to warnings found
+WARNING(35): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:20] set_clock_groups: Defaulting to -exclusive since none of the required option was specified
+WARNING(36): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:20] No clocks matched 'cmos_pclk'
+WARNING(37): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:20] set_clock_groups: No valid clock(s) found for -group 'cmos_pclk'
+WARNING(38): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:20] set_clock_groups: No valid clock group(s) specified
+WARNING(39): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:20] Unable to run 'set_clock_groups' constraint due to warnings found
+WARNING(40): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:26] No valid object(s) found for 'mipi_clkesc_i'
+WARNING(41): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:26] No valid pin(s) found for clock
+WARNING(42): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:26] Unable to run 'create_clock' constraint due to warnings found
+WARNING(43): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:29] No valid object(s) found for 'Ddr0Clk'
+WARNING(44): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:29] No valid pin(s) found for clock
+WARNING(45): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:29] Unable to run 'create_clock' constraint due to warnings found
+WARNING(46): No ports matched 'mipi_rx_0_VSYNC_i[3]'
+WARNING(47): No ports matched 'mipi_rx_0_VSYNC_i[2]'
+WARNING(48): No ports matched 'mipi_rx_0_VSYNC_i[1]'
+WARNING(49): No ports matched 'mipi_rx_0_VSYNC_i[0]'
+WARNING(50): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:186] No valid object(s) found for ''
+WARNING(51): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:186] set_input_delay: No valid input port(s) found
+WARNING(52): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:186] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING(53): No ports matched 'mipi_rx_0_VSYNC_i[3]'
+WARNING(54): No ports matched 'mipi_rx_0_VSYNC_i[2]'
+WARNING(55): No ports matched 'mipi_rx_0_VSYNC_i[1]'
+WARNING(56): No ports matched 'mipi_rx_0_VSYNC_i[0]'
+WARNING(57): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:187] No valid object(s) found for ''
+WARNING(58): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:187] set_input_delay: No valid input port(s) found
+WARNING(59): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:187] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING(60): No ports matched 'mipi_rx_0_HSYNC_i[3]'
+WARNING(61): No ports matched 'mipi_rx_0_HSYNC_i[2]'
+WARNING(62): No ports matched 'mipi_rx_0_HSYNC_i[1]'
+WARNING(63): No ports matched 'mipi_rx_0_HSYNC_i[0]'
+WARNING(64): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:188] No valid object(s) found for ''
+WARNING(65): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:188] set_input_delay: No valid input port(s) found
+WARNING(66): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:188] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING(67): No ports matched 'mipi_rx_0_HSYNC_i[3]'
+WARNING(68): No ports matched 'mipi_rx_0_HSYNC_i[2]'
+WARNING(69): No ports matched 'mipi_rx_0_HSYNC_i[1]'
+WARNING(70): No ports matched 'mipi_rx_0_HSYNC_i[0]'
+WARNING(71): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:189] No valid object(s) found for ''
+WARNING(72): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:189] set_input_delay: No valid input port(s) found
+WARNING(73): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:189] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING(74): No ports matched 'mipi_rx_0_VALID_i'
+WARNING(75): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:190] No valid object(s) found for ''
+WARNING(76): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:190] set_input_delay: No valid input port(s) found
+WARNING(77): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:190] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING(78): No ports matched 'mipi_rx_0_VALID_i'
+WARNING(79): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:191] No valid object(s) found for ''
+WARNING(80): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:191] set_input_delay: No valid input port(s) found
+WARNING(81): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:191] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING(82): No ports matched 'mipi_rx_0_CNT_i[3]'
+WARNING(83): No ports matched 'mipi_rx_0_CNT_i[2]'
+WARNING(84): No ports matched 'mipi_rx_0_CNT_i[1]'
+WARNING(85): No ports matched 'mipi_rx_0_CNT_i[0]'
+WARNING(86): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:192] No valid object(s) found for ''
+WARNING(87): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:192] set_input_delay: No valid input port(s) found
+WARNING(88): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:192] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING(89): No ports matched 'mipi_rx_0_CNT_i[3]'
+WARNING(90): No ports matched 'mipi_rx_0_CNT_i[2]'
+WARNING(91): No ports matched 'mipi_rx_0_CNT_i[1]'
+WARNING(92): No ports matched 'mipi_rx_0_CNT_i[0]'
+WARNING(93): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:193] No valid object(s) found for ''
+WARNING(94): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:193] set_input_delay: No valid input port(s) found
+WARNING(95): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:193] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING(96): No ports matched 'mipi_rx_0_DATA_i[*]'
+WARNING(97): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:194] No valid object(s) found for ''
+WARNING(98): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:194] set_input_delay: No valid input port(s) found
+WARNING(99): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:194] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING(100): No ports matched 'mipi_rx_0_DATA_i[*]'
+WARNING(101): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:195] No valid object(s) found for ''
+WARNING(102): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:195] set_input_delay: No valid input port(s) found
+WARNING(103): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:195] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING(104): No ports matched 'mipi_rx_0_ERROR[*]'
+WARNING(105): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:196] No valid object(s) found for ''
+WARNING(106): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:196] set_input_delay: No valid input port(s) found
+WARNING(107): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:196] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING(108): No ports matched 'mipi_rx_0_ERROR[*]'
+WARNING(109): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:197] No valid object(s) found for ''
+WARNING(110): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:197] set_input_delay: No valid input port(s) found
+WARNING(111): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:197] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING(112): No ports matched 'mipi_rx_0_ULPS_CLK'
+WARNING(113): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:198] No valid object(s) found for ''
+WARNING(114): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:198] set_input_delay: No valid input port(s) found
+WARNING(115): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:198] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING(116): No ports matched 'mipi_rx_0_ULPS_CLK'
+WARNING(117): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:199] No valid object(s) found for ''
+WARNING(118): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:199] set_input_delay: No valid input port(s) found
+WARNING(119): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:199] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING(120): No ports matched 'mipi_rx_0_ULPS[3]'
+WARNING(121): No ports matched 'mipi_rx_0_ULPS[2]'
+WARNING(122): No ports matched 'mipi_rx_0_ULPS[1]'
+WARNING(123): No ports matched 'mipi_rx_0_ULPS[0]'
+WARNING(124): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:200] No valid object(s) found for ''
+WARNING(125): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:200] set_input_delay: No valid input port(s) found
+WARNING(126): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:200] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING(127): No ports matched 'mipi_rx_0_ULPS[3]'
+WARNING(128): No ports matched 'mipi_rx_0_ULPS[2]'
+WARNING(129): No ports matched 'mipi_rx_0_ULPS[1]'
+WARNING(130): No ports matched 'mipi_rx_0_ULPS[0]'
+WARNING(131): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:201] No valid object(s) found for ''
+WARNING(132): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:201] set_input_delay: No valid input port(s) found
+WARNING(133): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:201] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING(134): No ports matched 'mipi_rx_1_VSYNC_i[3]'
+WARNING(135): No ports matched 'mipi_rx_1_VSYNC_i[2]'
+WARNING(136): No ports matched 'mipi_rx_1_VSYNC_i[1]'
+WARNING(137): No ports matched 'mipi_rx_1_VSYNC_i[0]'
+WARNING(138): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:206] No valid object(s) found for ''
+WARNING(139): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:206] set_input_delay: No valid input port(s) found
+WARNING(140): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:206] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING(141): No ports matched 'mipi_rx_1_VSYNC_i[3]'
+WARNING(142): No ports matched 'mipi_rx_1_VSYNC_i[2]'
+WARNING(143): No ports matched 'mipi_rx_1_VSYNC_i[1]'
+WARNING(144): No ports matched 'mipi_rx_1_VSYNC_i[0]'
+WARNING(145): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:207] No valid object(s) found for ''
+WARNING(146): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:207] set_input_delay: No valid input port(s) found
+WARNING(147): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:207] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING(148): No ports matched 'mipi_rx_1_HSYNC_i[3]'
+WARNING(149): No ports matched 'mipi_rx_1_HSYNC_i[2]'
+WARNING(150): No ports matched 'mipi_rx_1_HSYNC_i[1]'
+WARNING(151): No ports matched 'mipi_rx_1_HSYNC_i[0]'
+WARNING(152): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:208] No valid object(s) found for ''
+WARNING(153): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:208] set_input_delay: No valid input port(s) found
+WARNING(154): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:208] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING(155): No ports matched 'mipi_rx_1_HSYNC_i[3]'
+WARNING(156): No ports matched 'mipi_rx_1_HSYNC_i[2]'
+WARNING(157): No ports matched 'mipi_rx_1_HSYNC_i[1]'
+WARNING(158): No ports matched 'mipi_rx_1_HSYNC_i[0]'
+WARNING(159): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:209] No valid object(s) found for ''
+WARNING(160): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:209] set_input_delay: No valid input port(s) found
+WARNING(161): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:209] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING(162): No ports matched 'mipi_rx_1_VALID_i'
+WARNING(163): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:210] No valid object(s) found for ''
+WARNING(164): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:210] set_input_delay: No valid input port(s) found
+WARNING(165): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:210] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING(166): No ports matched 'mipi_rx_1_VALID_i'
+WARNING(167): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:211] No valid object(s) found for ''
+WARNING(168): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:211] set_input_delay: No valid input port(s) found
+WARNING(169): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:211] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING(170): No ports matched 'mipi_rx_1_CNT_i[3]'
+WARNING(171): No ports matched 'mipi_rx_1_CNT_i[2]'
+WARNING(172): No ports matched 'mipi_rx_1_CNT_i[1]'
+WARNING(173): No ports matched 'mipi_rx_1_CNT_i[0]'
+WARNING(174): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:212] No valid object(s) found for ''
+WARNING(175): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:212] set_input_delay: No valid input port(s) found
+WARNING(176): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:212] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING(177): No ports matched 'mipi_rx_1_CNT_i[3]'
+WARNING(178): No ports matched 'mipi_rx_1_CNT_i[2]'
+WARNING(179): No ports matched 'mipi_rx_1_CNT_i[1]'
+WARNING(180): No ports matched 'mipi_rx_1_CNT_i[0]'
+WARNING(181): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:213] No valid object(s) found for ''
+WARNING(182): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:213] set_input_delay: No valid input port(s) found
+WARNING(183): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:213] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING(184): No ports matched 'mipi_rx_1_DATA_i[*]'
+WARNING(185): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:214] No valid object(s) found for ''
+WARNING(186): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:214] set_input_delay: No valid input port(s) found
+WARNING(187): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:214] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING(188): No ports matched 'mipi_rx_1_DATA_i[*]'
+WARNING(189): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:215] No valid object(s) found for ''
+WARNING(190): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:215] set_input_delay: No valid input port(s) found
+WARNING(191): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:215] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING(192): No ports matched 'mipi_rx_1_ERROR[*]'
+WARNING(193): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:216] No valid object(s) found for ''
+WARNING(194): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:216] set_input_delay: No valid input port(s) found
+WARNING(195): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:216] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING(196): No ports matched 'mipi_rx_1_ERROR[*]'
+WARNING(197): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:217] No valid object(s) found for ''
+WARNING(198): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:217] set_input_delay: No valid input port(s) found
+WARNING(199): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:217] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING(200): No ports matched 'mipi_rx_1_ULPS_CLK'
+WARNING(201): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:218] No valid object(s) found for ''
+WARNING(202): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:218] set_input_delay: No valid input port(s) found
+WARNING(203): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:218] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING(204): No ports matched 'mipi_rx_1_ULPS_CLK'
+WARNING(205): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:219] No valid object(s) found for ''
+WARNING(206): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:219] set_input_delay: No valid input port(s) found
+WARNING(207): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:219] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING(208): No ports matched 'mipi_rx_1_ULPS[3]'
+WARNING(209): No ports matched 'mipi_rx_1_ULPS[2]'
+WARNING(210): No ports matched 'mipi_rx_1_ULPS[1]'
+WARNING(211): No ports matched 'mipi_rx_1_ULPS[0]'
+WARNING(212): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:220] No valid object(s) found for ''
+WARNING(213): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:220] set_input_delay: No valid input port(s) found
+WARNING(214): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:220] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING(215): No ports matched 'mipi_rx_1_ULPS[3]'
+WARNING(216): No ports matched 'mipi_rx_1_ULPS[2]'
+WARNING(217): No ports matched 'mipi_rx_1_ULPS[1]'
+WARNING(218): No ports matched 'mipi_rx_1_ULPS[0]'
+WARNING(219): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:221] No valid object(s) found for ''
+WARNING(220): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:221] set_input_delay: No valid input port(s) found
+WARNING(221): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:221] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING(222): No ports matched 'DdrCtrl_BID_0[*]'
+WARNING(223): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:257] No valid object(s) found for ''
+WARNING(224): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:257] set_input_delay: No valid input port(s) found
+WARNING(225): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:257] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING(226): No ports matched 'DdrCtrl_BID_0[*]'
+WARNING(227): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:258] No valid object(s) found for ''
+WARNING(228): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:258] set_input_delay: No valid input port(s) found
+WARNING(229): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:258] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING(230): No ports matched 'DdrCtrl_BVALID_0'
+WARNING(231): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:259] No valid object(s) found for ''
+WARNING(232): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:259] set_input_delay: No valid input port(s) found
+WARNING(233): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:259] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING(234): No ports matched 'DdrCtrl_BVALID_0'
+WARNING(235): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:260] No valid object(s) found for ''
+WARNING(236): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:260] set_input_delay: No valid input port(s) found
+WARNING(237): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:260] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING(238): No ports matched 'DdrCtrl_RID_0[*]'
+WARNING(239): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:263] No valid object(s) found for ''
+WARNING(240): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:263] set_input_delay: No valid input port(s) found
+WARNING(241): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:263] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING(242): No ports matched 'DdrCtrl_RID_0[*]'
+WARNING(243): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:264] No valid object(s) found for ''
+WARNING(244): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:264] set_input_delay: No valid input port(s) found
+WARNING(245): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:264] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING(246): No ports matched 'DdrCtrl_RRESP_0[1]'
+WARNING(247): No ports matched 'DdrCtrl_RRESP_0[0]'
+WARNING(248): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:267] No valid object(s) found for ''
+WARNING(249): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:267] set_input_delay: No valid input port(s) found
+WARNING(250): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:267] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING(251): No ports matched 'DdrCtrl_RRESP_0[1]'
+WARNING(252): No ports matched 'DdrCtrl_RRESP_0[0]'
+WARNING(253): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:268] No valid object(s) found for ''
+WARNING(254): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:268] set_input_delay: No valid input port(s) found
+WARNING(255): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:268] Unable to run 'set_input_delay' constraint due to warnings found
+
+SDC file 'D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc' parsed successfully.
+10 clocks (including virtual clocks), 142 inputs and 278 outputs were constrained.
+
+***** Beginning stage initial placement ... *****
+Reading core interface constraints from 'D:/code/learning/a241111_03/Efinity/outflow/T35_Sensor_DDR3_LCD_Test.interface.csv'.
+Successfully processed interface constraints file "D:/code/learning/a241111_03/Efinity/outflow/T35_Sensor_DDR3_LCD_Test.interface.csv".
+Writing IO placement constraints to 'D:/code/learning/a241111_03/Efinity/outflow\T35_Sensor_DDR3_LCD_Test.interface.io'.
+
+Reading placement constraints from 'D:/code/learning/a241111_03/Efinity/outflow\T35_Sensor_DDR3_LCD_Test.interface.io'.
+
+Reading placement constraints from 'D:/code/learning/a241111_03/Efinity/work_pnr\T35_Sensor_DDR3_LCD_Test.io_place'.
+WARNING(256): Clock driver jtag_inst1_TCK should use the dedicated clock pad.
+The driver, jtag_inst1_RESET, of control net, jtag_inst1_RESET, should be placed at a dedicated control pad location.
+***** Ending stage initial placement *****
+
+***** Beginning stage placement ... *****
+Found 40 synchronizers as follows: 
+	Synchronizer 0:  u_axi4_ctrl_0/u_R0_FIFO_128/u_efx_fifo_top/xefx_fifo_ctl/genblk7.xrd2wr_addr_sync/pipe_reg[0][0]~FF u_axi4_ctrl_0/u_R0_FIFO_128/u_efx_fifo_top/xefx_fifo_ctl/genblk7.xrd2wr_addr_sync/pipe_reg[1][0]~FF u_axi4_ctrl_0/u_R0_FIFO_128/u_efx_fifo_top/xefx_fifo_ctl/genblk7.raddr_cntr_gry_sync[0]~FF
+	Synchronizer 1:  u_axi4_ctrl_0/u_R0_FIFO_128/u_efx_fifo_top/genblk2.rd_rst[0]~FF u_axi4_ctrl_0/u_R0_FIFO_128/u_efx_fifo_top/genblk2.rd_rst[1]~FF
+	Synchronizer 2:  u_axi4_ctrl_0/u_R0_FIFO_128/u_efx_fifo_top/genblk2.wr_rst[0]~FF u_axi4_ctrl_0/u_R0_FIFO_128/u_efx_fifo_top/genblk2.wr_rst[1]~FF
+	Synchronizer 3:  u_axi4_ctrl_0/u_W0_FIFO_128/u_efx_fifo_top/genblk2.rd_rst[0]~FF u_axi4_ctrl_0/u_W0_FIFO_128/u_efx_fifo_top/genblk2.rd_rst[1]~FF
+	Synchronizer 4:  u_axi4_ctrl_0/u_W0_FIFO_128/u_efx_fifo_top/genblk2.wr_rst[0]~FF u_axi4_ctrl_0/u_W0_FIFO_128/u_efx_fifo_top/genblk2.wr_rst[1]~FF
+	Synchronizer 5:  u_axi4_ctrl_0/u_R0_FIFO_128/u_efx_fifo_top/xefx_fifo_ctl/genblk7.xrd2wr_addr_sync/pipe_reg[0][1]~FF u_axi4_ctrl_0/u_R0_FIFO_128/u_efx_fifo_top/xefx_fifo_ctl/genblk7.xrd2wr_addr_sync/pipe_reg[1][1]~FF u_axi4_ctrl_0/u_R0_FIFO_128/u_efx_fifo_top/xefx_fifo_ctl/genblk7.raddr_cntr_gry_sync[1]~FF
+	Synchronizer 6:  u_axi4_ctrl_0/u_W0_FIFO_128/u_efx_fifo_top/xefx_fifo_ctl/genblk7.xrd2wr_addr_sync/pipe_reg[0][0]~FF u_axi4_ctrl_0/u_W0_FIFO_128/u_efx_fifo_top/xefx_fifo_ctl/genblk7.xrd2wr_addr_sync/pipe_reg[1][0]~FF u_axi4_ctrl_0/u_W0_FIFO_128/u_efx_fifo_top/xefx_fifo_ctl/genblk7.raddr_cntr_gry_sync[0]~FF
+	Synchronizer 7:  u_axi4_ctrl_0/u_R0_FIFO_128/u_efx_fifo_top/xefx_fifo_ctl/genblk7.xrd2wr_addr_sync/pipe_reg[0][2]~FF u_axi4_ctrl_0/u_R0_FIFO_128/u_efx_fifo_top/xefx_fifo_ctl/genblk7.xrd2wr_addr_sync/pipe_reg[1][2]~FF u_axi4_ctrl_0/u_R0_FIFO_128/u_efx_fifo_top/xefx_fifo_ctl/genblk7.raddr_cntr_gry_sync[2]~FF
+	Synchronizer 8:  u_axi4_ctrl_0/u_W0_FIFO_128/u_efx_fifo_top/xefx_fifo_ctl/genblk7.xrd2wr_addr_sync/pipe_reg[0][1]~FF u_axi4_ctrl_0/u_W0_FIFO_128/u_efx_fifo_top/xefx_fifo_ctl/genblk7.xrd2wr_addr_sync/pipe_reg[1][1]~FF u_axi4_ctrl_0/u_W0_FIFO_128/u_efx_fifo_top/xefx_fifo_ctl/genblk7.raddr_cntr_gry_sync[1]~FF
+	Synchronizer 9:  u_axi4_ctrl_0/u_R0_FIFO_128/u_efx_fifo_top/xefx_fifo_ctl/genblk7.xrd2wr_addr_sync/pipe_reg[0][3]~FF u_axi4_ctrl_0/u_R0_FIFO_128/u_efx_fifo_top/xefx_fifo_ctl/genblk7.xrd2wr_addr_sync/pipe_reg[1][3]~FF u_axi4_ctrl_0/u_R0_FIFO_128/u_efx_fifo_top/xefx_fifo_ctl/genblk7.raddr_cntr_gry_sync[3]~FF
+	Synchronizer 10:  u_axi4_ctrl_0/u_W0_FIFO_128/u_efx_fifo_top/xefx_fifo_ctl/genblk7.xrd2wr_addr_sync/pipe_reg[0][2]~FF u_axi4_ctrl_0/u_W0_FIFO_128/u_efx_fifo_top/xefx_fifo_ctl/genblk7.xrd2wr_addr_sync/pipe_reg[1][2]~FF u_axi4_ctrl_0/u_W0_FIFO_128/u_efx_fifo_top/xefx_fifo_ctl/genblk7.raddr_cntr_gry_sync[2]~FF
+	Synchronizer 11:  u_axi4_ctrl_0/u_R0_FIFO_128/u_efx_fifo_top/xefx_fifo_ctl/genblk7.xrd2wr_addr_sync/pipe_reg[0][4]~FF u_axi4_ctrl_0/u_R0_FIFO_128/u_efx_fifo_top/xefx_fifo_ctl/genblk7.xrd2wr_addr_sync/pipe_reg[1][4]~FF u_axi4_ctrl_0/u_R0_FIFO_128/u_efx_fifo_top/xefx_fifo_ctl/genblk7.raddr_cntr_gry_sync[4]~FF
+	Synchronizer 12:  u_axi4_ctrl_0/u_W0_FIFO_128/u_efx_fifo_top/xefx_fifo_ctl/genblk7.xrd2wr_addr_sync/pipe_reg[0][3]~FF u_axi4_ctrl_0/u_W0_FIFO_128/u_efx_fifo_top/xefx_fifo_ctl/genblk7.xrd2wr_addr_sync/pipe_reg[1][3]~FF u_axi4_ctrl_0/u_W0_FIFO_128/u_efx_fifo_top/xefx_fifo_ctl/genblk7.raddr_cntr_gry_sync[3]~FF
+	Synchronizer 13:  u_axi4_ctrl_0/u_R0_FIFO_128/u_efx_fifo_top/xefx_fifo_ctl/genblk7.xrd2wr_addr_sync/pipe_reg[0][5]~FF u_axi4_ctrl_0/u_R0_FIFO_128/u_efx_fifo_top/xefx_fifo_ctl/genblk7.xrd2wr_addr_sync/pipe_reg[1][5]~FF u_axi4_ctrl_0/u_R0_FIFO_128/u_efx_fifo_top/xefx_fifo_ctl/genblk7.raddr_cntr_gry_sync[5]~FF
+	Synchronizer 14:  u_axi4_ctrl_0/u_W0_FIFO_128/u_efx_fifo_top/xefx_fifo_ctl/genblk7.xrd2wr_addr_sync/pipe_reg[0][4]~FF u_axi4_ctrl_0/u_W0_FIFO_128/u_efx_fifo_top/xefx_fifo_ctl/genblk7.xrd2wr_addr_sync/pipe_reg[1][4]~FF u_axi4_ctrl_0/u_W0_FIFO_128/u_efx_fifo_top/xefx_fifo_ctl/genblk7.raddr_cntr_gry_sync[4]~FF
+	Synchronizer 15:  u_axi4_ctrl_0/u_R0_FIFO_128/u_efx_fifo_top/xefx_fifo_ctl/genblk7.xrd2wr_addr_sync/pipe_reg[0][6]~FF u_axi4_ctrl_0/u_R0_FIFO_128/u_efx_fifo_top/xefx_fifo_ctl/genblk7.xrd2wr_addr_sync/pipe_reg[1][6]~FF u_axi4_ctrl_0/u_R0_FIFO_128/u_efx_fifo_top/xefx_fifo_ctl/genblk7.raddr_cntr_gry_sync[6]~FF
+	Synchronizer 16:  u_axi4_ctrl_0/u_W0_FIFO_128/u_efx_fifo_top/xefx_fifo_ctl/genblk7.xrd2wr_addr_sync/pipe_reg[0][5]~FF u_axi4_ctrl_0/u_W0_FIFO_128/u_efx_fifo_top/xefx_fifo_ctl/genblk7.xrd2wr_addr_sync/pipe_reg[1][5]~FF u_axi4_ctrl_0/u_W0_FIFO_128/u_efx_fifo_top/xefx_fifo_ctl/genblk7.raddr_cntr_gry_sync[5]~FF
+	Synchronizer 17:  u_axi4_ctrl_0/u_R0_FIFO_128/u_efx_fifo_top/xefx_fifo_ctl/genblk7.xrd2wr_addr_sync/pipe_reg[0][7]~FF u_axi4_ctrl_0/u_R0_FIFO_128/u_efx_fifo_top/xefx_fifo_ctl/genblk7.xrd2wr_addr_sync/pipe_reg[1][7]~FF u_axi4_ctrl_0/u_R0_FIFO_128/u_efx_fifo_top/xefx_fifo_ctl/genblk7.raddr_cntr_gry_sync[7]~FF
+	Synchronizer 18:  u_axi4_ctrl_0/u_W0_FIFO_128/u_efx_fifo_top/xefx_fifo_ctl/genblk7.xrd2wr_addr_sync/pipe_reg[0][6]~FF u_axi4_ctrl_0/u_W0_FIFO_128/u_efx_fifo_top/xefx_fifo_ctl/genblk7.xrd2wr_addr_sync/pipe_reg[1][6]~FF u_axi4_ctrl_0/u_W0_FIFO_128/u_efx_fifo_top/xefx_fifo_ctl/genblk7.raddr_cntr_gry_sync[6]~FF
+	Synchronizer 19:  u_axi4_ctrl_0/u_R0_FIFO_128/u_efx_fifo_top/xefx_fifo_ctl/genblk7.xrd2wr_addr_sync/pipe_reg[0][8]~FF u_axi4_ctrl_0/u_R0_FIFO_128/u_efx_fifo_top/xefx_fifo_ctl/genblk7.xrd2wr_addr_sync/pipe_reg[1][8]~FF u_axi4_ctrl_0/u_R0_FIFO_128/u_efx_fifo_top/xefx_fifo_ctl/genblk7.raddr_cntr_gry_sync[8]~FF
+	Synchronizer 20:  u_axi4_ctrl_0/u_W0_FIFO_128/u_efx_fifo_top/xefx_fifo_ctl/genblk7.xrd2wr_addr_sync/pipe_reg[0][7]~FF u_axi4_ctrl_0/u_W0_FIFO_128/u_efx_fifo_top/xefx_fifo_ctl/genblk7.xrd2wr_addr_sync/pipe_reg[1][7]~FF u_axi4_ctrl_0/u_W0_FIFO_128/u_efx_fifo_top/xefx_fifo_ctl/genblk7.raddr_cntr_gry_sync[7]~FF
+	Synchronizer 21:  u_axi4_ctrl_0/u_W0_FIFO_128/u_efx_fifo_top/xefx_fifo_ctl/genblk7.xrd2wr_addr_sync/pipe_reg[0][8]~FF u_axi4_ctrl_0/u_W0_FIFO_128/u_efx_fifo_top/xefx_fifo_ctl/genblk7.xrd2wr_addr_sync/pipe_reg[1][8]~FF u_axi4_ctrl_0/u_W0_FIFO_128/u_efx_fifo_top/xefx_fifo_ctl/genblk7.raddr_cntr_gry_sync[8]~FF
+	Synchronizer 22:  u_axi4_ctrl_0/u_R0_FIFO_128/u_efx_fifo_top/xefx_fifo_ctl/genblk7.wr2rd_addr_sync/pipe_reg[0][0]~FF u_axi4_ctrl_0/u_R0_FIFO_128/u_efx_fifo_top/xefx_fifo_ctl/genblk7.wr2rd_addr_sync/pipe_reg[1][0]~FF u_axi4_ctrl_0/u_R0_FIFO_128/u_efx_fifo_top/xefx_fifo_ctl/genblk7.waddr_cntr_gry_sync[0]~FF
+	Synchronizer 23:  u_axi4_ctrl_0/u_R0_FIFO_128/u_efx_fifo_top/xefx_fifo_ctl/genblk7.wr2rd_addr_sync/pipe_reg[0][1]~FF u_axi4_ctrl_0/u_R0_FIFO_128/u_efx_fifo_top/xefx_fifo_ctl/genblk7.wr2rd_addr_sync/pipe_reg[1][1]~FF u_axi4_ctrl_0/u_R0_FIFO_128/u_efx_fifo_top/xefx_fifo_ctl/genblk7.waddr_cntr_gry_sync[1]~FF
+	Synchronizer 24:  u_axi4_ctrl_0/u_W0_FIFO_128/u_efx_fifo_top/xefx_fifo_ctl/genblk7.wr2rd_addr_sync/pipe_reg[0][0]~FF u_axi4_ctrl_0/u_W0_FIFO_128/u_efx_fifo_top/xefx_fifo_ctl/genblk7.wr2rd_addr_sync/pipe_reg[1][0]~FF u_axi4_ctrl_0/u_W0_FIFO_128/u_efx_fifo_top/xefx_fifo_ctl/genblk7.waddr_cntr_gry_sync[0]~FF
+	Synchronizer 25:  u_axi4_ctrl_0/u_R0_FIFO_128/u_efx_fifo_top/xefx_fifo_ctl/genblk7.wr2rd_addr_sync/pipe_reg[0][2]~FF u_axi4_ctrl_0/u_R0_FIFO_128/u_efx_fifo_top/xefx_fifo_ctl/genblk7.wr2rd_addr_sync/pipe_reg[1][2]~FF u_axi4_ctrl_0/u_R0_FIFO_128/u_efx_fifo_top/xefx_fifo_ctl/genblk7.waddr_cntr_gry_sync[2]~FF
+	Synchronizer 26:  u_axi4_ctrl_0/u_W0_FIFO_128/u_efx_fifo_top/xefx_fifo_ctl/genblk7.wr2rd_addr_sync/pipe_reg[0][1]~FF u_axi4_ctrl_0/u_W0_FIFO_128/u_efx_fifo_top/xefx_fifo_ctl/genblk7.wr2rd_addr_sync/pipe_reg[1][1]~FF u_axi4_ctrl_0/u_W0_FIFO_128/u_efx_fifo_top/xefx_fifo_ctl/genblk7.waddr_cntr_gry_sync[1]~FF
+	Synchronizer 27:  u_axi4_ctrl_0/u_R0_FIFO_128/u_efx_fifo_top/xefx_fifo_ctl/genblk7.wr2rd_addr_sync/pipe_reg[0][3]~FF u_axi4_ctrl_0/u_R0_FIFO_128/u_efx_fifo_top/xefx_fifo_ctl/genblk7.wr2rd_addr_sync/pipe_reg[1][3]~FF u_axi4_ctrl_0/u_R0_FIFO_128/u_efx_fifo_top/xefx_fifo_ctl/genblk7.waddr_cntr_gry_sync[3]~FF
+	Synchronizer 28:  u_axi4_ctrl_0/u_W0_FIFO_128/u_efx_fifo_top/xefx_fifo_ctl/genblk7.wr2rd_addr_sync/pipe_reg[0][2]~FF u_axi4_ctrl_0/u_W0_FIFO_128/u_efx_fifo_top/xefx_fifo_ctl/genblk7.wr2rd_addr_sync/pipe_reg[1][2]~FF u_axi4_ctrl_0/u_W0_FIFO_128/u_efx_fifo_top/xefx_fifo_ctl/genblk7.waddr_cntr_gry_sync[2]~FF
+	Synchronizer 29:  u_axi4_ctrl_0/u_R0_FIFO_128/u_efx_fifo_top/xefx_fifo_ctl/genblk7.wr2rd_addr_sync/pipe_reg[0][4]~FF u_axi4_ctrl_0/u_R0_FIFO_128/u_efx_fifo_top/xefx_fifo_ctl/genblk7.wr2rd_addr_sync/pipe_reg[1][4]~FF u_axi4_ctrl_0/u_R0_FIFO_128/u_efx_fifo_top/xefx_fifo_ctl/genblk7.waddr_cntr_gry_sync[4]~FF
+	Synchronizer 30:  u_axi4_ctrl_0/u_W0_FIFO_128/u_efx_fifo_top/xefx_fifo_ctl/genblk7.wr2rd_addr_sync/pipe_reg[0][3]~FF u_axi4_ctrl_0/u_W0_FIFO_128/u_efx_fifo_top/xefx_fifo_ctl/genblk7.wr2rd_addr_sync/pipe_reg[1][3]~FF u_axi4_ctrl_0/u_W0_FIFO_128/u_efx_fifo_top/xefx_fifo_ctl/genblk7.waddr_cntr_gry_sync[3]~FF
+	Synchronizer 31:  u_axi4_ctrl_0/u_R0_FIFO_128/u_efx_fifo_top/xefx_fifo_ctl/genblk7.wr2rd_addr_sync/pipe_reg[0][5]~FF u_axi4_ctrl_0/u_R0_FIFO_128/u_efx_fifo_top/xefx_fifo_ctl/genblk7.wr2rd_addr_sync/pipe_reg[1][5]~FF u_axi4_ctrl_0/u_R0_FIFO_128/u_efx_fifo_top/xefx_fifo_ctl/genblk7.waddr_cntr_gry_sync[5]~FF
+	Synchronizer 32:  u_axi4_ctrl_0/u_W0_FIFO_128/u_efx_fifo_top/xefx_fifo_ctl/genblk7.wr2rd_addr_sync/pipe_reg[0][4]~FF u_axi4_ctrl_0/u_W0_FIFO_128/u_efx_fifo_top/xefx_fifo_ctl/genblk7.wr2rd_addr_sync/pipe_reg[1][4]~FF u_axi4_ctrl_0/u_W0_FIFO_128/u_efx_fifo_top/xefx_fifo_ctl/genblk7.waddr_cntr_gry_sync[4]~FF
+	Synchronizer 33:  u_axi4_ctrl_0/u_R0_FIFO_128/u_efx_fifo_top/xefx_fifo_ctl/genblk7.wr2rd_addr_sync/pipe_reg[0][6]~FF u_axi4_ctrl_0/u_R0_FIFO_128/u_efx_fifo_top/xefx_fifo_ctl/genblk7.wr2rd_addr_sync/pipe_reg[1][6]~FF u_axi4_ctrl_0/u_R0_FIFO_128/u_efx_fifo_top/xefx_fifo_ctl/genblk7.waddr_cntr_gry_sync[6]~FF
+	Synchronizer 34:  u_axi4_ctrl_0/u_W0_FIFO_128/u_efx_fifo_top/xefx_fifo_ctl/genblk7.wr2rd_addr_sync/pipe_reg[0][5]~FF u_axi4_ctrl_0/u_W0_FIFO_128/u_efx_fifo_top/xefx_fifo_ctl/genblk7.wr2rd_addr_sync/pipe_reg[1][5]~FF u_axi4_ctrl_0/u_W0_FIFO_128/u_efx_fifo_top/xefx_fifo_ctl/genblk7.waddr_cntr_gry_sync[5]~FF
+	Synchronizer 35:  u_axi4_ctrl_0/u_R0_FIFO_128/u_efx_fifo_top/xefx_fifo_ctl/genblk7.wr2rd_addr_sync/pipe_reg[0][7]~FF u_axi4_ctrl_0/u_R0_FIFO_128/u_efx_fifo_top/xefx_fifo_ctl/genblk7.wr2rd_addr_sync/pipe_reg[1][7]~FF u_axi4_ctrl_0/u_R0_FIFO_128/u_efx_fifo_top/xefx_fifo_ctl/genblk7.waddr_cntr_gry_sync[7]~FF
+	Synchronizer 36:  u_axi4_ctrl_0/u_W0_FIFO_128/u_efx_fifo_top/xefx_fifo_ctl/genblk7.wr2rd_addr_sync/pipe_reg[0][6]~FF u_axi4_ctrl_0/u_W0_FIFO_128/u_efx_fifo_top/xefx_fifo_ctl/genblk7.wr2rd_addr_sync/pipe_reg[1][6]~FF u_axi4_ctrl_0/u_W0_FIFO_128/u_efx_fifo_top/xefx_fifo_ctl/genblk7.waddr_cntr_gry_sync[6]~FF
+	Synchronizer 37:  u_axi4_ctrl_0/u_R0_FIFO_128/u_efx_fifo_top/xefx_fifo_ctl/genblk7.wr2rd_addr_sync/pipe_reg[0][8]~FF u_axi4_ctrl_0/u_R0_FIFO_128/u_efx_fifo_top/xefx_fifo_ctl/genblk7.wr2rd_addr_sync/pipe_reg[1][8]~FF u_axi4_ctrl_0/u_R0_FIFO_128/u_efx_fifo_top/xefx_fifo_ctl/genblk7.waddr_cntr_gry_sync[8]~FF
+	Synchronizer 38:  u_axi4_ctrl_0/u_W0_FIFO_128/u_efx_fifo_top/xefx_fifo_ctl/genblk7.wr2rd_addr_sync/pipe_reg[0][7]~FF u_axi4_ctrl_0/u_W0_FIFO_128/u_efx_fifo_top/xefx_fifo_ctl/genblk7.wr2rd_addr_sync/pipe_reg[1][7]~FF u_axi4_ctrl_0/u_W0_FIFO_128/u_efx_fifo_top/xefx_fifo_ctl/genblk7.waddr_cntr_gry_sync[7]~FF
+	Synchronizer 39:  u_axi4_ctrl_0/u_W0_FIFO_128/u_efx_fifo_top/xefx_fifo_ctl/genblk7.wr2rd_addr_sync/pipe_reg[0][8]~FF u_axi4_ctrl_0/u_W0_FIFO_128/u_efx_fifo_top/xefx_fifo_ctl/genblk7.wr2rd_addr_sync/pipe_reg[1][8]~FF u_axi4_ctrl_0/u_W0_FIFO_128/u_efx_fifo_top/xefx_fifo_ctl/genblk7.waddr_cntr_gry_sync[8]~FF
+Create D:/code/learning/a241111_03/Efinity/outflow\T35_Sensor_DDR3_LCD_Test_after_qp.qdelay
+QPLACER STATIC DB USAGE DISABLED
+Starting Global Placer with 4 threads ...
+
+ ----------     -------  --------------     -------
+  Iteration       WHPWL Worst Slack (ps) Convergence
+ ----------     -------  --------------     -------
+          1    28367210          -51889         3.1%
+          2    20129874          -52838         5.4%
+          3    17381742          -57160         7.0%
+          4    12397487          -54794         9.1%
+          5     4770052          -58795         9.8%
+          6     2244669          -64892        14.0%
+          7     1178535          -77634        25.4%
+          8      741916          -90036        31.0%
+          9      492776          -92725        46.2%
+         10      494252          -94128        48.0%
+         11      461570          -98298        49.1%
+         12      417602          -94998        49.1%
+         13      384570          -95762        51.8%
+         14      379820          -98377        51.8%
+         15      348649          -99921        52.5%
+         16      341024         -100514        54.1%
+         17      338067          -99176        56.1%
+         18      332678         -100382        56.7%
+         19      330623         -101875        58.3%
+         20      333265         -101989        58.3%
+         21      312438         -104544        62.5%
+         22      306134         -104984        63.4%
+         23      300316         -106203        65.3%
+         24      297476         -106290        65.9%
+         25      290727         -109353        68.8%
+         26      289895         -108997        69.7%
+         27      281307         -111071        71.8%
+         28      281260         -114097        73.2%
+         29      280411         -112661        73.4%
+         30      276114         -112639        75.0%
+         31      274864         -114720        75.8%
+         32      269803         -116066        78.3%
+         33      268452         -115908        79.6%
+         34      265964         -116139        81.1%
+         35      266391         -117351        82.4%
+         36      265410         -120472        83.5%
+         37      264506         -121119        85.4%
+         38      268116         -122563        85.4%
+         39      266508         -122342        85.8%
+         40      267485         -124008        86.4%
+         41      266710         -123397        87.8%
+         42      266792         -123650        88.5%
+         43      266498         -122559        88.8%
+         44      264567         -126041        90.3%
+         45      264875         -127239        91.0%
+         46      264895         -128415        91.4%
+         47      265579         -128988        92.3%
+         48      265104         -129166        92.7%
+         49      264342         -128388        93.8%
+         50      262083         -131358        95.5%
+         51      262771         -130952        96.2%
+         52      264108         -131593        96.5%
+         53      265294         -132808        97.0%
+         54      266124         -134763        97.5%
+         55      267742         -135794        98.2%
+         56      268870         -134967        99.0%
+Starting Annealer
+
+ ----------     -------  --------------     -------
+  Iteration       WHPWL  Delay Max (ps)     R Limit
+ ----------     -------  --------------     -------
+          0      262771          149676        30.0
+          1      278214          133070        28.3
+          2      287893          129291        26.5
+          3      269569          126789        24.6
+          4      261712          123213        22.9
+          5      256465          120880        21.2
+          6      251033          119140        19.8
+          7      250321          118031        18.4
+          8      248263          118725        17.2
+          9      246032          116797        16.0
+         10      242603          115789        15.0
+         11      240994          115184        13.9
+         12      239039          115046        13.1
+         13      239439          114031        12.2
+         14      236910          113741        11.5
+         15      236649          113268        10.8
+         16      234407          112970        10.2
+         17      234002          111760         9.6
+         18      233354          110760         9.1
+         19      232651          110697         8.5
+         20      230971          110029         8.1
+         21      231403          109787         7.6
+         22      229869          109291         7.3
+         23      229316          108813         6.9
+         24      228350          109097         6.6
+         25      228304          108571         6.2
+         26      227546          108528         6.0
+         27      228849          108845         5.7
+         28      227637          107948         5.4
+         29      225609          107505         5.2
+         30      225413          108004         5.0
+         31      224494          108349         4.8
+         32      223066          107859         4.7
+         33      222931          107832         4.5
+         34      223186          107331         4.3
+         35      222570          107114         4.2
+         36      222452          107685         4.1
+         37      222482          107144         3.9
+         38      221411          106960         3.8
+         39      220958          107117         3.7
+         40      220365          107015         3.5
+         41      221478          106815         3.4
+         42      220681          106911         3.3
+         43      219902          106674         3.2
+         44      220555          106983         3.1
+         45      219925          106824         3.0
+         46      219364          107959         3.0
+         47      218482          107068         2.9
+         48      219385          107026         2.8
+         49      218979          106888         2.7
+         50      218841          106496         2.6
+         51      218042          106177         2.5
+         52      218565          106236         2.5
+         53      218226          106362         2.4
+         54      217713          106571         2.4
+         55      217726          106832         2.3
+         56      218125          106483         2.3
+         57      218167          106632         2.2
+         58      218594          106668         2.2
+         59      219058          106519         2.1
+         60      217991          106438         2.1
+         61      218242          106588         2.0
+         62      218442          106258         2.0
+         63      218368          106607         2.0
+         64      218102          106550         1.9
+         65      217357          106561         1.9
+         66      218041          106212         1.8
+         67      218038          106255         1.8
+         68      217703          106327         1.7
+         69      216887          106186         1.7
+         70      217089          106527         1.6
+         71      217305          106230         1.6
+         72      217003          106143         1.5
+         73      216014          106320         1.5
+         74      216394          106215         1.4
+         75      214842          106623         1.4
+         76      213537          106121         1.3
+         77      212875          106340         1.2
+         78      212105          105865         1.1
+         79      211522          105985         1.0
+         80      210920          105862         1.0
+         81      211124          105858         1.0
+         82      208247          108644         1.0
+Starting incremental timing annealer
+Starting incremental timing quench 1 with temperature 0.1 and 1 moves per pass
+
+ ----------     -------  --------------     -------
+  Iteration       WHPWL  Delay Max (ps)     R Limit
+ ----------     -------  --------------     -------
+          0      203563          108644        30.0
+          1      208246          105705        27.0
+          2      213144          104448        24.3
+          3      216898          102944        21.8
+          4      218169          102416        19.7
+          5      220336          101672        17.7
+          6      222300          101403        15.9
+          7      222730          100921        14.3
+          8      223565          100471        12.9
+          9      224787          100032        11.7
+         10      225282           99810        10.5
+         11      225179           99630         9.5
+         12      224542          100081         8.6
+         13      224393           99209         7.8
+         14      223361           98817         7.0
+         15      223661           98372         6.4
+         16      222773           98427         5.8
+         17      222229           98054         5.2
+         18      221779           97625         4.8
+         19      222531           97292         4.3
+         20      222070           96920         4.0
+         21      221853           96689         3.6
+         22      222124           96506         3.3
+         23      221928           96182         3.0
+         24      222607           95810         2.7
+         25      222236           95679         2.5
+         26      222501           95533         2.3
+         27      221962           95495         2.1
+         28      222166           95482         1.9
+         29      222468           95335         1.8
+         30      222348           95255         1.6
+         31      222372           95241         1.5
+         32      222247           95271         1.4
+         33      222851           95257         1.2
+         34      220682           95270         1.1
+Generate D:/code/learning/a241111_03/Efinity/outflow\T35_Sensor_DDR3_LCD_Test_after_qp.qdelay
+Placement successful: 8806 cells are placed
+Peak congestion smeared over 1/4 of the chip is 0.487875 at 57,64
+Congestion-weighted HPWL per net: 18.7275
+
+Reading placement constraints from 'D:/code/learning/a241111_03/Efinity/outflow/T35_Sensor_DDR3_LCD_Test.qplace'.
+Finished Realigning Types (3131 blocks needed type change)
+
+Completed placement consistency check successfully.
+Successfully created FPGA place file 'D:/code/learning/a241111_03/Efinity/outflow/T35_Sensor_DDR3_LCD_Test.place'
+Placement took 733.103 seconds.
+	Placement took 219.016 seconds (approximately) in total CPU time.
+Placement virtual memory usage: begin = 161.56 MB, end = 195.912 MB, delta = 34.352 MB
+	Placement peak virtual memory usage = 401.14 MB
+Placement resident set memory usage: begin = 170.308 MB, end = 198.432 MB, delta = 28.124 MB
+	Placement peak resident set memory usage = 397.508 MB
+***** Ending stage placement *****
+

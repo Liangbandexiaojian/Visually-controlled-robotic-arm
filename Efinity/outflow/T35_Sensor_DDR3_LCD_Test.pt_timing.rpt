@@ -1,0 +1,177 @@
+
+Efinity Interface Designer Timing Report
+Version: 2023.2.307.5.10
+Date: 2024-11-11 18:32
+
+Copyright (C) 2013 - 2023 Efinix Inc. All rights reserved.
+
+Device: T35F324
+Project: T35_Sensor_DDR3_LCD_Test
+Timing Model: C4 (final)
+
+---------- 1. PLL Timing Report (begin) ----------
+
++--------------+----------+-----------------+--------------------------+----------+-------------------+---------------------------------+---------------------------------+
+| PLL Instance | Resource | Reference Clock | Core Clock Reference Pin | FB Mode  | Core Feedback Pin | PLL Compensation Delay Max (ns) | PLL Compensation Delay Min (ns) |
++--------------+----------+-----------------+--------------------------+----------+-------------------+---------------------------------+---------------------------------+
+|   MipiPLL    | PLL_BL0  |       core      |  tx_slowclk~CLKOUT~3~1   | internal |                   |               N/A               |               N/A               |
+|    DdrPLL    | PLL_BR0  |     external    |                          | internal |                   |               N/A               |               N/A               |
+|   HdmiPLL    | PLL_BR1  |       core      | tx_slowclk~CLKOUT~124~1  | internal |                   |               N/A               |               N/A               |
+|    AxiPLL    | PLL_TR0  |     external    |                          | internal |                   |               N/A               |               N/A               |
++--------------+----------+-----------------+--------------------------+----------+-------------------+---------------------------------+---------------------------------+
+
++---------------+-------------+-----------------------+
+|     Clock     | Period (ns) | Phase Shift (degrees) |
++---------------+-------------+-----------------------+
+| mipi_clkesc_i |   50.0000   |           0           |
+| mipi_clkcal_i |   10.0000   |           0           |
+| mipi_pixclk_i |   10.0000   |           0           |
+|    Ddr0Clk    |    2.5063   |           0           |
+|    clk_cmos   |   37.5940   |           0           |
+|  hdmi_clk1x_i |   13.4409   |           0           |
+|  hdmi_clk2x_i |    6.7204   |           0           |
+|  hdmi_clk5x_i |    2.6882   |           90          |
+|    Axi0Clk    |   10.4167   |           0           |
+|   tx_slowclk  |   20.8333   |           0           |
+|   tx_fastclk  |    5.9524   |           90          |
++---------------+-------------+-----------------------+
+
+---------- PLL Timing Report (end) ----------
+
+---------- 2. GPIO Timing Report (begin) ----------
+
+Non-registered GPIO Configuration:
+===================================
+
++---------------+-------------+-------------+----------+----------+
+| Instance Name |   Pin Name  |  Parameter  | Max (ns) | Min (ns) |
++---------------+-------------+-------------+----------+----------+
+|  AxiPllClkIn  | AxiPllClkIn |   GPIO_IN   |  1.589   |  0.794   |
+|   cmos_pclk   |  cmos_pclk  | GPIO_CLK_IN |  1.275   |  0.637   |
+|  DdrPllClkIn  | DdrPllClkIn |   GPIO_IN   |  1.589   |  0.794   |
+|      key0     |     key0    |   GPIO_IN   |  1.636   |  0.818   |
+|  led_data[0]  | led_data[0] |   GPIO_OUT  |  3.829   |  1.915   |
+|  led_data[1]  | led_data[1] |   GPIO_OUT  |  3.829   |  1.915   |
+|  led_data[2]  | led_data[2] |   GPIO_OUT  |  3.829   |  1.915   |
+|  led_data[3]  | led_data[3] |   GPIO_OUT  |  3.829   |  1.915   |
+|  led_data[4]  | led_data[4] |   GPIO_OUT  |  3.829   |  1.915   |
+|  led_data[5]  | led_data[5] |   GPIO_OUT  |  3.829   |  1.915   |
+|  led_data[6]  | led_data[6] |   GPIO_OUT  |  3.829   |  1.915   |
+|  led_data[7]  | led_data[7] |   GPIO_OUT  |  3.829   |  1.915   |
++---------------+-------------+-------------+----------+----------+
+
+---------- GPIO Timing Report (end) ----------
+
+---------- 3. LVDS Rx Timing Report (begin) ----------
+
+Non-registered LVDS GPIO Configuration:
+========================================
+
++----------------+----------------+-----------+----------+----------+
+| Instance Name  |    Pin Name    | Parameter | Max (ns) | Min (ns) |
++----------------+----------------+-----------+----------+----------+
+|    lcd_pwm     |    lcd_pwm     |  GPIO_OUT |  3.542   |  1.771   |
+| mipi_trig_o[0] | mipi_trig_o[0] |  GPIO_OUT |  3.542   |  1.771   |
+| mipi_trig_o[1] | mipi_trig_o[1] |  GPIO_OUT |  3.542   |  1.771   |
+|   zone_bit0    |   zone_bit0    |  GPIO_OUT |  3.542   |  1.771   |
+|   zone_bit1    |   zone_bit1    |  GPIO_OUT |  3.542   |  1.771   |
+|   zone_bit2    |   zone_bit2    |  GPIO_OUT |  3.542   |  1.771   |
+|  mipi0_scl_io  |  mipi0_scl_i   |  GPIO_IN  |  1.714   |  0.857   |
+|  mipi0_scl_io  |  mipi0_scl_o   |  GPIO_OUT |  3.542   |  1.771   |
+|  mipi0_scl_io  |  mipi0_scl_oe  |  GPIO_OUT |  3.500   |  1.750   |
+|  mipi0_sda_io  |  mipi0_sda_i   |  GPIO_IN  |  1.714   |  0.857   |
+|  mipi0_sda_io  |  mipi0_sda_o   |  GPIO_OUT |  3.542   |  1.771   |
+|  mipi0_sda_io  |  mipi0_sda_oe  |  GPIO_OUT |  3.500   |  1.750   |
+|  mipi1_scl_io  |  mipi1_scl_i   |  GPIO_IN  |  1.714   |  0.857   |
+|  mipi1_scl_io  |  mipi1_scl_o   |  GPIO_OUT |  3.542   |  1.771   |
+|  mipi1_scl_io  |  mipi1_scl_oe  |  GPIO_OUT |  3.500   |  1.750   |
+|  mipi1_sda_io  |  mipi1_sda_i   |  GPIO_IN  |  1.714   |  0.857   |
+|  mipi1_sda_io  |  mipi1_sda_o   |  GPIO_OUT |  3.542   |  1.771   |
+|  mipi1_sda_io  |  mipi1_sda_oe  |  GPIO_OUT |  3.500   |  1.750   |
++----------------+----------------+-----------+----------+----------+
+
+---------- LVDS Rx Timing Report (end) ----------
+
+---------- 4. LVDS Tx Timing Report (begin) ----------
+
+Clkout GPIO Configuration:
+===========================
+
++---------------+-----------+--------------+----------+----------+----------------------+
+| Instance Name | Clock Pin |  Parameter   | Max (ns) | Min (ns) |  Reference Pin Name  |
++---------------+-----------+--------------+----------+----------+----------------------+
+|   cmos_xclk   |  clk_cmos | GPIO_CLK_OUT |  3.827   |  1.913   | clk_cmos~CLKOUT~84~1 |
++---------------+-----------+--------------+----------+----------+----------------------+
+
+Non-registered LVDS GPIO Configuration:
+========================================
+
++---------------+---------------+-----------+----------+----------+
+| Instance Name |    Pin Name   | Parameter | Max (ns) | Min (ns) |
++---------------+---------------+-----------+----------+----------+
+|   cmos_sclk   |   cmos_sclk   |  GPIO_OUT |  3.658   |  1.829   |
+|   cmos_ctl0   |  cmos_ctl0_i  |  GPIO_IN  |  1.467   |  0.734   |
+|   cmos_ctl0   |  cmos_ctl0_o  |  GPIO_OUT |  3.658   |  1.829   |
+|   cmos_ctl0   |  cmos_ctl0_oe |  GPIO_OUT |  3.630   |  1.815   |
+|   cmos_ctl1   |  cmos_ctl1_i  |  GPIO_IN  |  1.467   |  0.734   |
+|   cmos_ctl1   |  cmos_ctl1_o  |  GPIO_OUT |  3.658   |  1.829   |
+|   cmos_ctl1   |  cmos_ctl1_oe |  GPIO_OUT |  3.630   |  1.815   |
+|   cmos_ctl2   |  cmos_ctl2_i  |  GPIO_IN  |  1.467   |  0.734   |
+|   cmos_ctl2   |  cmos_ctl2_o  |  GPIO_OUT |  3.658   |  1.829   |
+|   cmos_ctl2   |  cmos_ctl2_oe |  GPIO_OUT |  3.630   |  1.815   |
+|   cmos_ctl3   |  cmos_ctl3_i  |  GPIO_IN  |  1.467   |  0.734   |
+|   cmos_ctl3   |  cmos_ctl3_o  |  GPIO_OUT |  3.658   |  1.829   |
+|   cmos_ctl3   |  cmos_ctl3_oe |  GPIO_OUT |  3.630   |  1.815   |
+|   cmos_sdat   |  cmos_sdat_IN |  GPIO_IN  |  1.467   |  0.734   |
+|   cmos_sdat   | cmos_sdat_OUT |  GPIO_OUT |  3.658   |  1.829   |
+|   cmos_sdat   |  cmos_sdat_OE |  GPIO_OUT |  3.630   |  1.815   |
++---------------+---------------+-----------+----------+----------+
+
+Registered LVDS GPIO Configuration:
+====================================
+
++---------------+-----------+----------------+----------------+---------------+---------------+-----------------------+-----------------------+
+| Instance Name | Clock Pin | Max Setup (ns) | Min Setup (ns) | Max Hold (ns) | Min Hold (ns) | Max Clock To Out (ns) | Min Clock To Out (ns) |
++---------------+-----------+----------------+----------------+---------------+---------------+-----------------------+-----------------------+
+|  cmos_data[0] | cmos_pclk |     1.122      |     0.561      |     -1.000    |     -0.500    |                       |                       |
+|  cmos_data[1] | cmos_pclk |     1.122      |     0.561      |     -1.000    |     -0.500    |                       |                       |
+|  cmos_data[2] | cmos_pclk |     1.122      |     0.561      |     -1.000    |     -0.500    |                       |                       |
+|  cmos_data[3] | cmos_pclk |     1.122      |     0.561      |     -1.000    |     -0.500    |                       |                       |
+|  cmos_data[4] | cmos_pclk |     1.122      |     0.561      |     -1.000    |     -0.500    |                       |                       |
+|  cmos_data[5] | cmos_pclk |     1.122      |     0.561      |     -1.000    |     -0.500    |                       |                       |
+|  cmos_data[6] | cmos_pclk |     1.122      |     0.561      |     -1.000    |     -0.500    |                       |                       |
+|  cmos_data[7] | cmos_pclk |     1.122      |     0.561      |     -1.000    |     -0.500    |                       |                       |
+|   cmos_href   | cmos_pclk |     1.122      |     0.561      |     -1.000    |     -0.500    |                       |                       |
+|   cmos_vsync  | cmos_pclk |     1.122      |     0.561      |     -1.000    |     -0.500    |                       |                       |
++---------------+-----------+----------------+----------------+---------------+---------------+-----------------------+-----------------------+
+
+---------- LVDS Tx Timing Report (end) ----------
+
+---------- 6. JTAG Timing Report (begin) ----------
+
++---------------+----------------+-----------+----------+----------+
+| Instance Name |    Pin Name    | Parameter | Max (ns) | Min (ns) |
++---------------+----------------+-----------+----------+----------+
+|   jtag_inst1  | jtag_inst1_TDI |  JTAG_IN  |  2.415   |  1.208   |
+|   jtag_inst1  | jtag_inst1_TMS |  JTAG_IN  |  1.755   |  0.877   |
++---------------+----------------+-----------+----------+----------+
+
+---------- JTAG Timing Report (end) ----------
+
+---------- 8. Clock Network Delay Report (begin) ----------
+
++---------------+----------+----------+
+|   Clock Pin   | Max (ns) | Min (ns) |
++---------------+----------+----------+
+|    Axi0Clk    |  4.310   |  2.155   |
+|    clk_cmos   |  4.310   |  2.155   |
+|   cmos_pclk   |  4.310   |  2.155   |
+|  hdmi_clk2x_i |  4.310   |  2.155   |
+|  hdmi_clk5x_i |  4.310   |  2.155   |
+| mipi_clkcal_i |  4.310   |  2.155   |
+| mipi_pixclk_i |  4.310   |  2.155   |
+|   tx_fastclk  |  4.310   |  2.155   |
+|   tx_slowclk  |  4.310   |  2.155   |
++---------------+----------+----------+
+
+---------- Clock Network Delay Report (end) ----------

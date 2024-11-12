@@ -1,0 +1,25 @@
+
+Efinix FPGA Bitstream Generator.
+Version: 2023.2.307.5.10 
+Copyright (C) 2013 - 2023 Efinix, Inc. All rights reserved.
+
+Compiled: May 19 2024.
+
+Using source file "D:/code/learning/a241111_03/Efinity/work_pnr/T35_Sensor_DDR3_LCD_Test.lbf"
+Generating HEX programming file for device "T35F324", family "Trion"
+Using periphery source file "D:/code/learning/a241111_03/Efinity/outflow/T35_Sensor_DDR3_LCD_Test.lpf"
+Generating bit file: "D:/code/learning/a241111_03/Efinity/outflow/T35_Sensor_DDR3_LCD_Test.bit"
+HEX Generation Options Summary:
+	Listing options specified to bitstream generation:
+	spi_low_power_mode                       = off
+	oscillator_clock_divider                 = DIV8
+	io_weak_pullup                           = on
+	enable_remote_update                     = off
+	release_tri_then_reset                   = on
+Finished generating "D:/code/learning/a241111_03/Efinity/outflow/T35_Sensor_DDR3_LCD_Test.hex"
+Efinity Bitstream Generator took 7.2773 seconds.
+	Efinity Bitstream Generator took 1.64062 seconds (approximately) in total CPU time.
+Efinity Bitstream Generator virtual memory usage: begin = 2.476 MB, end = 8.8 MB, delta = 6.324 MB
+	Efinity Bitstream Generator peak virtual memory usage = 68.824 MB
+Efinity Bitstream Generator resident set memory usage: begin = 8.024 MB, end = 16.716 MB, delta = 8.692 MB
+	Efinity Bitstream Generator peak resident set memory usage = 69.832 MB

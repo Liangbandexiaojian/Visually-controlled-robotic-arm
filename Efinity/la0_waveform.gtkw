@@ -1,0 +1,19 @@
+[dumpfile] "C:\Users\Landon\AppData\Local\Temp\tmppbulrjc8\tmp_continous.vcd"
+[dumpfile_mtime] "Mon Nov 11 10:56:42 2024"
+[dumpfile_size] 667
+[savefile] "D:\code\learning\a241111_03\Efinity\la0_waveform.gtkw"
+[timestart] 0
+[size] 1000 600
+[pos] -1 -1
+*0.000000 c 128 384 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[signals_width] 126
+[sst_expanded] 1
+@22
+top.key0
+top.\u_state_machine/led[7:0]
+top.\u_zone_identifier/y_avg_black[11:0]
+top.\u_zone_identifier/x_avg_black[11:0]
+top.\u_zone_identifier/zone[2:0]
+top.\u_state_machine/zone_bit0
+top.\u_state_machine/zone_bit1
+top.\u_state_machine/zone_bit2

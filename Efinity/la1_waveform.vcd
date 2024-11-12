@@ -1,0 +1,15 @@
+#0 $dumpon
+$date today $end
+$timescale 1 ns $end
+$scope module top $end
+$var wire 1 0 key1 $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+10
+$end
+#128
+00
+#255
+00

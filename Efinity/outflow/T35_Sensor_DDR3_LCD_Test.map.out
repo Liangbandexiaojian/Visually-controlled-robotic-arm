@@ -1,0 +1,682 @@
+[EFX-0000 INFO] Efinix FPGA Synthesis.
+[EFX-0000 INFO] Version: 2023.2.307.5.10
+[EFX-0000 INFO] Compiled: May 19 2024.
+[EFX-0000 INFO] 
+[EFX-0000 INFO] Copyright (C) 2013 - 2023 Efinix, Inc. All rights reserved.
+
+INFO: Read project database "D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.xml"
+-- Analyzing Verilog file 'C:/Efinity/2023.2/sim_models/maplib/efinix_peri_lib.v' (VERI-1482)
+C:/Efinity/2023.2/sim_models/maplib/efinix_peri_lib.v(8): INFO: compiling module 'EFX_IBUF' (VERI-1018)
+C:/Efinity/2023.2/sim_models/maplib/efinix_peri_lib.v(16): INFO: compiling module 'EFX_OBUF' (VERI-1018)
+C:/Efinity/2023.2/sim_models/maplib/efinix_peri_lib.v(23): INFO: compiling module 'EFX_IO_BUF' (VERI-1018)
+C:/Efinity/2023.2/sim_models/maplib/efinix_peri_lib.v(33): INFO: compiling module 'EFX_CLKOUT' (VERI-1018)
+C:/Efinity/2023.2/sim_models/maplib/efinix_peri_lib.v(41): INFO: compiling module 'EFX_IREG' (VERI-1018)
+C:/Efinity/2023.2/sim_models/maplib/efinix_peri_lib.v(51): INFO: compiling module 'EFX_OREG' (VERI-1018)
+C:/Efinity/2023.2/sim_models/maplib/efinix_peri_lib.v(60): INFO: compiling module 'EFX_IOREG' (VERI-1018)
+C:/Efinity/2023.2/sim_models/maplib/efinix_peri_lib.v(75): INFO: compiling module 'EFX_IDDIO' (VERI-1018)
+C:/Efinity/2023.2/sim_models/maplib/efinix_peri_lib.v(87): INFO: compiling module 'EFX_ODDIO' (VERI-1018)
+C:/Efinity/2023.2/sim_models/maplib/efinix_peri_lib.v(99): INFO: compiling module 'EFX_GPIO_V1' (VERI-1018)
+C:/Efinity/2023.2/sim_models/maplib/efinix_peri_lib.v(118): INFO: compiling module 'EFX_PLL_V1' (VERI-1018)
+C:/Efinity/2023.2/sim_models/maplib/efinix_peri_lib.v(136): INFO: compiling module 'EFX_OSC_V1' (VERI-1018)
+INFO: Read project database "D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.xml"
+INFO: ***** Beginning Analysis ... *****
+INFO: default VHDL library search path is now "C:/Efinity/2023.2/sim_models/vhdl/packages/vhdl_2008" (VHDL-1504)
+-- Analyzing Verilog file 'C:/Efinity/2023.2/sim_models/maplib/efinix_maplib.v' (VERI-1482)
+-- Analyzing Verilog file 'C:/Efinity/2023.2/sim_models/maplib/efinix_peri_lib.v' (VERI-1482)
+-- Analyzing Verilog file 'D:\code\learning\a241111_03\Source\ddr_calibration_defines.v' (VERI-1482)
+-- Analyzing Verilog file 'D:\code\learning\a241111_03\Source\cmos_i2c\i2c_timing_ctrl_reg16_dat16.v' (VERI-1482)
+-- Analyzing Verilog file 'D:\code\learning\a241111_03\Source\Sensor_Image_XYCrop.v' (VERI-1482)
+-- Analyzing Verilog file 'D:\code\learning\a241111_03\Source\lcd_driver.v' (VERI-1482)
+D:\code\learning\a241111_03\Source\lcd_driver.v(67): INFO: analyzing included file 'D:\code\learning\a241111_03\Source/lcd_para.v' (VERI-1328)
+D:\code\learning\a241111_03\Source\lcd_driver.v(67): INFO: back to file 'D:\code\learning\a241111_03\Source\lcd_driver.v' (VERI-2320)
+-- Analyzing Verilog file 'D:\code\learning\a241111_03\Source\lcd_para.v' (VERI-1482)
+-- Analyzing Verilog file 'D:\code\learning\a241111_03\Source\sensor_frame_count.v' (VERI-1482)
+-- Analyzing Verilog file 'D:\code\learning\a241111_03\Source\T35_Sensor_DDR3_LCD_Test.v' (VERI-1482)
+D:\code\learning\a241111_03\Source\T35_Sensor_DDR3_LCD_Test.v(6): INFO: analyzing included file 'D:\code\learning\a241111_03\Source/ddr_calibration_defines.v' (VERI-1328)
+D:\code\learning\a241111_03\Source\T35_Sensor_DDR3_LCD_Test.v(6): INFO: back to file 'D:\code\learning\a241111_03\Source\T35_Sensor_DDR3_LCD_Test.v' (VERI-2320)
+-- Analyzing Verilog file 'D:\code\learning\a241111_03\Source\cmos_i2c\i2c_timing_ctrl_reg16_dat8_wronly.v' (VERI-1482)
+-- Analyzing Verilog file 'D:\code\learning\a241111_03\Source\rgb2dvi\src\OutputSERDES.v' (VERI-1482)
+-- Analyzing VHDL file 'D:\code\learning\a241111_03\Source\rgb2dvi\src\OutputSERDES_impl.vhd' (VHDL-1481)
+-- Restoring VHDL unit 'ieee.std_logic_1164' from file 'C:/Efinity/2023.2/sim_models/vhdl/packages/vhdl_2008/ieee/std_logic_1164.vdb' (VHDL-1493)
+-- Restoring VHDL unit 'std.standard' from file 'C:/Efinity/2023.2/sim_models/vhdl/packages/vhdl_2008/std/standard.vdb' (VHDL-1493)
+-- Restoring VHDL unit 'std.textio' from file 'C:/Efinity/2023.2/sim_models/vhdl/packages/vhdl_2008/std/textio.vdb' (VHDL-1493)
+D:\code\learning\a241111_03\Source\rgb2dvi\src\OutputSERDES_impl.vhd(59): INFO: analyzing entity 'outputserdes' (VHDL-1012)
+D:\code\learning\a241111_03\Source\rgb2dvi\src\OutputSERDES_impl.vhd(76): INFO: analyzing architecture 'behavioral' (VHDL-1010)
+-- Analyzing VHDL file 'D:\code\learning\a241111_03\Source\rgb2dvi\src\DVI_Constants.vhd' (VHDL-1481)
+D:\code\learning\a241111_03\Source\rgb2dvi\src\DVI_Constants.vhd(57): INFO: analyzing package 'dvi_constants' (VHDL-1014)
+D:\code\learning\a241111_03\Source\rgb2dvi\src\DVI_Constants.vhd(68): INFO: analyzing package body 'dvi_constants' (VHDL-1013)
+-- Analyzing VHDL file 'D:\code\learning\a241111_03\Source\rgb2dvi\src\SyncAsync.vhd' (VHDL-1481)
+D:\code\learning\a241111_03\Source\rgb2dvi\src\SyncAsync.vhd(61): INFO: analyzing entity 'syncasync' (VHDL-1012)
+D:\code\learning\a241111_03\Source\rgb2dvi\src\SyncAsync.vhd(72): INFO: analyzing architecture 'behavioral' (VHDL-1010)
+-- Analyzing VHDL file 'D:\code\learning\a241111_03\Source\rgb2dvi\src\SyncAsyncReset.vhd' (VHDL-1481)
+D:\code\learning\a241111_03\Source\rgb2dvi\src\SyncAsyncReset.vhd(63): INFO: analyzing entity 'resetbridge' (VHDL-1012)
+D:\code\learning\a241111_03\Source\rgb2dvi\src\SyncAsyncReset.vhd(72): INFO: analyzing architecture 'behavioral' (VHDL-1010)
+-- Analyzing VHDL file 'D:\code\learning\a241111_03\Source\rgb2dvi\src\TMDS_Encoder.vhd' (VHDL-1481)
+-- Restoring VHDL unit 'ieee.numeric_std' from file 'C:/Efinity/2023.2/sim_models/vhdl/packages/vhdl_2008/ieee/numeric_std.vdb' (VHDL-1493)
+D:\code\learning\a241111_03\Source\rgb2dvi\src\TMDS_Encoder.vhd(63): INFO: analyzing entity 'tmds_encoder' (VHDL-1012)
+D:\code\learning\a241111_03\Source\rgb2dvi\src\TMDS_Encoder.vhd(80): INFO: analyzing architecture 'behavioral' (VHDL-1010)
+-- Analyzing VHDL file 'D:\code\learning\a241111_03\Source\rgb2dvi\src\rgb2dvi.vhd' (VHDL-1481)
+D:\code\learning\a241111_03\Source\rgb2dvi\src\rgb2dvi.vhd(62): INFO: analyzing entity 'rgb2dvi' (VHDL-1012)
+D:\code\learning\a241111_03\Source\rgb2dvi\src\rgb2dvi.vhd(94): INFO: analyzing architecture 'behavioral' (VHDL-1010)
+-- Analyzing Verilog file 'D:\code\learning\a241111_03\Efinity\ip\etx_ddr3_reset_controller\etx_ddr3_reset_controller.v' (VERI-1482)
+-- Analyzing Verilog file 'D:\code\learning\a241111_03\Source\cmos_i2c\I2C_SC130GS_12801024_1Lanes_Config.v' (VERI-1482)
+-- Analyzing Verilog file 'D:\code\learning\a241111_03\Source\axi\AXI4_AWARMux.v' (VERI-1482)
+-- Analyzing Verilog file 'D:\code\learning\a241111_03\Source\axi\axi4_ctrl.v' (VERI-1482)
+-- Analyzing Verilog file 'D:\code\learning\a241111_03\Source\axi\axi4_interconnect_128.v' (VERI-1482)
+-- Analyzing Verilog file 'D:\code\learning\a241111_03\Source\cmos_i2c\I2C_OV5640_1280720_Config.v' (VERI-1482)
+-- Analyzing Verilog file 'D:\code\learning\a241111_03\Source\cmos_i2c\i2c_timing_ctrl_16bit.v' (VERI-1482)
+-- Analyzing Verilog file 'D:\code\learning\a241111_03\Source\hdmi_ip\rgb2dvi.v' (VERI-1482)
+-- Analyzing Verilog file 'D:\code\learning\a241111_03\Source\hdmi_ip\tmds_channel.v' (VERI-1482)
+-- Analyzing Verilog file 'D:\code\learning\a241111_03\Source\black_pixel_avg.v' (VERI-1482)
+-- Analyzing Verilog file 'D:\code\learning\a241111_03\Source\state_machine.v' (VERI-1482)
+-- Analyzing Verilog file 'D:\code\learning\a241111_03\Source\zone_identifier.v' (VERI-1482)
+-- Analyzing Verilog file 'D:\code\learning\a241111_03\Efinity\ip\W0_FIFO_128\W0_FIFO_128.v' (VERI-1482)
+INFO: Analysis took 0.0668593 seconds.
+INFO: 	Analysis took 0.015625 seconds (approximately) in total CPU time.
+INFO: Analysis virtual memory usage: begin = 56.124 MB, end = 63.252 MB, delta = 7.128 MB
+INFO: 	Analysis peak virtual memory usage = 63.252 MB
+INFO: Analysis resident set memory usage: begin = 59.596 MB, end = 68.728 MB, delta = 9.132 MB
+INFO: 	Analysis peak resident set memory usage = 68.728 MB
+INFO: ***** Ending Analysis ... *****
+INFO: ***** Beginning Elaboration ... *****
+D:\code\learning\a241111_03\Source\T35_Sensor_DDR3_LCD_Test.v(317): WARNING: port 'i2c_rdata' remains unconnected for this instance (VERI-1927)
+D:\code\learning\a241111_03\Source\T35_Sensor_DDR3_LCD_Test.v(508): WARNING: port 'axi_base_0' is not connected on this instance (VERI-2435)
+D:\code\learning\a241111_03\Source\T35_Sensor_DDR3_LCD_Test.v(508): WARNING: port 'axi_awid' remains unconnected for this instance (VERI-1927)
+D:\code\learning\a241111_03\Source\T35_Sensor_DDR3_LCD_Test.v(683): WARNING: port 'TMDS_Clk_p' remains unconnected for this instance (VERI-1927)
+D:\code\learning\a241111_03\Source\T35_Sensor_DDR3_LCD_Test.v(7): INFO: compiling module 'T35_Sensor_DDR3_LCD_Test' (VERI-1018)
+D:\code\learning\a241111_03\Efinity\ip\etx_ddr3_reset_controller\etx_ddr3_reset_controller.v(50): INFO: compiling module 'etx_ddr3_reset_controller' (VERI-1018)
+D:\code\learning\a241111_03\Efinity\ip\etx_ddr3_reset_controller\etx_ddr3_reset_controller.v(117): INFO: compiling module 'ddr_reset_sequencer_27c2cfd541fb452b9c266db6cc6e0a58' (VERI-1018)
+D:\code\learning\a241111_03\Efinity\ip\etx_ddr3_reset_controller\etx_ddr3_reset_controller.v(164): WARNING: expression size 64 truncated to fit in target size 20 (VERI-1209)
+D:\code\learning\a241111_03\Source\cmos_i2c\i2c_timing_ctrl_16bit.v(32): INFO: compiling module 'i2c_timing_ctrl_16bit(I2C_FREQ=10000)' (VERI-1018)
+D:\code\learning\a241111_03\Source\T35_Sensor_DDR3_LCD_Test.v(315): WARNING: actual bit length 32 differs from formal bit length 9 for port 'i2c_config_size' (VERI-1330)
+D:\code\learning\a241111_03\Source\cmos_i2c\I2C_OV5640_1280720_Config.v(17): INFO: compiling module 'I2C_OV5640_1280720_Config' (VERI-1018)
+D:\code\learning\a241111_03\Source\Sensor_Image_XYCrop.v(32): INFO: compiling module 'Sensor_Image_XYCrop(IMAGE_HSIZE_SOURCE=2560,IMAGE_VSIZE_SOURCE=720,IMAGE_HSIZE_TARGET=2560,IMAGE_YSIZE_TARGET=720,PIXEL_DATA_WIDTH=8)' (VERI-1018)
+D:\code\learning\a241111_03\Source\T35_Sensor_DDR3_LCD_Test.v(361): WARNING: actual bit length 32 differs from formal bit length 1 for port 'rst_n' (VERI-1330)
+D:\code\learning\a241111_03\Source\T35_Sensor_DDR3_LCD_Test.v(366): WARNING: actual bit length 32 differs from formal bit length 1 for port 'image_in_de' (VERI-1330)
+D:\code\learning\a241111_03\Source\T35_Sensor_DDR3_LCD_Test.v(372): WARNING: actual bit length 32 differs from formal bit length 8 for port 'image_out_data' (VERI-1330)
+D:\code\learning\a241111_03\Source\axi\AXI4_AWARMux.v(11): INFO: compiling module 'AXI4_AWARMux(AID_LEN=6)' (VERI-1018)
+D:\code\learning\a241111_03\Source\axi\AXI4_AWARMux.v(90): WARNING: expression size 2 truncated to fit in target size 1 (VERI-1209)
+D:\code\learning\a241111_03\Source\T35_Sensor_DDR3_LCD_Test.v(417): WARNING: actual bit length 8 differs from formal bit length 6 for port 'awid_i' (VERI-1330)
+D:\code\learning\a241111_03\Source\T35_Sensor_DDR3_LCD_Test.v(423): WARNING: actual bit length 8 differs from formal bit length 6 for port 'arid_i' (VERI-1330)
+D:\code\learning\a241111_03\Source\T35_Sensor_DDR3_LCD_Test.v(429): WARNING: actual bit length 8 differs from formal bit length 6 for port 'aid_o' (VERI-1330)
+D:\code\learning\a241111_03\Source\axi\axi4_ctrl.v(315): WARNING: port 'almost_full_o' remains unconnected for this instance (VERI-1927)
+D:\code\learning\a241111_03\Source\axi\axi4_ctrl.v(405): WARNING: port 'almost_full_o' remains unconnected for this instance (VERI-1927)
+D:\code\learning\a241111_03\Source\axi\axi4_ctrl.v(2): INFO: compiling module 'axi4_ctrl(C_RD_END_ADDR=1843200,C_W_WIDTH=8,C_R_WIDTH=16)' (VERI-1018)
+D:\code\learning\a241111_03\Source\axi\axi4_ctrl.v(96): WARNING: expression size 32 truncated to fit in target size 16 (VERI-1209)
+D:\code\learning\a241111_03\Source\axi\axi4_ctrl.v(118): WARNING: expression size 3 truncated to fit in target size 2 (VERI-1209)
+D:\code\learning\a241111_03\Source\axi\axi4_ctrl.v(119): WARNING: expression size 3 truncated to fit in target size 2 (VERI-1209)
+D:\code\learning\a241111_03\Source\axi\axi4_ctrl.v(201): WARNING: expression size 3 truncated to fit in target size 2 (VERI-1209)
+D:\code\learning\a241111_03\Source\axi\axi4_ctrl.v(243): WARNING: expression size 2 truncated to fit in target size 1 (VERI-1209)
+D:\code\learning\a241111_03\Source\axi\axi4_ctrl.v(262): WARNING: expression size 23 truncated to fit in target size 22 (VERI-1209)
+D:\code\learning\a241111_03\Efinity\ip\W0_FIFO_128\W0_FIFO_128.v(111): WARNING: port 'a_wr_rst_i' remains unconnected for this instance (VERI-1927)
+D:\code\learning\a241111_03\Efinity\ip\W0_FIFO_128\W0_FIFO_128.v(49): INFO: compiling module 'W0_FIFO_128' (VERI-1018)
+D:\code\learning\a241111_03\Efinity\ip\W0_FIFO_128\W0_FIFO_128.v(392): INFO: compiling module 'efx_fifo_top_95b849c1c5ec4e2aba72f8bacae65a8f_renamed_due_excessive_length_1' (VERI-1018)
+D:\code\learning\a241111_03\Efinity\ip\W0_FIFO_128\W0_FIFO_128.v(684): INFO: compiling module 'efx_fifo_ram_95b849c1c5ec4e2aba72f8bacae65a8f(MODE="FWFT",WR_DEPTH=256,RD_DEPTH=256,WDATA_WIDTH=128,RDATA_WIDTH=128,WADDR_WIDTH=8,RADDR_WIDTH=8,OUTPUT_REG=0,RAM_MUX_RATIO=1)' (VERI-1018)
+D:\code\learning\a241111_03\Efinity\ip\W0_FIFO_128\W0_FIFO_128.v(721): INFO: extracting RAM for identifier 'ram' (VERI-2571)
+D:\code\learning\a241111_03\Efinity\ip\W0_FIFO_128\W0_FIFO_128.v(1002): INFO: compiling module 'efx_fifo_ctl_95b849c1c5ec4e2aba72f8bacae65a8f_renamed_due_excessive_length_2' (VERI-1018)
+D:\code\learning\a241111_03\Efinity\ip\W0_FIFO_128\W0_FIFO_128.v(1278): WARNING: expression size 32 truncated to fit in target size 9 (VERI-1209)
+D:\code\learning\a241111_03\Efinity\ip\W0_FIFO_128\W0_FIFO_128.v(1279): WARNING: expression size 32 truncated to fit in target size 9 (VERI-1209)
+D:\code\learning\a241111_03\Efinity\ip\W0_FIFO_128\W0_FIFO_128.v(303): INFO: compiling module 'efx_fifo_bin2gray_95b849c1c5ec4e2aba72f8bacae65a8f(WIDTH=9)' (VERI-1018)
+D:\code\learning\a241111_03\Efinity\ip\W0_FIFO_128\W0_FIFO_128.v(132): INFO: compiling module 'efx_fifo_datasync_95b849c1c5ec4e2aba72f8bacae65a8f(STAGE=3,WIDTH=9)' (VERI-1018)
+D:\code\learning\a241111_03\Efinity\ip\W0_FIFO_128\W0_FIFO_128.v(215): INFO: compiling module 'efx_fifo_gray2bin_95b849c1c5ec4e2aba72f8bacae65a8f(WIDTH=9)' (VERI-1018)
+D:\code\learning\a241111_03\Efinity\ip\W0_FIFO_128\W0_FIFO_128.v(215): INFO: compiling module 'efx_fifo_gray2bin_95b849c1c5ec4e2aba72f8bacae65a8f(WIDTH=8)' (VERI-1018)
+D:\code\learning\a241111_03\Efinity\ip\W0_FIFO_128\W0_FIFO_128.v(215): INFO: compiling module 'efx_fifo_gray2bin_95b849c1c5ec4e2aba72f8bacae65a8f(WIDTH=7)' (VERI-1018)
+D:\code\learning\a241111_03\Efinity\ip\W0_FIFO_128\W0_FIFO_128.v(215): INFO: compiling module 'efx_fifo_gray2bin_95b849c1c5ec4e2aba72f8bacae65a8f(WIDTH=6)' (VERI-1018)
+D:\code\learning\a241111_03\Efinity\ip\W0_FIFO_128\W0_FIFO_128.v(215): INFO: compiling module 'efx_fifo_gray2bin_95b849c1c5ec4e2aba72f8bacae65a8f' (VERI-1018)
+D:\code\learning\a241111_03\Efinity\ip\W0_FIFO_128\W0_FIFO_128.v(215): INFO: compiling module 'efx_fifo_gray2bin_95b849c1c5ec4e2aba72f8bacae65a8f(WIDTH=4)' (VERI-1018)
+D:\code\learning\a241111_03\Efinity\ip\W0_FIFO_128\W0_FIFO_128.v(215): INFO: compiling module 'efx_fifo_gray2bin_95b849c1c5ec4e2aba72f8bacae65a8f(WIDTH=3)' (VERI-1018)
+D:\code\learning\a241111_03\Efinity\ip\W0_FIFO_128\W0_FIFO_128.v(215): INFO: compiling module 'efx_fifo_gray2bin_95b849c1c5ec4e2aba72f8bacae65a8f(WIDTH=2)' (VERI-1018)
+D:\code\learning\a241111_03\Efinity\ip\W0_FIFO_128\W0_FIFO_128.v(106): WARNING: actual bit length 8 differs from formal bit length 9 for port 'wr_datacount_o' (VERI-1330)
+D:\code\learning\a241111_03\Efinity\ip\W0_FIFO_128\W0_FIFO_128.v(109): WARNING: actual bit length 8 differs from formal bit length 9 for port 'rd_datacount_o' (VERI-1330)
+D:\code\learning\a241111_03\Efinity\ip\W0_FIFO_128\W0_FIFO_128.v(90): WARNING: input port 'a_wr_rst_i' is not connected on this instance (VDB-1013)
+D:\code\learning\a241111_03\Source\axi\axi4_ctrl.v(441): WARNING: expression size 128 truncated to fit in target size 16 (VERI-1209)
+D:\code\learning\a241111_03\Source\axi\axi4_ctrl.v(453): WARNING: expression size 17 truncated to fit in target size 16 (VERI-1209)
+D:\code\learning\a241111_03\Source\axi\axi4_ctrl.v(563): WARNING: expression size 23 truncated to fit in target size 22 (VERI-1209)
+D:\code\learning\a241111_03\Source\T35_Sensor_DDR3_LCD_Test.v(482): WARNING: actual bit length 8 differs from formal bit length 4 for port 'axi_bid' (VERI-1330)
+D:\code\learning\a241111_03\Source\T35_Sensor_DDR3_LCD_Test.v(483): WARNING: actual bit length 32 differs from formal bit length 2 for port 'axi_bresp' (VERI-1330)
+D:\code\learning\a241111_03\Source\T35_Sensor_DDR3_LCD_Test.v(486): WARNING: actual bit length 8 differs from formal bit length 4 for port 'axi_arid' (VERI-1330)
+D:\code\learning\a241111_03\Source\T35_Sensor_DDR3_LCD_Test.v(492): WARNING: actual bit length 8 differs from formal bit length 4 for port 'axi_rid' (VERI-1330)
+D:\code\learning\a241111_03\Source\T35_Sensor_DDR3_LCD_Test.v(502): WARNING: actual bit length 32 differs from formal bit length 8 for port 'wframe_data' (VERI-1330)
+D:\code\learning\a241111_03\Source\lcd_driver.v(36): INFO: compiling module 'lcd_driver' (VERI-1018)
+D:\code\learning\a241111_03\Source\black_pixel_avg.v(3): INFO: compiling module 'black_pixel_avg' (VERI-1018)
+D:\code\learning\a241111_03\Source\black_pixel_avg.v(47): WARNING: expression size 32 truncated to fit in target size 12 (VERI-1209)
+D:\code\learning\a241111_03\Source\black_pixel_avg.v(48): WARNING: expression size 32 truncated to fit in target size 12 (VERI-1209)
+D:\code\learning\a241111_03\Source\zone_identifier.v(1): INFO: compiling module 'zone_identifier' (VERI-1018)
+D:\code\learning\a241111_03\Source\state_machine.v(1): INFO: compiling module 'state_machine' (VERI-1018)
+D:\code\learning\a241111_03\Source\state_machine.v(53): WARNING: expression size 32 truncated to fit in target size 31 (VERI-1209)
+D:\code\learning\a241111_03\Source\hdmi_ip\rgb2dvi.v(7): INFO: compiling module 'rgb2dvi(ENABLE_OSERDES=0)' (VERI-1018)
+D:\code\learning\a241111_03\Source\hdmi_ip\tmds_channel.v(4): INFO: compiling module 'tmds_channel' (VERI-1018)
+D:\code\learning\a241111_03\Source\hdmi_ip\rgb2dvi.v(50): WARNING: actual bit length 32 differs from formal bit length 4 for port 'data_island_data' (VERI-1330)
+D:\code\learning\a241111_03\Source\hdmi_ip\rgb2dvi.v(52): WARNING: actual bit length 4 differs from formal bit length 3 for port 'mode' (VERI-1330)
+D:\code\learning\a241111_03\Source\hdmi_ip\rgb2dvi.v(58): WARNING: actual bit length 32 differs from formal bit length 4 for port 'data_island_data' (VERI-1330)
+D:\code\learning\a241111_03\Source\hdmi_ip\rgb2dvi.v(60): WARNING: actual bit length 4 differs from formal bit length 3 for port 'mode' (VERI-1330)
+D:\code\learning\a241111_03\Source\hdmi_ip\rgb2dvi.v(66): WARNING: actual bit length 32 differs from formal bit length 4 for port 'data_island_data' (VERI-1330)
+D:\code\learning\a241111_03\Source\hdmi_ip\rgb2dvi.v(68): WARNING: actual bit length 4 differs from formal bit length 3 for port 'mode' (VERI-1330)
+D:\code\learning\a241111_03\Source\T35_Sensor_DDR3_LCD_Test.v(665): WARNING: actual bit length 32 differs from formal bit length 1 for port 'oe_i' (VERI-1330)
+D:\code\learning\a241111_03\Source\T35_Sensor_DDR3_LCD_Test.v(701): WARNING: expression size 10 truncated to fit in target size 5 (VERI-1209)
+D:\code\learning\a241111_03\Source\T35_Sensor_DDR3_LCD_Test.v(702): WARNING: expression size 10 truncated to fit in target size 5 (VERI-1209)
+D:\code\learning\a241111_03\Source\T35_Sensor_DDR3_LCD_Test.v(703): WARNING: expression size 10 truncated to fit in target size 5 (VERI-1209)
+D:\code\learning\a241111_03\Source\T35_Sensor_DDR3_LCD_Test.v(704): WARNING: expression size 10 truncated to fit in target size 5 (VERI-1209)
+D:\code\learning\a241111_03\Source\T35_Sensor_DDR3_LCD_Test.v(467): WARNING: input port 'axi_base_0[31]' is not connected on this instance (VDB-1013)
+D:\code\learning\a241111_03\Source\T35_Sensor_DDR3_LCD_Test.v(663): WARNING: input port 'SerialClk' is not connected on this instance (VDB-1013)
+INFO: Elaboration took 0.0790898 seconds.
+INFO: 	Elaboration took 0.046875 seconds (approximately) in total CPU time.
+INFO: Elaboration virtual memory usage: begin = 63.252 MB, end = 92.332 MB, delta = 29.08 MB
+INFO: 	Elaboration peak virtual memory usage = 92.332 MB
+INFO: Elaboration resident set memory usage: begin = 68.74 MB, end = 97.584 MB, delta = 28.844 MB
+INFO: 	Elaboration peak resident set memory usage = 97.584 MB
+INFO: ***** Ending Elaboration ... *****
+[EFX-0000 INFO] ... Setting Synthesis Option: mode=speed
+INFO: ***** Beginning Reading Mapping Library ... *****
+-- Analyzing Verilog file 'C:/Efinity/2023.2/sim_models/maplib/efinix_maplib.v' (VERI-1482)
+C:/Efinity/2023.2/sim_models/maplib/efinix_maplib.v(8): INFO: compiling module 'EFX_ADD' (VERI-1018)
+C:/Efinity/2023.2/sim_models/maplib/efinix_maplib.v(21): INFO: compiling module 'EFX_FF' (VERI-1018)
+C:/Efinity/2023.2/sim_models/maplib/efinix_maplib.v(38): INFO: compiling module 'EFX_COMB4' (VERI-1018)
+C:/Efinity/2023.2/sim_models/maplib/efinix_maplib.v(48): INFO: compiling module 'EFX_GBUFCE' (VERI-1018)
+C:/Efinity/2023.2/sim_models/maplib/efinix_maplib.v(57): INFO: compiling module 'EFX_LUT4' (VERI-1018)
+C:/Efinity/2023.2/sim_models/maplib/efinix_maplib.v(65): INFO: compiling module 'EFX_MULT' (VERI-1018)
+C:/Efinity/2023.2/sim_models/maplib/efinix_maplib.v(100): INFO: compiling module 'EFX_DSP48' (VERI-1018)
+C:/Efinity/2023.2/sim_models/maplib/efinix_maplib.v(156): INFO: compiling module 'EFX_DSP24' (VERI-1018)
+C:/Efinity/2023.2/sim_models/maplib/efinix_maplib.v(209): INFO: compiling module 'EFX_DSP12' (VERI-1018)
+C:/Efinity/2023.2/sim_models/maplib/efinix_maplib.v(262): INFO: compiling module 'EFX_RAM_4K' (VERI-1018)
+C:/Efinity/2023.2/sim_models/maplib/efinix_maplib.v(322): INFO: compiling module 'EFX_RAM_5K' (VERI-1018)
+C:/Efinity/2023.2/sim_models/maplib/efinix_maplib.v(394): INFO: compiling module 'EFX_DPRAM_5K' (VERI-1018)
+C:/Efinity/2023.2/sim_models/maplib/efinix_maplib.v(499): INFO: compiling module 'RAMB5' (VERI-1018)
+C:/Efinity/2023.2/sim_models/maplib/efinix_maplib.v(561): INFO: compiling module 'EFX_RAM_10K' (VERI-1018)
+C:/Efinity/2023.2/sim_models/maplib/efinix_maplib.v(653): INFO: compiling module 'EFX_RAM10' (VERI-1018)
+C:/Efinity/2023.2/sim_models/maplib/efinix_maplib.v(754): INFO: compiling module 'EFX_DPRAM10' (VERI-1018)
+C:/Efinity/2023.2/sim_models/maplib/efinix_maplib.v(884): INFO: compiling module 'EFX_SRL8' (VERI-1018)
+INFO: Reading Mapping Library took 0.0103157 seconds.
+INFO: 	Reading Mapping Library took 0 seconds (approximately) in total CPU time.
+INFO: Reading Mapping Library virtual memory usage: begin = 94.14 MB, end = 94.14 MB, delta = 0 MB
+INFO: 	Reading Mapping Library peak virtual memory usage = 95.752 MB
+INFO: Reading Mapping Library resident set memory usage: begin = 99.692 MB, end = 99.708 MB, delta = 0.016 MB
+INFO: 	Reading Mapping Library peak resident set memory usage = 101.164 MB
+INFO: ***** Ending Reading Mapping Library ... *****
+[EFX-0000 INFO] ... Pre-synthesis checks begin
+[EFX-0677 INFO] ... Zero initialization of uninitialized memory block 'ram'. (D:\code\learning\a241111_03\Efinity\ip\W0_FIFO_128\W0_FIFO_128.v:721)
+[EFX-0256 WARNING] The primary output port 'lvds_tx_clk_DATA[6]' wire 'lvds_tx_clk_DATA[6]' is not driven.
+[EFX-0256 WARNING] The primary output port 'lvds_tx_clk_DATA[5]' wire 'lvds_tx_clk_DATA[5]' is not driven.
+[EFX-0256 WARNING] The primary output port 'lvds_tx_clk_DATA[4]' wire 'lvds_tx_clk_DATA[4]' is not driven.
+[EFX-0256 WARNING] The primary output port 'lvds_tx_clk_DATA[3]' wire 'lvds_tx_clk_DATA[3]' is not driven.
+[EFX-0256 WARNING] The primary output port 'lvds_tx_clk_DATA[2]' wire 'lvds_tx_clk_DATA[2]' is not driven.
+[EFX-0256 WARNING] The primary output port 'lvds_tx_clk_DATA[1]' wire 'lvds_tx_clk_DATA[1]' is not driven.
+[EFX-0256 WARNING] The primary output port 'lvds_tx_clk_DATA[0]' wire 'lvds_tx_clk_DATA[0]' is not driven.
+[EFX-0256 WARNING] The primary output port 'lvds_tx0_DATA[6]' wire 'lvds_tx0_DATA[6]' is not driven.
+[EFX-0256 WARNING] The primary output port 'lvds_tx0_DATA[5]' wire 'lvds_tx0_DATA[5]' is not driven.
+[EFX-0256 WARNING] The primary output port 'lvds_tx0_DATA[4]' wire 'lvds_tx0_DATA[4]' is not driven.
+[EFX-0256 WARNING] The primary output port 'lvds_tx0_DATA[3]' wire 'lvds_tx0_DATA[3]' is not driven.
+[EFX-0256 WARNING] The primary output port 'lvds_tx0_DATA[2]' wire 'lvds_tx0_DATA[2]' is not driven.
+[EFX-0256 WARNING] The primary output port 'lvds_tx0_DATA[1]' wire 'lvds_tx0_DATA[1]' is not driven.
+[EFX-0256 WARNING] The primary output port 'lvds_tx0_DATA[0]' wire 'lvds_tx0_DATA[0]' is not driven.
+[EFX-0256 WARNING] The primary output port 'lvds_tx1_DATA[6]' wire 'lvds_tx1_DATA[6]' is not driven.
+[EFX-0256 WARNING] The primary output port 'lvds_tx1_DATA[5]' wire 'lvds_tx1_DATA[5]' is not driven.
+[EFX-0256 WARNING] The primary output port 'lvds_tx1_DATA[4]' wire 'lvds_tx1_DATA[4]' is not driven.
+[EFX-0256 WARNING] The primary output port 'lvds_tx1_DATA[3]' wire 'lvds_tx1_DATA[3]' is not driven.
+[EFX-0256 WARNING] The primary output port 'lvds_tx1_DATA[2]' wire 'lvds_tx1_DATA[2]' is not driven.
+[EFX-0256 WARNING] The primary output port 'lvds_tx1_DATA[1]' wire 'lvds_tx1_DATA[1]' is not driven.
+[EFX-0256 WARNING] The primary output port 'lvds_tx1_DATA[0]' wire 'lvds_tx1_DATA[0]' is not driven.
+[EFX-0256 WARNING] The primary output port 'lvds_tx2_DATA[6]' wire 'lvds_tx2_DATA[6]' is not driven.
+[EFX-0256 WARNING] The primary output port 'lvds_tx2_DATA[5]' wire 'lvds_tx2_DATA[5]' is not driven.
+[EFX-0256 WARNING] The primary output port 'lvds_tx2_DATA[4]' wire 'lvds_tx2_DATA[4]' is not driven.
+[EFX-0256 WARNING] The primary output port 'lvds_tx2_DATA[3]' wire 'lvds_tx2_DATA[3]' is not driven.
+[EFX-0256 WARNING] The primary output port 'lvds_tx2_DATA[2]' wire 'lvds_tx2_DATA[2]' is not driven.
+[EFX-0256 WARNING] The primary output port 'lvds_tx2_DATA[1]' wire 'lvds_tx2_DATA[1]' is not driven.
+[EFX-0256 WARNING] The primary output port 'lvds_tx2_DATA[0]' wire 'lvds_tx2_DATA[0]' is not driven.
+[EFX-0256 WARNING] The primary output port 'lvds_tx3_DATA[6]' wire 'lvds_tx3_DATA[6]' is not driven.
+[EFX-0256 WARNING] The primary output port 'lvds_tx3_DATA[5]' wire 'lvds_tx3_DATA[5]' is not driven.
+[EFX-0256 WARNING] The primary output port 'lvds_tx3_DATA[4]' wire 'lvds_tx3_DATA[4]' is not driven.
+[EFX-0256 WARNING] The primary output port 'lvds_tx3_DATA[3]' wire 'lvds_tx3_DATA[3]' is not driven.
+[EFX-0256 WARNING] The primary output port 'lvds_tx3_DATA[2]' wire 'lvds_tx3_DATA[2]' is not driven.
+[EFX-0256 WARNING] The primary output port 'lvds_tx3_DATA[1]' wire 'lvds_tx3_DATA[1]' is not driven.
+[EFX-0256 WARNING] The primary output port 'lvds_tx3_DATA[0]' wire 'lvds_tx3_DATA[0]' is not driven.
+[EFX-0256 WARNING] The primary output port 'mipi0_scl_o' wire 'mipi0_scl_o' is not driven.
+[EFX-0256 WARNING] The primary output port 'mipi0_scl_oe' wire 'mipi0_scl_oe' is not driven.
+[EFX-0256 WARNING] The primary output port 'mipi0_sda_o' wire 'mipi0_sda_o' is not driven.
+[EFX-0256 WARNING] The primary output port 'mipi0_sda_oe' wire 'mipi0_sda_oe' is not driven.
+[EFX-0256 WARNING] The primary output port 'mipi1_scl_o' wire 'mipi1_scl_o' is not driven.
+[EFX-0256 WARNING] The primary output port 'mipi1_scl_oe' wire 'mipi1_scl_oe' is not driven.
+[EFX-0256 WARNING] The primary output port 'mipi1_sda_o' wire 'mipi1_sda_o' is not driven.
+[EFX-0256 WARNING] The primary output port 'mipi1_sda_oe' wire 'mipi1_sda_oe' is not driven.
+[EFX-0256 WARNING] The primary output port 'mipi_rx_0_RSTN_o' wire 'mipi_rx_0_RSTN_o' is not driven.
+[EFX-0256 WARNING] The primary output port 'mipi_rx_0_DPHY_RSTN_o' wire 'mipi_rx_0_DPHY_RSTN_o' is not driven.
+[EFX-0256 WARNING] The primary output port 'mipi_rx_0_VC_ENA_o[3]' wire 'mipi_rx_0_VC_ENA_o[3]' is not driven.
+[EFX-0256 WARNING] The primary output port 'mipi_rx_0_VC_ENA_o[2]' wire 'mipi_rx_0_VC_ENA_o[2]' is not driven.
+[EFX-0256 WARNING] The primary output port 'mipi_rx_0_VC_ENA_o[1]' wire 'mipi_rx_0_VC_ENA_o[1]' is not driven.
+[EFX-0256 WARNING] The primary output port 'mipi_rx_0_VC_ENA_o[0]' wire 'mipi_rx_0_VC_ENA_o[0]' is not driven.
+[EFX-0256 WARNING] The primary output port 'mipi_rx_0_LANES_o[1]' wire 'mipi_rx_0_LANES_o[1]' is not driven.
+[EFX-0256 WARNING] The primary output port 'mipi_rx_0_LANES_o[0]' wire 'mipi_rx_0_LANES_o[0]' is not driven.
+[EFX-0256 WARNING] The primary output port 'mipi_rx_1_RSTN_o' wire 'mipi_rx_1_RSTN_o' is not driven.
+[EFX-0256 WARNING] The primary output port 'mipi_rx_1_DPHY_RSTN_o' wire 'mipi_rx_1_DPHY_RSTN_o' is not driven.
+[EFX-0256 WARNING] The primary output port 'mipi_rx_1_VC_ENA_o[3]' wire 'mipi_rx_1_VC_ENA_o[3]' is not driven.
+[EFX-0256 WARNING] The primary output port 'mipi_rx_1_VC_ENA_o[2]' wire 'mipi_rx_1_VC_ENA_o[2]' is not driven.
+[EFX-0256 WARNING] The primary output port 'mipi_rx_1_VC_ENA_o[1]' wire 'mipi_rx_1_VC_ENA_o[1]' is not driven.
+[EFX-0256 WARNING] The primary output port 'mipi_rx_1_VC_ENA_o[0]' wire 'mipi_rx_1_VC_ENA_o[0]' is not driven.
+[EFX-0256 WARNING] The primary output port 'mipi_rx_1_LANES_o[1]' wire 'mipi_rx_1_LANES_o[1]' is not driven.
+[EFX-0256 WARNING] The primary output port 'mipi_rx_1_LANES_o[0]' wire 'mipi_rx_1_LANES_o[0]' is not driven.
+[EFX-0256 WARNING] The primary output port 'mipi_rx_0_CLEAR' wire 'mipi_rx_0_CLEAR' is not driven.
+[EFX-0256 WARNING] The primary output port 'mipi_rx_1_CLEAR' wire 'mipi_rx_1_CLEAR' is not driven.
+[EFX-0200 WARNING] Removing redundant signal : i2c_rdata[15]. (D:\code\learning\a241111_03\Source\cmos_i2c\i2c_timing_ctrl_16bit.v:54)
+[EFX-0200 WARNING] Removing redundant signal : i2c_rdata[14]. (D:\code\learning\a241111_03\Source\cmos_i2c\i2c_timing_ctrl_16bit.v:54)
+[EFX-0200 WARNING] Removing redundant signal : i2c_rdata[13]. (D:\code\learning\a241111_03\Source\cmos_i2c\i2c_timing_ctrl_16bit.v:54)
+[EFX-0200 WARNING] Removing redundant signal : i2c_rdata[12]. (D:\code\learning\a241111_03\Source\cmos_i2c\i2c_timing_ctrl_16bit.v:54)
+[EFX-0200 WARNING] Removing redundant signal : i2c_rdata[11]. (D:\code\learning\a241111_03\Source\cmos_i2c\i2c_timing_ctrl_16bit.v:54)
+[EFX-0200 WARNING] Removing redundant signal : i2c_rdata[10]. (D:\code\learning\a241111_03\Source\cmos_i2c\i2c_timing_ctrl_16bit.v:54)
+[EFX-0200 WARNING] Removing redundant signal : i2c_rdata[9]. (D:\code\learning\a241111_03\Source\cmos_i2c\i2c_timing_ctrl_16bit.v:54)
+[EFX-0200 WARNING] Removing redundant signal : i2c_rdata[8]. (D:\code\learning\a241111_03\Source\cmos_i2c\i2c_timing_ctrl_16bit.v:54)
+[EFX-0200 WARNING] Removing redundant signal : i2c_rdata[7]. (D:\code\learning\a241111_03\Source\cmos_i2c\i2c_timing_ctrl_16bit.v:54)
+[EFX-0200 WARNING] Removing redundant signal : i2c_rdata[6]. (D:\code\learning\a241111_03\Source\cmos_i2c\i2c_timing_ctrl_16bit.v:54)
+[EFX-0200 WARNING] Removing redundant signal : i2c_rdata[5]. (D:\code\learning\a241111_03\Source\cmos_i2c\i2c_timing_ctrl_16bit.v:54)
+[EFX-0200 WARNING] Removing redundant signal : i2c_rdata[4]. (D:\code\learning\a241111_03\Source\cmos_i2c\i2c_timing_ctrl_16bit.v:54)
+[EFX-0200 WARNING] Removing redundant signal : i2c_rdata[3]. (D:\code\learning\a241111_03\Source\cmos_i2c\i2c_timing_ctrl_16bit.v:54)
+[EFX-0200 WARNING] Removing redundant signal : i2c_rdata[2]. (D:\code\learning\a241111_03\Source\cmos_i2c\i2c_timing_ctrl_16bit.v:54)
+[EFX-0200 WARNING] Removing redundant signal : i2c_rdata[1]. (D:\code\learning\a241111_03\Source\cmos_i2c\i2c_timing_ctrl_16bit.v:54)
+[EFX-0200 WARNING] Removing redundant signal : i2c_rdata[0]. (D:\code\learning\a241111_03\Source\cmos_i2c\i2c_timing_ctrl_16bit.v:54)
+[EFX-0200 WARNING] Removing redundant signal : LUT_INDEX[8]. (D:\code\learning\a241111_03\Source\cmos_i2c\I2C_OV5640_1280720_Config.v:24)
+[EFX-0200 WARNING] Removing redundant signal : bit_xor. (D:\code\learning\a241111_03\Efinity\ip\W0_FIFO_128\W0_FIFO_128.v:314)
+[EFX-0200 WARNING] Removing redundant signal : bit_xor.nex_bit[31]. (D:\code\learning\a241111_03\Efinity\ip\W0_FIFO_128\W0_FIFO_128.v:315)
+[EFX-0200 WARNING] Removing redundant signal : bit_xor.nex_bit[30]. (D:\code\learning\a241111_03\Efinity\ip\W0_FIFO_128\W0_FIFO_128.v:315)
+[EFX-0200 WARNING] The above message was generated too many times, subsequent similar messages will be muted.
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'u_efx_fifo_top.a_wr_rst_i'. (D:\code\learning\a241111_03\Efinity\ip\W0_FIFO_128\W0_FIFO_128.v:90)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'u_efx_fifo_top.a_rd_rst_i'. (D:\code\learning\a241111_03\Efinity\ip\W0_FIFO_128\W0_FIFO_128.v:90)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'u_efx_fifo_top.clk_i'. (D:\code\learning\a241111_03\Efinity\ip\W0_FIFO_128\W0_FIFO_128.v:90)
+[EFX-0266 WARNING] Module Instance 'enc_0' input pin tied to constant (data_island_data[0]=0).
+[EFX-0266 WARNING] Module Instance 'enc_0' input pin tied to constant (data_island_data[1]=0).
+[EFX-0266 WARNING] Module Instance 'enc_0' input pin tied to constant (data_island_data[2]=0).
+[EFX-0266 WARNING] Module Instance 'enc_0' input pin tied to constant (data_island_data[3]=0).
+[EFX-0266 WARNING] Module Instance 'enc_0' input pin tied to constant (mode[1]=0).
+[EFX-0266 WARNING] Module Instance 'enc_0' input pin tied to constant (mode[2]=0).
+[EFX-0266 WARNING] Module Instance 'enc_1' input pin tied to constant (data_island_data[0]=0).
+[EFX-0266 WARNING] Module Instance 'enc_1' input pin tied to constant (data_island_data[1]=0).
+[EFX-0266 WARNING] Module Instance 'enc_1' input pin tied to constant (data_island_data[2]=0).
+[EFX-0266 WARNING] Module Instance 'enc_1' input pin tied to constant (data_island_data[3]=0).
+[EFX-0266 WARNING] Module Instance 'enc_1' input pin tied to constant (mode[1]=0).
+[EFX-0266 WARNING] Module Instance 'enc_1' input pin tied to constant (mode[2]=0).
+[EFX-0266 WARNING] Module Instance 'enc_2' input pin tied to constant (data_island_data[0]=0).
+[EFX-0266 WARNING] Module Instance 'enc_2' input pin tied to constant (data_island_data[1]=0).
+[EFX-0266 WARNING] Module Instance 'enc_2' input pin tied to constant (data_island_data[2]=0).
+[EFX-0266 WARNING] Module Instance 'enc_2' input pin tied to constant (data_island_data[3]=0).
+[EFX-0266 WARNING] Module Instance 'enc_2' input pin tied to constant (mode[1]=0).
+[EFX-0266 WARNING] Module Instance 'enc_2' input pin tied to constant (mode[2]=0).
+[EFX-0266 WARNING] Module Instance 'u_i2c_timing_ctrl_16bit' input pin tied to constant (i2c_config_data[24]=0).
+[EFX-0266 WARNING] Module Instance 'u_i2c_timing_ctrl_16bit' input pin tied to constant (i2c_config_data[25]=0).
+[EFX-0266 WARNING] Module Instance 'u_i2c_timing_ctrl_16bit' input pin tied to constant (i2c_config_data[26]=0).
+[EFX-0266 WARNING] Module Instance 'u_i2c_timing_ctrl_16bit' input pin tied to constant (i2c_config_data[27]=1).
+[EFX-0266 WARNING] Module Instance 'u_i2c_timing_ctrl_16bit' input pin tied to constant (i2c_config_data[28]=1).
+[EFX-0266 WARNING] Module Instance 'u_i2c_timing_ctrl_16bit' input pin tied to constant (i2c_config_data[29]=1).
+[EFX-0266 WARNING] Module Instance 'u_i2c_timing_ctrl_16bit' input pin tied to constant (i2c_config_data[30]=1).
+[EFX-0266 WARNING] Module Instance 'u_i2c_timing_ctrl_16bit' input pin tied to constant (i2c_config_data[31]=0).
+[EFX-0266 WARNING] Module Instance 'u_Sensor_Image_XYCrop_0' input pin tied to constant (rst_n=1).
+[EFX-0266 WARNING] Module Instance 'u_Sensor_Image_XYCrop_0' input pin tied to constant (image_in_de=1).
+[EFX-0266 WARNING] Module Instance 'u_axi4_ctrl_0' input pin tied to constant (axi_bresp[0]=0).
+[EFX-0266 WARNING] Module Instance 'u_axi4_ctrl_0' input pin tied to constant (axi_bresp[1]=0).
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'u_axi4_ctrl_0.axi_base_0[31]'. (D:\code\learning\a241111_03\Source\T35_Sensor_DDR3_LCD_Test.v:467)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'u_axi4_ctrl_0.axi_base_0[30]'. (D:\code\learning\a241111_03\Source\T35_Sensor_DDR3_LCD_Test.v:467)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'u_axi4_ctrl_0.axi_base_0[29]'. (D:\code\learning\a241111_03\Source\T35_Sensor_DDR3_LCD_Test.v:467)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'u_axi4_ctrl_0.axi_base_0[28]'. (D:\code\learning\a241111_03\Source\T35_Sensor_DDR3_LCD_Test.v:467)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'u_axi4_ctrl_0.axi_base_0[27]'. (D:\code\learning\a241111_03\Source\T35_Sensor_DDR3_LCD_Test.v:467)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'u_axi4_ctrl_0.axi_base_0[26]'. (D:\code\learning\a241111_03\Source\T35_Sensor_DDR3_LCD_Test.v:467)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'u_axi4_ctrl_0.axi_base_0[25]'. (D:\code\learning\a241111_03\Source\T35_Sensor_DDR3_LCD_Test.v:467)
+[EFX-0201 WARNING] The above message was generated too many times, subsequent similar messages will be muted.
+[EFX-0266 WARNING] Module Instance 'u_rgb2dvi' input pin tied to constant (oe_i=1).
+[EFX-0266 WARNING] Module Instance 'u_rgb2dvi' input pin tied to constant (bitflip_i[0]=0).
+[EFX-0266 WARNING] Module Instance 'u_rgb2dvi' input pin tied to constant (bitflip_i[1]=0).
+[EFX-0266 WARNING] Module Instance 'u_rgb2dvi' input pin tied to constant (bitflip_i[2]=0).
+[EFX-0266 WARNING] Module Instance 'u_rgb2dvi' input pin tied to constant (bitflip_i[3]=0).
+[EFX-0266 WARNING] Module Instance 'u_rgb2dvi' input pin tied to constant (aRst=0).
+[EFX-0266 WARNING] Module Instance 'u_rgb2dvi' input pin tied to constant (aRst_n=1).
+[EFX-0000 INFO] ... Pre-synthesis checks end (Real time : 0s)
+[EFX-0000 INFO] ... NameSpace init begin
+[EFX-0000 INFO] ... NameSpace init end (Real time : 0s)
+[EFX-0000 INFO] ... Mapping design "T35_Sensor_DDR3_LCD_Test"
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "ddr_reset_sequencer_27c2cfd541fb452b9c266db6cc6e0a58" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "ddr_reset_sequencer_27c2cfd541fb452b9c266db6cc6e0a58" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "etx_ddr3_reset_controller" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "etx_ddr3_reset_controller" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "i2c_timing_ctrl_16bit(I2C_FREQ=10000)" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "i2c_timing_ctrl_16bit(I2C_FREQ=10000)" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "I2C_OV5640_1280720_Config" begin
+[EFX-0000 INFO] ... Wide MUX mapping to ram-net, output: 'LUT_DATA' select size : 8 output width: 24
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "I2C_OV5640_1280720_Config" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "Sensor_Image_XYCrop(IMAGE_HSIZE_SOURCE=2560,IMAGE_VSIZE_SOURCE=720,IMAGE_HSIZE_TARGET=2560,IMAGE_YSIZE_TARGET=720,PIXEL_DATA_WIDTH=8)" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "Sensor_Image_XYCrop(IMAGE_HSIZE_SOURCE=2560,IMAGE_VSIZE_SOURCE=720,IMAGE_HSIZE_TARGET=2560,IMAGE_YSIZE_TARGET=720,PIXEL_DATA_WIDTH=8)" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "AXI4_AWARMux(AID_LEN=6)" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "AXI4_AWARMux(AID_LEN=6)" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "efx_fifo_ram_95b849c1c5ec4e2aba72f8bacae65a8f(MODE="FWFT",WR_DEPTH=256,RD_DEPTH=256,WDATA_WIDTH=128,RDATA_WIDTH=128,WADDR_WIDTH=8,RADDR_WIDTH=8,OUTPUT_REG=0,RAM_MUX_RATIO=1)" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "efx_fifo_ram_95b849c1c5ec4e2aba72f8bacae65a8f(MODE="FWFT",WR_DEPTH=256,RD_DEPTH=256,WDATA_WIDTH=128,RDATA_WIDTH=128,WADDR_WIDTH=8,RADDR_WIDTH=8,OUTPUT_REG=0,RAM_MUX_RATIO=1)" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "efx_fifo_bin2gray_95b849c1c5ec4e2aba72f8bacae65a8f(WIDTH=9)" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "efx_fifo_bin2gray_95b849c1c5ec4e2aba72f8bacae65a8f(WIDTH=9)" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "efx_fifo_datasync_95b849c1c5ec4e2aba72f8bacae65a8f(STAGE=3,WIDTH=9)" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "efx_fifo_datasync_95b849c1c5ec4e2aba72f8bacae65a8f(STAGE=3,WIDTH=9)" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "efx_fifo_gray2bin_95b849c1c5ec4e2aba72f8bacae65a8f(WIDTH=2)" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "efx_fifo_gray2bin_95b849c1c5ec4e2aba72f8bacae65a8f(WIDTH=2)" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "efx_fifo_gray2bin_95b849c1c5ec4e2aba72f8bacae65a8f(WIDTH=3)" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "efx_fifo_gray2bin_95b849c1c5ec4e2aba72f8bacae65a8f(WIDTH=3)" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "efx_fifo_gray2bin_95b849c1c5ec4e2aba72f8bacae65a8f(WIDTH=4)" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "efx_fifo_gray2bin_95b849c1c5ec4e2aba72f8bacae65a8f(WIDTH=4)" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "efx_fifo_gray2bin_95b849c1c5ec4e2aba72f8bacae65a8f" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "efx_fifo_gray2bin_95b849c1c5ec4e2aba72f8bacae65a8f" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "efx_fifo_gray2bin_95b849c1c5ec4e2aba72f8bacae65a8f(WIDTH=6)" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "efx_fifo_gray2bin_95b849c1c5ec4e2aba72f8bacae65a8f(WIDTH=6)" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "efx_fifo_gray2bin_95b849c1c5ec4e2aba72f8bacae65a8f(WIDTH=7)" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "efx_fifo_gray2bin_95b849c1c5ec4e2aba72f8bacae65a8f(WIDTH=7)" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "efx_fifo_gray2bin_95b849c1c5ec4e2aba72f8bacae65a8f(WIDTH=8)" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "efx_fifo_gray2bin_95b849c1c5ec4e2aba72f8bacae65a8f(WIDTH=8)" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "efx_fifo_gray2bin_95b849c1c5ec4e2aba72f8bacae65a8f(WIDTH=9)" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "efx_fifo_gray2bin_95b849c1c5ec4e2aba72f8bacae65a8f(WIDTH=9)" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "efx_fifo_ctl_95b849c1c5ec4e2aba72f8bacae65a8f_renamed_due_excessive_length_2" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "efx_fifo_ctl_95b849c1c5ec4e2aba72f8bacae65a8f_renamed_due_excessive_length_2" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "efx_fifo_top_95b849c1c5ec4e2aba72f8bacae65a8f_renamed_due_excessive_length_1" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "efx_fifo_top_95b849c1c5ec4e2aba72f8bacae65a8f_renamed_due_excessive_length_1" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "W0_FIFO_128" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "W0_FIFO_128" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "axi4_ctrl(C_RD_END_ADDR=1843200,C_W_WIDTH=8,C_R_WIDTH=16)" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "axi4_ctrl(C_RD_END_ADDR=1843200,C_W_WIDTH=8,C_R_WIDTH=16)" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "lcd_driver" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "lcd_driver" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "black_pixel_avg" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "black_pixel_avg" end (Real time : 1s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "zone_identifier" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "zone_identifier" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "state_machine" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "state_machine" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "tmds_channel" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "tmds_channel" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "rgb2dvi(ENABLE_OSERDES=0)" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "rgb2dvi(ENABLE_OSERDES=0)" end (Real time : 0s)
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "T35_Sensor_DDR3_LCD_Test" begin
+[EFX-0000 INFO] ... Hierarchical pre-synthesis "T35_Sensor_DDR3_LCD_Test" end (Real time : 1s)
+[EFX-0000 INFO] ... Flat optimizations begin
+[EFX-0000 INFO] ... Flat optimizations end (Real time : 0s)
+[EFX-0000 INFO] ... Flat synthesis begin
+[EFX-0000 INFO] ... Flat synthesis end (Real time : 0s)
+[EFX-0000 INFO] ... Flat optimizations begin
+[EFX-0000 INFO] ... Flat optimizations end (Real time : 0s)
+[EFX-0000 INFO] ... Check and break combinational loops begin
+[EFX-0000 INFO] ... Check and break combinational loops end (Real time : 0s)
+[EFX-0000 INFO] ... SOP modeling begin
+[EFX-0000 INFO] ... SOP modeling end (Real time : 0s)
+[EFX-0000 INFO] ... LUT mapping begin
+[EFX-0000 INFO] ... LS, strategy: 3, nd: 4948, ed: 16645, lv: 128, pw: 10284.95
+[EFX-0000 INFO] ... LUT mapping end (Real time : 21s)
+[EFX-0000 INFO] ... Post-synthesis Verific netlist creation begin
+[EFX-0000 INFO] ... Post-synthesis Verific netlist creation end (Real time : 1s)
+[EFX-0000 INFO] ... Postmap Retiming Optimization begin
+[EFX-0000 INFO] ... Clock Network 'Axi0Clk' with 475 loads will be considered for retiming optimization.
+[EFX-0000 INFO] ... Clock Network 'hdmi_clk1x_i' with 457 loads will be considered for retiming optimization.
+[EFX-0000 INFO] ... Clock Network 'cmos_pclk' with 235 loads will be considered for retiming optimization.
+[EFX-0000 INFO] ... Clock Network 'hdmi_clk2x_i' with 29 loads will be considered for retiming optimization.
+[EFX-0000 INFO] ... Performed 4 retime moves.
+[EFX-0000 INFO] ... Postmap Retiming Optimization end (Real time : 13s)
+[EFX-0000 INFO] ... Post-synthesis Verific netlist unification/params processing begin
+[EFX-0000 INFO] ... Post-synthesis Verific netlist unification/params processing end (Real time : 0s)
+INFO: ***** Beginning VDB Netlist Checker ... *****
+WARNING: Input/Inout Port AxiPllClkIn is unconnected and will be removed
+WARNING: Input/Inout Port DdrPllClkIn is unconnected and will be removed
+WARNING: Input/Inout Port mipi_clkcal_i is unconnected and will be removed
+WARNING: Input/Inout Port mipi_clkesc_i is unconnected and will be removed
+WARNING: Input/Inout Port mipi_pixclk_i is unconnected and will be removed
+WARNING: Input/Inout Port hdmi_clk5x_i is unconnected and will be removed
+WARNING: Input/Inout Port clk_cmos is unconnected and will be removed
+WARNING: Input/Inout Port tx_slowclk is unconnected and will be removed
+WARNING: Input/Inout Port tx_fastclk is unconnected and will be removed
+WARNING: Input/Inout Port hdmi_lock_i is unconnected and will be removed
+WARNING: Input/Inout Port mipi_lock_i is unconnected and will be removed
+WARNING: Input/Inout Port DdrCtrl_RID_0[7] is unconnected and will be removed
+WARNING: Input/Inout Port DdrCtrl_RID_0[6] is unconnected and will be removed
+WARNING: Input/Inout Port DdrCtrl_RID_0[5] is unconnected and will be removed
+WARNING: Input/Inout Port DdrCtrl_RID_0[4] is unconnected and will be removed
+WARNING: Input/Inout Port DdrCtrl_RID_0[3] is unconnected and will be removed
+WARNING: Input/Inout Port DdrCtrl_RID_0[2] is unconnected and will be removed
+WARNING: Input/Inout Port DdrCtrl_RID_0[1] is unconnected and will be removed
+WARNING: Input/Inout Port DdrCtrl_RID_0[0] is unconnected and will be removed
+WARNING: Input/Inout Port DdrCtrl_RRESP_0[1] is unconnected and will be removed
+WARNING: Input/Inout Port DdrCtrl_RRESP_0[0] is unconnected and will be removed
+WARNING: Input/Inout Port DdrCtrl_BID_0[7] is unconnected and will be removed
+WARNING: Input/Inout Port DdrCtrl_BID_0[6] is unconnected and will be removed
+WARNING: Input/Inout Port DdrCtrl_BID_0[5] is unconnected and will be removed
+WARNING: Input/Inout Port DdrCtrl_BID_0[4] is unconnected and will be removed
+WARNING: Input/Inout Port DdrCtrl_BID_0[3] is unconnected and will be removed
+WARNING: Input/Inout Port DdrCtrl_BID_0[2] is unconnected and will be removed
+WARNING: Input/Inout Port DdrCtrl_BID_0[1] is unconnected and will be removed
+WARNING: Input/Inout Port DdrCtrl_BID_0[0] is unconnected and will be removed
+WARNING: Input/Inout Port DdrCtrl_BVALID_0 is unconnected and will be removed
+WARNING: Input/Inout Port cmos_sdat_IN is unconnected and will be removed
+WARNING: Input/Inout Port mipi0_scl_i is unconnected and will be removed
+WARNING: Input/Inout Port mipi0_sda_i is unconnected and will be removed
+WARNING: Input/Inout Port mipi1_scl_i is unconnected and will be removed
+WARNING: Input/Inout Port mipi1_sda_i is unconnected and will be removed
+WARNING: Input/Inout Port mipi_rx_0_VC_i[1] is unconnected and will be removed
+WARNING: Input/Inout Port mipi_rx_0_VC_i[0] is unconnected and will be removed
+WARNING: Input/Inout Port mipi_rx_0_VSYNC_i[3] is unconnected and will be removed
+WARNING: Input/Inout Port mipi_rx_0_VSYNC_i[2] is unconnected and will be removed
+WARNING: Input/Inout Port mipi_rx_0_VSYNC_i[1] is unconnected and will be removed
+WARNING: Input/Inout Port mipi_rx_0_VSYNC_i[0] is unconnected and will be removed
+WARNING: Input/Inout Port mipi_rx_0_HSYNC_i[3] is unconnected and will be removed
+WARNING: Input/Inout Port mipi_rx_0_HSYNC_i[2] is unconnected and will be removed
+WARNING: Input/Inout Port mipi_rx_0_HSYNC_i[1] is unconnected and will be removed
+WARNING: Input/Inout Port mipi_rx_0_HSYNC_i[0] is unconnected and will be removed
+WARNING: Input/Inout Port mipi_rx_0_DATA_i[63] is unconnected and will be removed
+WARNING: Input/Inout Port mipi_rx_0_DATA_i[62] is unconnected and will be removed
+WARNING: Input/Inout Port mipi_rx_0_DATA_i[61] is unconnected and will be removed
+WARNING: Input/Inout Port mipi_rx_0_DATA_i[60] is unconnected and will be removed
+WARNING: Input/Inout Port mipi_rx_0_DATA_i[59] is unconnected and will be removed
+WARNING: Input/Inout Port mipi_rx_0_DATA_i[58] is unconnected and will be removed
+WARNING: Input/Inout Port mipi_rx_0_DATA_i[57] is unconnected and will be removed
+WARNING: Input/Inout Port mipi_rx_0_DATA_i[56] is unconnected and will be removed
+WARNING: Input/Inout Port mipi_rx_0_DATA_i[55] is unconnected and will be removed
+WARNING: Input/Inout Port mipi_rx_0_DATA_i[54] is unconnected and will be removed
+WARNING: Input/Inout Port mipi_rx_0_DATA_i[53] is unconnected and will be removed
+WARNING: Input/Inout Port mipi_rx_0_DATA_i[52] is unconnected and will be removed
+WARNING: Input/Inout Port mipi_rx_0_DATA_i[51] is unconnected and will be removed
+WARNING: Input/Inout Port mipi_rx_0_DATA_i[50] is unconnected and will be removed
+WARNING: Input/Inout Port mipi_rx_0_DATA_i[49] is unconnected and will be removed
+WARNING: Input/Inout Port mipi_rx_0_DATA_i[48] is unconnected and will be removed
+WARNING: Input/Inout Port mipi_rx_0_DATA_i[47] is unconnected and will be removed
+WARNING: Input/Inout Port mipi_rx_0_DATA_i[46] is unconnected and will be removed
+WARNING: Input/Inout Port mipi_rx_0_DATA_i[45] is unconnected and will be removed
+WARNING: Input/Inout Port mipi_rx_0_DATA_i[44] is unconnected and will be removed
+WARNING: Input/Inout Port mipi_rx_0_DATA_i[43] is unconnected and will be removed
+WARNING: Input/Inout Port mipi_rx_0_DATA_i[42] is unconnected and will be removed
+WARNING: Input/Inout Port mipi_rx_0_DATA_i[41] is unconnected and will be removed
+WARNING: Input/Inout Port mipi_rx_0_DATA_i[40] is unconnected and will be removed
+WARNING: Input/Inout Port mipi_rx_0_DATA_i[39] is unconnected and will be removed
+WARNING: Input/Inout Port mipi_rx_0_DATA_i[38] is unconnected and will be removed
+WARNING: Input/Inout Port mipi_rx_0_DATA_i[37] is unconnected and will be removed
+WARNING: Input/Inout Port mipi_rx_0_DATA_i[36] is unconnected and will be removed
+WARNING: Input/Inout Port mipi_rx_0_DATA_i[35] is unconnected and will be removed
+WARNING: Input/Inout Port mipi_rx_0_DATA_i[34] is unconnected and will be removed
+WARNING: Input/Inout Port mipi_rx_0_DATA_i[33] is unconnected and will be removed
+WARNING: Input/Inout Port mipi_rx_0_DATA_i[32] is unconnected and will be removed
+WARNING: Input/Inout Port mipi_rx_0_DATA_i[31] is unconnected and will be removed
+WARNING: Input/Inout Port mipi_rx_0_DATA_i[30] is unconnected and will be removed
+WARNING: Input/Inout Port mipi_rx_0_DATA_i[29] is unconnected and will be removed
+WARNING: Input/Inout Port mipi_rx_0_DATA_i[28] is unconnected and will be removed
+WARNING: Input/Inout Port mipi_rx_0_DATA_i[27] is unconnected and will be removed
+WARNING: Input/Inout Port mipi_rx_0_DATA_i[26] is unconnected and will be removed
+WARNING: Input/Inout Port mipi_rx_0_DATA_i[25] is unconnected and will be removed
+WARNING: Input/Inout Port mipi_rx_0_DATA_i[24] is unconnected and will be removed
+WARNING: Input/Inout Port mipi_rx_0_DATA_i[23] is unconnected and will be removed
+WARNING: Input/Inout Port mipi_rx_0_DATA_i[22] is unconnected and will be removed
+WARNING: Input/Inout Port mipi_rx_0_DATA_i[21] is unconnected and will be removed
+WARNING: Input/Inout Port mipi_rx_0_DATA_i[20] is unconnected and will be removed
+WARNING: Input/Inout Port mipi_rx_0_DATA_i[19] is unconnected and will be removed
+WARNING: Input/Inout Port mipi_rx_0_DATA_i[18] is unconnected and will be removed
+WARNING: Input/Inout Port mipi_rx_0_DATA_i[17] is unconnected and will be removed
+WARNING: Input/Inout Port mipi_rx_0_DATA_i[16] is unconnected and will be removed
+WARNING: Input/Inout Port mipi_rx_0_DATA_i[15] is unconnected and will be removed
+WARNING: Input/Inout Port mipi_rx_0_DATA_i[14] is unconnected and will be removed
+WARNING: Input/Inout Port mipi_rx_0_DATA_i[13] is unconnected and will be removed
+WARNING: Input/Inout Port mipi_rx_0_DATA_i[12] is unconnected and will be removed
+WARNING: Input/Inout Port mipi_rx_0_DATA_i[11] is unconnected and will be removed
+WARNING: Input/Inout Port mipi_rx_0_DATA_i[10] is unconnected and will be removed
+WARNING: Input/Inout Port mipi_rx_0_DATA_i[9] is unconnected and will be removed
+WARNING: Input/Inout Port mipi_rx_0_DATA_i[8] is unconnected and will be removed
+WARNING: Input/Inout Port mipi_rx_0_DATA_i[7] is unconnected and will be removed
+WARNING: Input/Inout Port mipi_rx_0_DATA_i[6] is unconnected and will be removed
+WARNING: Input/Inout Port mipi_rx_0_DATA_i[5] is unconnected and will be removed
+WARNING: Input/Inout Port mipi_rx_0_DATA_i[4] is unconnected and will be removed
+WARNING: Input/Inout Port mipi_rx_0_DATA_i[3] is unconnected and will be removed
+WARNING: Input/Inout Port mipi_rx_0_DATA_i[2] is unconnected and will be removed
+WARNING: Input/Inout Port mipi_rx_0_DATA_i[1] is unconnected and will be removed
+WARNING: Input/Inout Port mipi_rx_0_DATA_i[0] is unconnected and will be removed
+WARNING: Input/Inout Port mipi_rx_0_CNT_i[3] is unconnected and will be removed
+WARNING: Input/Inout Port mipi_rx_0_CNT_i[2] is unconnected and will be removed
+WARNING: Input/Inout Port mipi_rx_0_CNT_i[1] is unconnected and will be removed
+WARNING: Input/Inout Port mipi_rx_0_CNT_i[0] is unconnected and will be removed
+WARNING: Input/Inout Port mipi_rx_0_TYPE_i[5] is unconnected and will be removed
+WARNING: Input/Inout Port mipi_rx_0_TYPE_i[4] is unconnected and will be removed
+WARNING: Input/Inout Port mipi_rx_0_TYPE_i[3] is unconnected and will be removed
+WARNING: Input/Inout Port mipi_rx_0_TYPE_i[2] is unconnected and will be removed
+WARNING: Input/Inout Port mipi_rx_0_TYPE_i[1] is unconnected and will be removed
+WARNING: Input/Inout Port mipi_rx_0_TYPE_i[0] is unconnected and will be removed
+WARNING: Input/Inout Port mipi_rx_0_VALID_i is unconnected and will be removed
+WARNING: Input/Inout Port mipi_rx_1_VC_i[1] is unconnected and will be removed
+WARNING: Input/Inout Port mipi_rx_1_VC_i[0] is unconnected and will be removed
+WARNING: Input/Inout Port mipi_rx_1_VSYNC_i[3] is unconnected and will be removed
+WARNING: Input/Inout Port mipi_rx_1_VSYNC_i[2] is unconnected and will be removed
+WARNING: Input/Inout Port mipi_rx_1_VSYNC_i[1] is unconnected and will be removed
+WARNING: Input/Inout Port mipi_rx_1_VSYNC_i[0] is unconnected and will be removed
+WARNING: Input/Inout Port mipi_rx_1_HSYNC_i[3] is unconnected and will be removed
+WARNING: Input/Inout Port mipi_rx_1_HSYNC_i[2] is unconnected and will be removed
+WARNING: Input/Inout Port mipi_rx_1_HSYNC_i[1] is unconnected and will be removed
+WARNING: Input/Inout Port mipi_rx_1_HSYNC_i[0] is unconnected and will be removed
+WARNING: Input/Inout Port mipi_rx_1_DATA_i[63] is unconnected and will be removed
+WARNING: Input/Inout Port mipi_rx_1_DATA_i[62] is unconnected and will be removed
+WARNING: Input/Inout Port mipi_rx_1_DATA_i[61] is unconnected and will be removed
+WARNING: Input/Inout Port mipi_rx_1_DATA_i[60] is unconnected and will be removed
+WARNING: Input/Inout Port mipi_rx_1_DATA_i[59] is unconnected and will be removed
+WARNING: Input/Inout Port mipi_rx_1_DATA_i[58] is unconnected and will be removed
+WARNING: Input/Inout Port mipi_rx_1_DATA_i[57] is unconnected and will be removed
+WARNING: Input/Inout Port mipi_rx_1_DATA_i[56] is unconnected and will be removed
+WARNING: Input/Inout Port mipi_rx_1_DATA_i[55] is unconnected and will be removed
+WARNING: Input/Inout Port mipi_rx_1_DATA_i[54] is unconnected and will be removed
+WARNING: Input/Inout Port mipi_rx_1_DATA_i[53] is unconnected and will be removed
+WARNING: Input/Inout Port mipi_rx_1_DATA_i[52] is unconnected and will be removed
+WARNING: Input/Inout Port mipi_rx_1_DATA_i[51] is unconnected and will be removed
+WARNING: Input/Inout Port mipi_rx_1_DATA_i[50] is unconnected and will be removed
+WARNING: Input/Inout Port mipi_rx_1_DATA_i[49] is unconnected and will be removed
+WARNING: Input/Inout Port mipi_rx_1_DATA_i[48] is unconnected and will be removed
+WARNING: Input/Inout Port mipi_rx_1_DATA_i[47] is unconnected and will be removed
+WARNING: Input/Inout Port mipi_rx_1_DATA_i[46] is unconnected and will be removed
+WARNING: Input/Inout Port mipi_rx_1_DATA_i[45] is unconnected and will be removed
+WARNING: Input/Inout Port mipi_rx_1_DATA_i[44] is unconnected and will be removed
+WARNING: Input/Inout Port mipi_rx_1_DATA_i[43] is unconnected and will be removed
+WARNING: Input/Inout Port mipi_rx_1_DATA_i[42] is unconnected and will be removed
+WARNING: Input/Inout Port mipi_rx_1_DATA_i[41] is unconnected and will be removed
+WARNING: Input/Inout Port mipi_rx_1_DATA_i[40] is unconnected and will be removed
+WARNING: Input/Inout Port mipi_rx_1_DATA_i[39] is unconnected and will be removed
+WARNING: Input/Inout Port mipi_rx_1_DATA_i[38] is unconnected and will be removed
+WARNING: Input/Inout Port mipi_rx_1_DATA_i[37] is unconnected and will be removed
+WARNING: Input/Inout Port mipi_rx_1_DATA_i[36] is unconnected and will be removed
+WARNING: Input/Inout Port mipi_rx_1_DATA_i[35] is unconnected and will be removed
+WARNING: Input/Inout Port mipi_rx_1_DATA_i[34] is unconnected and will be removed
+WARNING: Input/Inout Port mipi_rx_1_DATA_i[33] is unconnected and will be removed
+WARNING: Input/Inout Port mipi_rx_1_DATA_i[32] is unconnected and will be removed
+WARNING: Input/Inout Port mipi_rx_1_DATA_i[31] is unconnected and will be removed
+WARNING: Input/Inout Port mipi_rx_1_DATA_i[30] is unconnected and will be removed
+WARNING: Input/Inout Port mipi_rx_1_DATA_i[29] is unconnected and will be removed
+WARNING: Input/Inout Port mipi_rx_1_DATA_i[28] is unconnected and will be removed
+WARNING: Input/Inout Port mipi_rx_1_DATA_i[27] is unconnected and will be removed
+WARNING: Input/Inout Port mipi_rx_1_DATA_i[26] is unconnected and will be removed
+WARNING: Input/Inout Port mipi_rx_1_DATA_i[25] is unconnected and will be removed
+WARNING: Input/Inout Port mipi_rx_1_DATA_i[24] is unconnected and will be removed
+WARNING: Input/Inout Port mipi_rx_1_DATA_i[23] is unconnected and will be removed
+WARNING: Input/Inout Port mipi_rx_1_DATA_i[22] is unconnected and will be removed
+WARNING: Input/Inout Port mipi_rx_1_DATA_i[21] is unconnected and will be removed
+WARNING: Input/Inout Port mipi_rx_1_DATA_i[20] is unconnected and will be removed
+WARNING: Input/Inout Port mipi_rx_1_DATA_i[19] is unconnected and will be removed
+WARNING: Input/Inout Port mipi_rx_1_DATA_i[18] is unconnected and will be removed
+WARNING: Input/Inout Port mipi_rx_1_DATA_i[17] is unconnected and will be removed
+WARNING: Input/Inout Port mipi_rx_1_DATA_i[16] is unconnected and will be removed
+WARNING: Input/Inout Port mipi_rx_1_DATA_i[15] is unconnected and will be removed
+WARNING: Input/Inout Port mipi_rx_1_DATA_i[14] is unconnected and will be removed
+WARNING: Input/Inout Port mipi_rx_1_DATA_i[13] is unconnected and will be removed
+WARNING: Input/Inout Port mipi_rx_1_DATA_i[12] is unconnected and will be removed
+WARNING: Input/Inout Port mipi_rx_1_DATA_i[11] is unconnected and will be removed
+WARNING: Input/Inout Port mipi_rx_1_DATA_i[10] is unconnected and will be removed
+WARNING: Input/Inout Port mipi_rx_1_DATA_i[9] is unconnected and will be removed
+WARNING: Input/Inout Port mipi_rx_1_DATA_i[8] is unconnected and will be removed
+WARNING: Input/Inout Port mipi_rx_1_DATA_i[7] is unconnected and will be removed
+WARNING: Input/Inout Port mipi_rx_1_DATA_i[6] is unconnected and will be removed
+WARNING: Input/Inout Port mipi_rx_1_DATA_i[5] is unconnected and will be removed
+WARNING: Input/Inout Port mipi_rx_1_DATA_i[4] is unconnected and will be removed
+WARNING: Input/Inout Port mipi_rx_1_DATA_i[3] is unconnected and will be removed
+WARNING: Input/Inout Port mipi_rx_1_DATA_i[2] is unconnected and will be removed
+WARNING: Input/Inout Port mipi_rx_1_DATA_i[1] is unconnected and will be removed
+WARNING: Input/Inout Port mipi_rx_1_DATA_i[0] is unconnected and will be removed
+WARNING: Input/Inout Port mipi_rx_1_CNT_i[3] is unconnected and will be removed
+WARNING: Input/Inout Port mipi_rx_1_CNT_i[2] is unconnected and will be removed
+WARNING: Input/Inout Port mipi_rx_1_CNT_i[1] is unconnected and will be removed
+WARNING: Input/Inout Port mipi_rx_1_CNT_i[0] is unconnected and will be removed
+WARNING: Input/Inout Port mipi_rx_1_TYPE_i[5] is unconnected and will be removed
+WARNING: Input/Inout Port mipi_rx_1_TYPE_i[4] is unconnected and will be removed
+WARNING: Input/Inout Port mipi_rx_1_TYPE_i[3] is unconnected and will be removed
+WARNING: Input/Inout Port mipi_rx_1_TYPE_i[2] is unconnected and will be removed
+WARNING: Input/Inout Port mipi_rx_1_TYPE_i[1] is unconnected and will be removed
+WARNING: Input/Inout Port mipi_rx_1_TYPE_i[0] is unconnected and will be removed
+WARNING: Input/Inout Port mipi_rx_1_VALID_i is unconnected and will be removed
+WARNING: Input/Inout Port mipi_rx_0_ULPS[3] is unconnected and will be removed
+WARNING: Input/Inout Port mipi_rx_0_ULPS[2] is unconnected and will be removed
+WARNING: Input/Inout Port mipi_rx_0_ULPS[1] is unconnected and will be removed
+WARNING: Input/Inout Port mipi_rx_0_ULPS[0] is unconnected and will be removed
+WARNING: Input/Inout Port mipi_rx_0_ULPS_CLK is unconnected and will be removed
+WARNING: Input/Inout Port mipi_rx_0_ERROR[17] is unconnected and will be removed
+WARNING: Input/Inout Port mipi_rx_0_ERROR[16] is unconnected and will be removed
+WARNING: Input/Inout Port mipi_rx_0_ERROR[15] is unconnected and will be removed
+WARNING: Input/Inout Port mipi_rx_0_ERROR[14] is unconnected and will be removed
+WARNING: Input/Inout Port mipi_rx_0_ERROR[13] is unconnected and will be removed
+WARNING: Input/Inout Port mipi_rx_0_ERROR[12] is unconnected and will be removed
+WARNING: Input/Inout Port mipi_rx_0_ERROR[11] is unconnected and will be removed
+WARNING: Input/Inout Port mipi_rx_0_ERROR[10] is unconnected and will be removed
+WARNING: Input/Inout Port mipi_rx_0_ERROR[9] is unconnected and will be removed
+WARNING: Input/Inout Port mipi_rx_0_ERROR[8] is unconnected and will be removed
+WARNING: Input/Inout Port mipi_rx_0_ERROR[7] is unconnected and will be removed
+WARNING: Input/Inout Port mipi_rx_0_ERROR[6] is unconnected and will be removed
+WARNING: Input/Inout Port mipi_rx_0_ERROR[5] is unconnected and will be removed
+WARNING: Input/Inout Port mipi_rx_0_ERROR[4] is unconnected and will be removed
+WARNING: Input/Inout Port mipi_rx_0_ERROR[3] is unconnected and will be removed
+WARNING: Input/Inout Port mipi_rx_0_ERROR[2] is unconnected and will be removed
+WARNING: Input/Inout Port mipi_rx_0_ERROR[1] is unconnected and will be removed
+WARNING: Input/Inout Port mipi_rx_0_ERROR[0] is unconnected and will be removed
+WARNING: Input/Inout Port mipi_rx_1_ULPS[3] is unconnected and will be removed
+WARNING: Input/Inout Port mipi_rx_1_ULPS[2] is unconnected and will be removed
+WARNING: Input/Inout Port mipi_rx_1_ULPS[1] is unconnected and will be removed
+WARNING: Input/Inout Port mipi_rx_1_ULPS[0] is unconnected and will be removed
+WARNING: Input/Inout Port mipi_rx_1_ULPS_CLK is unconnected and will be removed
+WARNING: Input/Inout Port mipi_rx_1_ERROR[17] is unconnected and will be removed
+WARNING: Input/Inout Port mipi_rx_1_ERROR[16] is unconnected and will be removed
+WARNING: Input/Inout Port mipi_rx_1_ERROR[15] is unconnected and will be removed
+WARNING: Input/Inout Port mipi_rx_1_ERROR[14] is unconnected and will be removed
+WARNING: Input/Inout Port mipi_rx_1_ERROR[13] is unconnected and will be removed
+WARNING: Input/Inout Port mipi_rx_1_ERROR[12] is unconnected and will be removed
+WARNING: Input/Inout Port mipi_rx_1_ERROR[11] is unconnected and will be removed
+WARNING: Input/Inout Port mipi_rx_1_ERROR[10] is unconnected and will be removed
+WARNING: Input/Inout Port mipi_rx_1_ERROR[9] is unconnected and will be removed
+WARNING: Input/Inout Port mipi_rx_1_ERROR[8] is unconnected and will be removed
+WARNING: Input/Inout Port mipi_rx_1_ERROR[7] is unconnected and will be removed
+WARNING: Input/Inout Port mipi_rx_1_ERROR[6] is unconnected and will be removed
+WARNING: Input/Inout Port mipi_rx_1_ERROR[5] is unconnected and will be removed
+WARNING: Input/Inout Port mipi_rx_1_ERROR[4] is unconnected and will be removed
+WARNING: Input/Inout Port mipi_rx_1_ERROR[3] is unconnected and will be removed
+WARNING: Input/Inout Port mipi_rx_1_ERROR[2] is unconnected and will be removed
+WARNING: Input/Inout Port mipi_rx_1_ERROR[1] is unconnected and will be removed
+WARNING: Input/Inout Port mipi_rx_1_ERROR[0] is unconnected and will be removed
+INFO: Found 251 warnings in the post-synthesis netlist.
+INFO: VDB Netlist Checker took 0.0584524 seconds.
+INFO: 	VDB Netlist Checker took 0.015625 seconds (approximately) in total CPU time.
+INFO: VDB Netlist Checker virtual memory usage: begin = 171.62 MB, end = 171.62 MB, delta = 0 MB
+INFO: 	VDB Netlist Checker peak virtual memory usage = 201.224 MB
+INFO: VDB Netlist Checker resident set memory usage: begin = 177.616 MB, end = 177.668 MB, delta = 0.052 MB
+INFO: 	VDB Netlist Checker peak resident set memory usage = 206.564 MB
+INFO: ***** Ending VDB Netlist Checker ... *****
+-- Writing netlist 'T35_Sensor_DDR3_LCD_Test' to Verilog file 'D:/code/learning/a241111_03/Efinity/outflow/T35_Sensor_DDR3_LCD_Test.map.v' (VDB-1030)
+[EFX-0000 INFO] Resource Summary 
+[EFX-0000 INFO] =============================== 
+[EFX-0000 INFO] EFX_ADD         : 	1190
+[EFX-0000 INFO] EFX_LUT4        : 	4081
+[EFX-0000 INFO] EFX_MULT        : 	3
+[EFX-0000 INFO] EFX_FF          : 	1147
+[EFX-0000 INFO] EFX_RAM_5K      : 	14
+[EFX-0000 INFO] EFX_GBUFCE      : 	4
+[EFX-0000 INFO] =============================== 

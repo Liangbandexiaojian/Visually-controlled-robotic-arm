@@ -1,0 +1,331 @@
+
+Efinix FPGA Placement and Routing.
+Version: 2023.2.307.5.10 
+Date: Mon Nov 11 18:32:53 2024
+
+Copyright (C) 2013 - 2023 Efinix, Inc. All rights reserved.
+ 
+Family: Trion 
+Device: T35F324
+Top-level Entity Name: T35_Sensor_DDR3_LCD_Test
+Elapsed time for packing: 0 hours 0 minutes 0 seconds
+
+---------- Resource Summary (begin) ----------
+Inputs: 162 / 947 (17.11%)
+Outputs: 353 / 1416 (24.93%)
+Clocks: 11 / 16 (68.75%)
+Logic Elements: 8787 / 31680 (27.74%)
+	LE: LUTs/Adders: 8216 / 31680 (25.93%)
+	LE: Registers: 2344 / 30720 (7.63%)
+Memory Blocks: 16 / 288 (5.56%)
+Multipliers: 3 / 120 (2.50%)
+---------- Resource Summary (end) ----------
+
+
+---------- DSP Block Information (begin) ----------
+
++---------+-------+-------+-------+-----------+------------+-----------+------------+-----------+------------+
+|  NAME   | A_REG | B_REG | O_REG | RSTA_SYNC | RSTA_VALUE | RSTB_SYNC | RSTB_VALUE | RSTO_SYNC | RSTO_VALUE |
++---------+-------+-------+-------+-----------+------------+-----------+------------+-----------+------------+
+| mult_80 | true  | false | false |   true    |   false    |   false   |   false    |   false   |   false    |
+| mult_83 | true  | false | false |   true    |   false    |   false   |   false    |   false   |   false    |
+| mult_81 | true  | false | false |   true    |   false    |   false   |   false    |   false   |   false    |
++---------+-------+-------+-------+-----------+------------+-----------+------------+-----------+------------+
+
+----------- DSP Block Information (end) ----------
+
+
+---------- Memory Block Information (begin) ----------
+
++-------------------------------------------------------------------------------------+------+------------+-------------+--------------+------------+
+|                                        NAME                                         | MODE | READ_WIDTH | WRITE_WIDTH |  WRITE_MODE  | OUTPUT_REG |
++-------------------------------------------------------------------------------------+------+------------+-------------+--------------+------------+
+|          u_axi4_ctrl_0/u_W0_FIFO_128/u_efx_fifo_top/xefx_fifo_ram/ram__D$2          | SDP  |     16     |     16      | READ_UNKNOWN |   false    |
+|         u_axi4_ctrl_0/u_W0_FIFO_128/u_efx_fifo_top/xefx_fifo_ram/ram__D$c12         | SDP  |     20     |     20      | READ_UNKNOWN |   false    |
+|         u_axi4_ctrl_0/u_W0_FIFO_128/u_efx_fifo_top/xefx_fifo_ram/ram__D$b12         | SDP  |     16     |     16      | READ_UNKNOWN |   false    |
+|         u_axi4_ctrl_0/u_W0_FIFO_128/u_efx_fifo_top/xefx_fifo_ram/ram__D$12          | SDP  |     16     |     16      | READ_UNKNOWN |   false    |
+|         u_axi4_ctrl_0/u_W0_FIFO_128/u_efx_fifo_top/xefx_fifo_ram/ram__D$d12         | SDP  |     20     |     20      | READ_UNKNOWN |   false    |
+|         u_axi4_ctrl_0/u_W0_FIFO_128/u_efx_fifo_top/xefx_fifo_ram/ram__D$e12         | SDP  |     20     |     20      | READ_UNKNOWN |   false    |
+|         u_axi4_ctrl_0/u_W0_FIFO_128/u_efx_fifo_top/xefx_fifo_ram/ram__D$f1          | SDP  |     20     |     20      | READ_UNKNOWN |   false    |
+|          u_axi4_ctrl_0/u_R0_FIFO_128/u_efx_fifo_top/xefx_fifo_ram/ram__D$2          | SDP  |     16     |     16      | READ_UNKNOWN |   false    |
+|         u_axi4_ctrl_0/u_R0_FIFO_128/u_efx_fifo_top/xefx_fifo_ram/ram__D$c12         | SDP  |     20     |     20      | READ_UNKNOWN |   false    |
+|         u_axi4_ctrl_0/u_R0_FIFO_128/u_efx_fifo_top/xefx_fifo_ram/ram__D$b12         | SDP  |     16     |     16      | READ_UNKNOWN |   false    |
+|         u_axi4_ctrl_0/u_R0_FIFO_128/u_efx_fifo_top/xefx_fifo_ram/ram__D$12          | SDP  |     16     |     16      | READ_UNKNOWN |   false    |
+|         u_axi4_ctrl_0/u_R0_FIFO_128/u_efx_fifo_top/xefx_fifo_ram/ram__D$d12         | SDP  |     20     |     20      | READ_UNKNOWN |   false    |
+|         u_axi4_ctrl_0/u_R0_FIFO_128/u_efx_fifo_top/xefx_fifo_ram/ram__D$e12         | SDP  |     20     |     20      | READ_UNKNOWN |   false    |
+|         u_axi4_ctrl_0/u_R0_FIFO_128/u_efx_fifo_top/xefx_fifo_ram/ram__D$f1          | SDP  |     20     |     20      | READ_UNKNOWN |   false    |
+| edb_top_inst/la0/la_biu_inst/fifo_with_read_inst/simple_dual_port_ram_inst/ram__D$1 | SDP  |     20     |     20      |  READ_FIRST  |   false    |
+| edb_top_inst/la0/la_biu_inst/fifo_with_read_inst/simple_dual_port_ram_inst/ram__D$2 | SDP  |     20     |     20      |  READ_FIRST  |   false    |
++-------------------------------------------------------------------------------------+------+------------+-------------+--------------+------------+
+
+----------- Memory Block Information (end) ----------
+
+
+---------- IO Interface Summary (begin) ----------
+
++------------------------+--------------+
+| Missing Interface Pins | Input/Output |
++------------------------+--------------+
+|    jtag_inst1_DRCK     |    Input     |
+|     jtag_inst1_TMS     |    Input     |
+|   jtag_inst1_RUNTEST   |    Input     |
+|     mipi_clkesc_i      |    Input     |
+|      mipi_lock_i       |    Input     |
+|      mipi0_sda_i       |    Input     |
+|      mipi1_scl_i       |    Input     |
+|      mipi0_scl_i       |    Input     |
+|      mipi1_sda_i       |    Input     |
+|      cmos_sdat_IN      |    Input     |
+|      cmos_ctl0_o       |    Output    |
+|      cmos_ctl1_o       |    Output    |
+|      cmos_ctl0_oe      |    Output    |
+|      cmos_ctl1_oe      |    Output    |
+|      cmos_ctl0_i       |    Input     |
+|      cmos_ctl1_i       |    Input     |
+|      cmos_ctl2_o       |    Output    |
+|      cmos_ctl3_o       |    Output    |
+|      cmos_ctl2_oe      |    Output    |
+|      cmos_ctl3_oe      |    Output    |
+|      cmos_ctl2_i       |    Input     |
+|      cmos_ctl3_i       |    Input     |
+|      hdmi_lock_i       |    Input     |
+|    DdrCtrl_BID_0[0]    |    Input     |
+|    DdrCtrl_BID_0[1]    |    Input     |
+|    DdrCtrl_BID_0[2]    |    Input     |
+|    DdrCtrl_BID_0[3]    |    Input     |
+|    DdrCtrl_BID_0[4]    |    Input     |
+|    DdrCtrl_BID_0[5]    |    Input     |
+|    DdrCtrl_BID_0[6]    |    Input     |
+|    DdrCtrl_BID_0[7]    |    Input     |
+|    DdrCtrl_BVALID_0    |    Input     |
+|    DdrCtrl_RID_0[0]    |    Input     |
+|    DdrCtrl_RID_0[1]    |    Input     |
+|    DdrCtrl_RID_0[2]    |    Input     |
+|    DdrCtrl_RID_0[3]    |    Input     |
+|    DdrCtrl_RID_0[4]    |    Input     |
+|    DdrCtrl_RID_0[5]    |    Input     |
+|    DdrCtrl_RID_0[6]    |    Input     |
+|    DdrCtrl_RID_0[7]    |    Input     |
+|   DdrCtrl_RRESP_0[0]   |    Input     |
+|   DdrCtrl_RRESP_0[1]   |    Input     |
+|   mipi_rx_1_ULPS[3]    |    Input     |
+|   mipi_rx_1_ULPS[2]    |    Input     |
+|   mipi_rx_1_ULPS[1]    |    Input     |
+|   mipi_rx_1_ULPS[0]    |    Input     |
+|   mipi_rx_1_ULPS_CLK   |    Input     |
+|  mipi_rx_1_ERROR[17]   |    Input     |
+|  mipi_rx_1_ERROR[16]   |    Input     |
+|  mipi_rx_1_ERROR[15]   |    Input     |
+|  mipi_rx_1_ERROR[14]   |    Input     |
+|  mipi_rx_1_ERROR[13]   |    Input     |
+|  mipi_rx_1_ERROR[12]   |    Input     |
+|  mipi_rx_1_ERROR[11]   |    Input     |
+|  mipi_rx_1_ERROR[10]   |    Input     |
+|   mipi_rx_1_ERROR[9]   |    Input     |
+|   mipi_rx_1_ERROR[8]   |    Input     |
+|   mipi_rx_1_ERROR[7]   |    Input     |
+|   mipi_rx_1_ERROR[6]   |    Input     |
+|   mipi_rx_1_ERROR[5]   |    Input     |
+|   mipi_rx_1_ERROR[4]   |    Input     |
+|   mipi_rx_1_ERROR[3]   |    Input     |
+|   mipi_rx_1_ERROR[2]   |    Input     |
+|   mipi_rx_1_ERROR[1]   |    Input     |
+|   mipi_rx_1_ERROR[0]   |    Input     |
+|   mipi_rx_1_VC_i[1]    |    Input     |
+|   mipi_rx_1_VC_i[0]    |    Input     |
+|   mipi_rx_1_VALID_i    |    Input     |
+|  mipi_rx_1_TYPE_i[5]   |    Input     |
+|  mipi_rx_1_TYPE_i[4]   |    Input     |
+|  mipi_rx_1_TYPE_i[3]   |    Input     |
+|  mipi_rx_1_TYPE_i[2]   |    Input     |
+|  mipi_rx_1_TYPE_i[1]   |    Input     |
+|  mipi_rx_1_TYPE_i[0]   |    Input     |
+|  mipi_rx_1_DATA_i[63]  |    Input     |
+|  mipi_rx_1_DATA_i[62]  |    Input     |
+|  mipi_rx_1_DATA_i[61]  |    Input     |
+|  mipi_rx_1_DATA_i[60]  |    Input     |
+|  mipi_rx_1_DATA_i[59]  |    Input     |
+|  mipi_rx_1_DATA_i[58]  |    Input     |
+|  mipi_rx_1_DATA_i[57]  |    Input     |
+|  mipi_rx_1_DATA_i[56]  |    Input     |
+|  mipi_rx_1_DATA_i[55]  |    Input     |
+|  mipi_rx_1_DATA_i[54]  |    Input     |
+|  mipi_rx_1_DATA_i[53]  |    Input     |
+|  mipi_rx_1_DATA_i[52]  |    Input     |
+|  mipi_rx_1_DATA_i[51]  |    Input     |
+|  mipi_rx_1_DATA_i[50]  |    Input     |
+|  mipi_rx_1_DATA_i[49]  |    Input     |
+|  mipi_rx_1_DATA_i[48]  |    Input     |
+|  mipi_rx_1_DATA_i[47]  |    Input     |
+|  mipi_rx_1_DATA_i[46]  |    Input     |
+|  mipi_rx_1_DATA_i[45]  |    Input     |
+|  mipi_rx_1_DATA_i[44]  |    Input     |
+|  mipi_rx_1_DATA_i[43]  |    Input     |
+|  mipi_rx_1_DATA_i[42]  |    Input     |
+|  mipi_rx_1_DATA_i[41]  |    Input     |
+|  mipi_rx_1_DATA_i[40]  |    Input     |
+|  mipi_rx_1_DATA_i[39]  |    Input     |
+|  mipi_rx_1_DATA_i[38]  |    Input     |
+|  mipi_rx_1_DATA_i[37]  |    Input     |
+|  mipi_rx_1_DATA_i[36]  |    Input     |
+|  mipi_rx_1_DATA_i[35]  |    Input     |
+|  mipi_rx_1_DATA_i[34]  |    Input     |
+|  mipi_rx_1_DATA_i[33]  |    Input     |
+|  mipi_rx_1_DATA_i[32]  |    Input     |
+|  mipi_rx_1_DATA_i[31]  |    Input     |
+|  mipi_rx_1_DATA_i[30]  |    Input     |
+|  mipi_rx_1_DATA_i[29]  |    Input     |
+|  mipi_rx_1_DATA_i[28]  |    Input     |
+|  mipi_rx_1_DATA_i[27]  |    Input     |
+|  mipi_rx_1_DATA_i[26]  |    Input     |
+|  mipi_rx_1_DATA_i[25]  |    Input     |
+|  mipi_rx_1_DATA_i[24]  |    Input     |
+|  mipi_rx_1_DATA_i[23]  |    Input     |
+|  mipi_rx_1_DATA_i[22]  |    Input     |
+|  mipi_rx_1_DATA_i[21]  |    Input     |
+|  mipi_rx_1_DATA_i[20]  |    Input     |
+|  mipi_rx_1_DATA_i[19]  |    Input     |
+|  mipi_rx_1_DATA_i[18]  |    Input     |
+|  mipi_rx_1_DATA_i[17]  |    Input     |
+|  mipi_rx_1_DATA_i[16]  |    Input     |
+|  mipi_rx_1_DATA_i[15]  |    Input     |
+|  mipi_rx_1_DATA_i[14]  |    Input     |
+|  mipi_rx_1_DATA_i[13]  |    Input     |
+|  mipi_rx_1_DATA_i[12]  |    Input     |
+|  mipi_rx_1_DATA_i[11]  |    Input     |
+|  mipi_rx_1_DATA_i[10]  |    Input     |
+|  mipi_rx_1_DATA_i[9]   |    Input     |
+|  mipi_rx_1_DATA_i[8]   |    Input     |
+|  mipi_rx_1_DATA_i[7]   |    Input     |
+|  mipi_rx_1_DATA_i[6]   |    Input     |
+|  mipi_rx_1_DATA_i[5]   |    Input     |
+|  mipi_rx_1_DATA_i[4]   |    Input     |
+|  mipi_rx_1_DATA_i[3]   |    Input     |
+|  mipi_rx_1_DATA_i[2]   |    Input     |
+|  mipi_rx_1_DATA_i[1]   |    Input     |
+|  mipi_rx_1_DATA_i[0]   |    Input     |
+|   mipi_rx_1_CNT_i[3]   |    Input     |
+|   mipi_rx_1_CNT_i[2]   |    Input     |
+|   mipi_rx_1_CNT_i[1]   |    Input     |
+|   mipi_rx_1_CNT_i[0]   |    Input     |
+|  mipi_rx_1_HSYNC_i[3]  |    Input     |
+|  mipi_rx_1_VSYNC_i[3]  |    Input     |
+|  mipi_rx_1_HSYNC_i[2]  |    Input     |
+|  mipi_rx_1_VSYNC_i[2]  |    Input     |
+|  mipi_rx_1_HSYNC_i[1]  |    Input     |
+|  mipi_rx_1_VSYNC_i[1]  |    Input     |
+|  mipi_rx_1_HSYNC_i[0]  |    Input     |
+|  mipi_rx_1_VSYNC_i[0]  |    Input     |
+|   mipi_rx_0_ULPS[3]    |    Input     |
+|   mipi_rx_0_ULPS[2]    |    Input     |
+|   mipi_rx_0_ULPS[1]    |    Input     |
+|   mipi_rx_0_ULPS[0]    |    Input     |
+|   mipi_rx_0_ULPS_CLK   |    Input     |
+|  mipi_rx_0_ERROR[17]   |    Input     |
+|  mipi_rx_0_ERROR[16]   |    Input     |
+|  mipi_rx_0_ERROR[15]   |    Input     |
+|  mipi_rx_0_ERROR[14]   |    Input     |
+|  mipi_rx_0_ERROR[13]   |    Input     |
+|  mipi_rx_0_ERROR[12]   |    Input     |
+|  mipi_rx_0_ERROR[11]   |    Input     |
+|  mipi_rx_0_ERROR[10]   |    Input     |
+|   mipi_rx_0_ERROR[9]   |    Input     |
+|   mipi_rx_0_ERROR[8]   |    Input     |
+|   mipi_rx_0_ERROR[7]   |    Input     |
+|   mipi_rx_0_ERROR[6]   |    Input     |
+|   mipi_rx_0_ERROR[5]   |    Input     |
+|   mipi_rx_0_ERROR[4]   |    Input     |
+|   mipi_rx_0_ERROR[3]   |    Input     |
+|   mipi_rx_0_ERROR[2]   |    Input     |
+|   mipi_rx_0_ERROR[1]   |    Input     |
+|   mipi_rx_0_ERROR[0]   |    Input     |
+|   mipi_rx_0_VC_i[1]    |    Input     |
+|   mipi_rx_0_VC_i[0]    |    Input     |
+|   mipi_rx_0_VALID_i    |    Input     |
+|  mipi_rx_0_TYPE_i[5]   |    Input     |
+|  mipi_rx_0_TYPE_i[4]   |    Input     |
+|  mipi_rx_0_TYPE_i[3]   |    Input     |
+|  mipi_rx_0_TYPE_i[2]   |    Input     |
+|  mipi_rx_0_TYPE_i[1]   |    Input     |
+|  mipi_rx_0_TYPE_i[0]   |    Input     |
+|  mipi_rx_0_DATA_i[63]  |    Input     |
+|  mipi_rx_0_DATA_i[62]  |    Input     |
+|  mipi_rx_0_DATA_i[61]  |    Input     |
+|  mipi_rx_0_DATA_i[60]  |    Input     |
+|  mipi_rx_0_DATA_i[59]  |    Input     |
+|  mipi_rx_0_DATA_i[58]  |    Input     |
+|  mipi_rx_0_DATA_i[57]  |    Input     |
+|  mipi_rx_0_DATA_i[56]  |    Input     |
+|  mipi_rx_0_DATA_i[55]  |    Input     |
+|  mipi_rx_0_DATA_i[54]  |    Input     |
+|  mipi_rx_0_DATA_i[53]  |    Input     |
+|  mipi_rx_0_DATA_i[52]  |    Input     |
+|  mipi_rx_0_DATA_i[51]  |    Input     |
+|  mipi_rx_0_DATA_i[50]  |    Input     |
+|  mipi_rx_0_DATA_i[49]  |    Input     |
+|  mipi_rx_0_DATA_i[48]  |    Input     |
+|  mipi_rx_0_DATA_i[47]  |    Input     |
+|  mipi_rx_0_DATA_i[46]  |    Input     |
+|  mipi_rx_0_DATA_i[45]  |    Input     |
+|  mipi_rx_0_DATA_i[44]  |    Input     |
+|  mipi_rx_0_DATA_i[43]  |    Input     |
+|  mipi_rx_0_DATA_i[42]  |    Input     |
+|  mipi_rx_0_DATA_i[41]  |    Input     |
+|  mipi_rx_0_DATA_i[40]  |    Input     |
+|  mipi_rx_0_DATA_i[39]  |    Input     |
+|  mipi_rx_0_DATA_i[38]  |    Input     |
+|  mipi_rx_0_DATA_i[37]  |    Input     |
+|  mipi_rx_0_DATA_i[36]  |    Input     |
+|  mipi_rx_0_DATA_i[35]  |    Input     |
+|  mipi_rx_0_DATA_i[34]  |    Input     |
+|  mipi_rx_0_DATA_i[33]  |    Input     |
+|  mipi_rx_0_DATA_i[32]  |    Input     |
+|  mipi_rx_0_DATA_i[31]  |    Input     |
+|  mipi_rx_0_DATA_i[30]  |    Input     |
+|  mipi_rx_0_DATA_i[29]  |    Input     |
+|  mipi_rx_0_DATA_i[28]  |    Input     |
+|  mipi_rx_0_DATA_i[27]  |    Input     |
+|  mipi_rx_0_DATA_i[26]  |    Input     |
+|  mipi_rx_0_DATA_i[25]  |    Input     |
+|  mipi_rx_0_DATA_i[24]  |    Input     |
+|  mipi_rx_0_DATA_i[23]  |    Input     |
+|  mipi_rx_0_DATA_i[22]  |    Input     |
+|  mipi_rx_0_DATA_i[21]  |    Input     |
+|  mipi_rx_0_DATA_i[20]  |    Input     |
+|  mipi_rx_0_DATA_i[19]  |    Input     |
+|  mipi_rx_0_DATA_i[18]  |    Input     |
+|  mipi_rx_0_DATA_i[17]  |    Input     |
+|  mipi_rx_0_DATA_i[16]  |    Input     |
+|  mipi_rx_0_DATA_i[15]  |    Input     |
+|  mipi_rx_0_DATA_i[14]  |    Input     |
+|  mipi_rx_0_DATA_i[13]  |    Input     |
+|  mipi_rx_0_DATA_i[12]  |    Input     |
+|  mipi_rx_0_DATA_i[11]  |    Input     |
+|  mipi_rx_0_DATA_i[10]  |    Input     |
+|  mipi_rx_0_DATA_i[9]   |    Input     |
+|  mipi_rx_0_DATA_i[8]   |    Input     |
+|  mipi_rx_0_DATA_i[7]   |    Input     |
+|  mipi_rx_0_DATA_i[6]   |    Input     |
+|  mipi_rx_0_DATA_i[5]   |    Input     |
+|  mipi_rx_0_DATA_i[4]   |    Input     |
+|  mipi_rx_0_DATA_i[3]   |    Input     |
+|  mipi_rx_0_DATA_i[2]   |    Input     |
+|  mipi_rx_0_DATA_i[1]   |    Input     |
+|  mipi_rx_0_DATA_i[0]   |    Input     |
+|   mipi_rx_0_CNT_i[3]   |    Input     |
+|   mipi_rx_0_CNT_i[2]   |    Input     |
+|   mipi_rx_0_CNT_i[1]   |    Input     |
+|   mipi_rx_0_CNT_i[0]   |    Input     |
+|  mipi_rx_0_HSYNC_i[3]  |    Input     |
+|  mipi_rx_0_VSYNC_i[3]  |    Input     |
+|  mipi_rx_0_HSYNC_i[2]  |    Input     |
+|  mipi_rx_0_VSYNC_i[2]  |    Input     |
+|  mipi_rx_0_HSYNC_i[1]  |    Input     |
+|  mipi_rx_0_VSYNC_i[1]  |    Input     |
+|  mipi_rx_0_HSYNC_i[0]  |    Input     |
+|  mipi_rx_0_VSYNC_i[0]  |    Input     |
++------------------------+--------------+
+
+----------- IO Interface Summary (end) ----------
+
+Elapsed time for placement: 0 hours 12 minutes 13 seconds

@@ -1,0 +1,412 @@
+Efinity Synthesis report for project T35_Sensor_DDR3_LCD_Test
+Version: 2023.2.307.5.10
+Generated at: Nov 11, 2024 18:31:41
+Copyright (C) 2013 - 2023  All rights reserved.
+
+### ### ### ### ### ### ### ### ### ### ### ### ### ### ###
+Top-level Entity Name : T35_Sensor_DDR3_LCD_Test
+
+### ### File List (begin) ### ### ###
+### ### File List (end) ### ### ###
+
+"MEM|SYN-0677" : ... Zero initialization of uninitialized memory block 'ram'. (D:\code\learning\a241111_03\Efinity\ip\W0_FIFO_128\W0_FIFO_128.v:721)
+
+### ### EFX_FF CE enables (begin) ### ### ###
+Total number of enable signals: 0
+Total number of FFs with enable signals: 0
+### ### EFX_FF CE enables (end) ### ### ###
+
+### ### EFX_FF SR set/reset (begin) ### ### ###
+Total number of set/reset signals: 25
+Total number of FFs with set/reset signals: 1303
+SR signal <U0_DDR_Reset/u_ddr_reset_sequencer/rstn_dly[1]>, number of controlling flip flops: 3
+SR signal <DdrCtrl_RSTN>, number of controlling flip flops: 23
+SR signal <Axi0ResetReg[2]>, number of controlling flip flops: 117
+SR signal <cmos_vsync>, number of controlling flip flops: 12
+SR signal <cmos_href>, number of controlling flip flops: 12
+SR signal <axi4_awar_mux/n131>, number of controlling flip flops: 2
+SR signal <u_axi4_ctrl_0/r_w_rst>, number of controlling flip flops: 8
+SR signal <u_axi4_ctrl_0/n2551>, number of controlling flip flops: 5
+SR signal <u_axi4_ctrl_0/r_rfifo_rst_rclk>, number of controlling flip flops: 3
+SR signal <u_axi4_ctrl_0/r_rfifo_rst>, number of controlling flip flops: 35
+SR signal <u_axi4_ctrl_0/u_W0_FIFO_128/u_efx_fifo_top/genblk2.rd_rst[1]>, number of controlling flip flops: 37
+SR signal <u_axi4_ctrl_0/u_W0_FIFO_128/u_efx_fifo_top/genblk2.wr_rst[1]>, number of controlling flip flops: 27
+SR signal <u_axi4_ctrl_0/w_rfifo_rst>, number of controlling flip flops: 4
+SR signal <u_axi4_ctrl_0/u_R0_FIFO_128/u_efx_fifo_top/genblk2.rd_rst[1]>, number of controlling flip flops: 37
+SR signal <u_axi4_ctrl_0/u_R0_FIFO_128/u_efx_fifo_top/genblk2.wr_rst[1]>, number of controlling flip flops: 27
+SR signal <r_hdmi_rst_n>, number of controlling flip flops: 24
+SR signal <lcd_vs>, number of controlling flip flops: 96
+SR signal <u_state_machine/equal_19/n3>, number of controlling flip flops: 27
+SR signal <u_lcd_driver/r_lcd_dv>, number of controlling flip flops: 22
+SR signal <rc_hdmi_tx>, number of controlling flip flops: 12
+SR signal <jtag_inst1_RESET>, number of controlling flip flops: 665
+SR signal <edb_top_inst/la0/n3027>, number of controlling flip flops: 2
+SR signal <edb_top_inst/la0/la_resetn>, number of controlling flip flops: 61
+SR signal <edb_top_inst/la0/la_biu_inst/fifo_rstn>, number of controlling flip flops: 17
+SR signal <edb_top_inst/la0/la_biu_inst/fifo_with_read_inst/n699>, number of controlling flip flops: 25
+### ### EFX_FF SR set/reset (end) ### ### ###
+
+### ### Finite State Machine Report (begin) ### ### ### 
+Module axi4_ctrl(C_RD_END_ADDR=1843200,C_W_WIDTH=8,C_R_WIDTH=16)
+----------------------------------------------------------------
+Recognized state machine 'rd_state' with states :
+    "00"   :    S_READ_IDLE
+    "01"   :    S_READ_ADDR
+    "10"   :    S_READ_DATA
+
+Module state_machine
+--------------------
+Recognized state machine 'current_state' with states :
+    "00"   :    WAITING
+    "01"   :    WORKING
+
+Recognized state machine 'next_state' with states :
+    "00"   :    WAITING
+    "01"   :    WORKING
+
+### ### Finite State Machine Report (end) ### ### ### 
+
+### ### Sequential Elements Trimming Report (begin) ### ### ### 
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "D:\code\learning\a241111_03\Source\lcd_driver.v (132)" removed instance : u_lcd_driver/dff_49/i23
+@ "D:\code\learning\a241111_03\Source\lcd_driver.v (132)" representative instance : u_lcd_driver/dff_49/i24
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "D:\code\learning\a241111_03\Source\lcd_driver.v (132)" removed instance : u_lcd_driver/dff_49/i22
+@ "D:\code\learning\a241111_03\Source\lcd_driver.v (132)" representative instance : u_lcd_driver/dff_49/i24
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "D:\code\learning\a241111_03\Source\lcd_driver.v (132)" removed instance : u_lcd_driver/dff_49/i21
+@ "D:\code\learning\a241111_03\Source\lcd_driver.v (132)" representative instance : u_lcd_driver/dff_49/i24
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "D:\code\learning\a241111_03\Source\lcd_driver.v (132)" removed instance : u_lcd_driver/dff_49/i20
+@ "D:\code\learning\a241111_03\Source\lcd_driver.v (132)" representative instance : u_lcd_driver/dff_49/i24
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "D:\code\learning\a241111_03\Source\lcd_driver.v (132)" removed instance : u_lcd_driver/dff_49/i19
+@ "D:\code\learning\a241111_03\Source\lcd_driver.v (132)" representative instance : u_lcd_driver/dff_49/i24
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "D:\code\learning\a241111_03\Source\lcd_driver.v (132)" removed instance : u_lcd_driver/dff_49/i18
+@ "D:\code\learning\a241111_03\Source\lcd_driver.v (132)" representative instance : u_lcd_driver/dff_49/i24
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "D:\code\learning\a241111_03\Source\lcd_driver.v (132)" removed instance : u_lcd_driver/dff_49/i17
+@ "D:\code\learning\a241111_03\Source\lcd_driver.v (132)" representative instance : u_lcd_driver/dff_49/i24
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "D:\code\learning\a241111_03\Source\lcd_driver.v (132)" removed instance : u_lcd_driver/dff_49/i16
+@ "D:\code\learning\a241111_03\Source\lcd_driver.v (132)" representative instance : u_lcd_driver/dff_49/i24
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "D:\code\learning\a241111_03\Source\lcd_driver.v (132)" removed instance : u_lcd_driver/dff_49/i15
+@ "D:\code\learning\a241111_03\Source\lcd_driver.v (132)" representative instance : u_lcd_driver/dff_49/i24
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "D:\code\learning\a241111_03\Source\lcd_driver.v (132)" removed instance : u_lcd_driver/dff_49/i14
+@ "D:\code\learning\a241111_03\Source\lcd_driver.v (132)" representative instance : u_lcd_driver/dff_49/i24
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "D:\code\learning\a241111_03\Source\lcd_driver.v (132)" removed instance : u_lcd_driver/dff_49/i13
+@ "D:\code\learning\a241111_03\Source\lcd_driver.v (132)" representative instance : u_lcd_driver/dff_49/i24
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "D:\code\learning\a241111_03\Source\lcd_driver.v (132)" removed instance : u_lcd_driver/dff_49/i12
+@ "D:\code\learning\a241111_03\Source\lcd_driver.v (132)" representative instance : u_lcd_driver/dff_49/i24
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "D:\code\learning\a241111_03\Source\lcd_driver.v (132)" removed instance : u_lcd_driver/dff_49/i11
+@ "D:\code\learning\a241111_03\Source\lcd_driver.v (132)" representative instance : u_lcd_driver/dff_49/i24
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "D:\code\learning\a241111_03\Source\lcd_driver.v (132)" removed instance : u_lcd_driver/dff_49/i10
+@ "D:\code\learning\a241111_03\Source\lcd_driver.v (132)" representative instance : u_lcd_driver/dff_49/i24
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "D:\code\learning\a241111_03\Source\lcd_driver.v (132)" removed instance : u_lcd_driver/dff_49/i9
+@ "D:\code\learning\a241111_03\Source\lcd_driver.v (132)" representative instance : u_lcd_driver/dff_49/i24
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "D:\code\learning\a241111_03\Source\lcd_driver.v (132)" removed instance : u_lcd_driver/dff_49/i8
+@ "D:\code\learning\a241111_03\Source\lcd_driver.v (132)" representative instance : u_lcd_driver/dff_49/i24
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "D:\code\learning\a241111_03\Source\lcd_driver.v (132)" removed instance : u_lcd_driver/dff_49/i7
+@ "D:\code\learning\a241111_03\Source\lcd_driver.v (132)" representative instance : u_lcd_driver/dff_49/i24
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "D:\code\learning\a241111_03\Source\lcd_driver.v (132)" removed instance : u_lcd_driver/dff_49/i6
+@ "D:\code\learning\a241111_03\Source\lcd_driver.v (132)" representative instance : u_lcd_driver/dff_49/i24
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "D:\code\learning\a241111_03\Source\lcd_driver.v (132)" removed instance : u_lcd_driver/dff_49/i5
+@ "D:\code\learning\a241111_03\Source\lcd_driver.v (132)" representative instance : u_lcd_driver/dff_49/i24
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "D:\code\learning\a241111_03\Source\lcd_driver.v (132)" removed instance : u_lcd_driver/dff_49/i4
+@ "D:\code\learning\a241111_03\Source\lcd_driver.v (132)" representative instance : u_lcd_driver/dff_49/i24
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "D:\code\learning\a241111_03\Source\lcd_driver.v (132)" removed instance : u_lcd_driver/dff_49/i3
+@ "D:\code\learning\a241111_03\Source\lcd_driver.v (132)" representative instance : u_lcd_driver/dff_49/i24
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "D:\code\learning\a241111_03\Source\lcd_driver.v (132)" removed instance : u_lcd_driver/dff_49/i2
+@ "D:\code\learning\a241111_03\Source\lcd_driver.v (132)" representative instance : u_lcd_driver/dff_49/i24
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "D:\code\learning\a241111_03\Source\lcd_driver.v (132)" removed instance : u_lcd_driver/dff_49/i1
+@ "D:\code\learning\a241111_03\Source\lcd_driver.v (132)" representative instance : u_lcd_driver/dff_49/i24
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "D:\code\learning\a241111_03\Source\lcd_driver.v (132)" removed instance : u_lcd_driver/i48
+@ "D:\code\learning\a241111_03\Source\lcd_driver.v (132)" representative instance : u_lcd_driver/i49
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "D:\code\learning\a241111_03\Source\T35_Sensor_DDR3_LCD_Test.v (700)" removed instance : dff_107/i9
+@ "D:\code\learning\a241111_03\Source\T35_Sensor_DDR3_LCD_Test.v (700)" representative instance : dff_107/i10
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "D:\code\learning\a241111_03\Source\T35_Sensor_DDR3_LCD_Test.v (700)" removed instance : dff_107/i4
+@ "D:\code\learning\a241111_03\Source\T35_Sensor_DDR3_LCD_Test.v (700)" representative instance : dff_107/i5
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "D:\code\learning\a241111_03\Source\T35_Sensor_DDR3_LCD_Test.v (700)" removed instance : dff_107/i8
+@ "D:\code\learning\a241111_03\Source\T35_Sensor_DDR3_LCD_Test.v (700)" representative instance : dff_107/i10
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "D:\code\learning\a241111_03\Source\T35_Sensor_DDR3_LCD_Test.v (700)" removed instance : dff_107/i3
+@ "D:\code\learning\a241111_03\Source\T35_Sensor_DDR3_LCD_Test.v (700)" representative instance : dff_107/i5
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "D:\code\learning\a241111_03\Source\T35_Sensor_DDR3_LCD_Test.v (700)" removed instance : dff_107/i7
+@ "D:\code\learning\a241111_03\Source\T35_Sensor_DDR3_LCD_Test.v (700)" representative instance : dff_107/i10
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "D:\code\learning\a241111_03\Source\T35_Sensor_DDR3_LCD_Test.v (700)" removed instance : dff_107/i2
+@ "D:\code\learning\a241111_03\Source\T35_Sensor_DDR3_LCD_Test.v (700)" representative instance : dff_107/i5
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "D:\code\learning\a241111_03\Source\T35_Sensor_DDR3_LCD_Test.v (700)" removed instance : dff_107/i6
+@ "D:\code\learning\a241111_03\Source\T35_Sensor_DDR3_LCD_Test.v (700)" representative instance : dff_107/i10
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "D:\code\learning\a241111_03\Source\T35_Sensor_DDR3_LCD_Test.v (700)" removed instance : dff_107/i1
+@ "D:\code\learning\a241111_03\Source\T35_Sensor_DDR3_LCD_Test.v (700)" representative instance : dff_107/i5
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "D:\code\learning\a241111_03\Source\hdmi_ip\tmds_channel.v (167)" removed instance : u_rgb2dvi/enc_0/dff_119/i3
+@ "D:\code\learning\a241111_03\Source\hdmi_ip\tmds_channel.v (167)" representative instance : u_rgb2dvi/enc_0/dff_119/i5
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "D:\code\learning\a241111_03\Source\hdmi_ip\tmds_channel.v (167)" removed instance : u_rgb2dvi/enc_0/dff_119/i8
+@ "D:\code\learning\a241111_03\Source\hdmi_ip\tmds_channel.v (167)" representative instance : u_rgb2dvi/enc_0/dff_119/i4
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "D:\code\learning\a241111_03\Source\hdmi_ip\tmds_channel.v (167)" removed instance : u_rgb2dvi/enc_0/dff_119/i2
+@ "D:\code\learning\a241111_03\Source\hdmi_ip\tmds_channel.v (167)" representative instance : u_rgb2dvi/enc_0/dff_119/i4
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "D:\code\learning\a241111_03\Source\hdmi_ip\tmds_channel.v (167)" removed instance : u_rgb2dvi/enc_0/dff_119/i7
+@ "D:\code\learning\a241111_03\Source\hdmi_ip\tmds_channel.v (167)" representative instance : u_rgb2dvi/enc_0/dff_119/i5
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "D:\code\learning\a241111_03\Source\hdmi_ip\tmds_channel.v (167)" removed instance : u_rgb2dvi/enc_0/dff_119/i6
+@ "D:\code\learning\a241111_03\Source\hdmi_ip\tmds_channel.v (167)" representative instance : u_rgb2dvi/enc_0/dff_119/i4
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "D:\code\learning\a241111_03\Source\T35_Sensor_DDR3_LCD_Test.v (700)" removed instance : dff_108/i6
+@ "D:\code\learning\a241111_03\Source\T35_Sensor_DDR3_LCD_Test.v (700)" representative instance : dff_108/i8
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "D:\code\learning\a241111_03\Source\hdmi_ip\tmds_channel.v (167)" removed instance : u_rgb2dvi/enc_1/dff_119/i3
+@ "D:\code\learning\a241111_03\Source\hdmi_ip\tmds_channel.v (167)" representative instance : u_rgb2dvi/enc_1/dff_119/i5
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "D:\code\learning\a241111_03\Source\hdmi_ip\tmds_channel.v (167)" removed instance : u_rgb2dvi/enc_1/dff_119/i8
+@ "D:\code\learning\a241111_03\Source\hdmi_ip\tmds_channel.v (167)" representative instance : u_rgb2dvi/enc_1/dff_119/i4
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "D:\code\learning\a241111_03\Source\hdmi_ip\tmds_channel.v (167)" removed instance : u_rgb2dvi/enc_1/dff_119/i2
+@ "D:\code\learning\a241111_03\Source\hdmi_ip\tmds_channel.v (167)" representative instance : u_rgb2dvi/enc_1/dff_119/i4
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "D:\code\learning\a241111_03\Source\hdmi_ip\tmds_channel.v (167)" removed instance : u_rgb2dvi/enc_1/dff_119/i7
+@ "D:\code\learning\a241111_03\Source\hdmi_ip\tmds_channel.v (167)" representative instance : u_rgb2dvi/enc_1/dff_119/i5
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "D:\code\learning\a241111_03\Source\hdmi_ip\tmds_channel.v (167)" removed instance : u_rgb2dvi/enc_1/dff_119/i6
+@ "D:\code\learning\a241111_03\Source\hdmi_ip\tmds_channel.v (167)" representative instance : u_rgb2dvi/enc_1/dff_119/i4
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "D:\code\learning\a241111_03\Source\T35_Sensor_DDR3_LCD_Test.v (700)" removed instance : dff_109/i6
+@ "D:\code\learning\a241111_03\Source\T35_Sensor_DDR3_LCD_Test.v (700)" representative instance : dff_109/i8
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "D:\code\learning\a241111_03\Source\hdmi_ip\tmds_channel.v (167)" removed instance : u_rgb2dvi/enc_2/dff_119/i9
+@ "D:\code\learning\a241111_03\Source\hdmi_ip\tmds_channel.v (167)" representative instance : u_rgb2dvi/enc_1/dff_119/i9
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "D:\code\learning\a241111_03\Source\T35_Sensor_DDR3_LCD_Test.v (700)" removed instance : dff_110/i9
+@ "D:\code\learning\a241111_03\Source\T35_Sensor_DDR3_LCD_Test.v (700)" representative instance : dff_109/i9
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "D:\code\learning\a241111_03\Source\hdmi_ip\tmds_channel.v (167)" removed instance : u_rgb2dvi/enc_2/dff_119/i3
+@ "D:\code\learning\a241111_03\Source\hdmi_ip\tmds_channel.v (167)" representative instance : u_rgb2dvi/enc_2/dff_119/i5
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "D:\code\learning\a241111_03\Source\hdmi_ip\tmds_channel.v (167)" removed instance : u_rgb2dvi/enc_2/dff_119/i8
+@ "D:\code\learning\a241111_03\Source\hdmi_ip\tmds_channel.v (167)" representative instance : u_rgb2dvi/enc_2/dff_119/i4
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "D:\code\learning\a241111_03\Source\hdmi_ip\tmds_channel.v (167)" removed instance : u_rgb2dvi/enc_2/dff_119/i2
+@ "D:\code\learning\a241111_03\Source\hdmi_ip\tmds_channel.v (167)" representative instance : u_rgb2dvi/enc_2/dff_119/i4
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "D:\code\learning\a241111_03\Source\hdmi_ip\tmds_channel.v (167)" removed instance : u_rgb2dvi/enc_2/dff_119/i7
+@ "D:\code\learning\a241111_03\Source\hdmi_ip\tmds_channel.v (167)" representative instance : u_rgb2dvi/enc_2/dff_119/i5
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "D:\code\learning\a241111_03\Source\hdmi_ip\tmds_channel.v (167)" removed instance : u_rgb2dvi/enc_2/dff_119/i6
+@ "D:\code\learning\a241111_03\Source\hdmi_ip\tmds_channel.v (167)" representative instance : u_rgb2dvi/enc_2/dff_119/i4
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "D:\code\learning\a241111_03\Source\T35_Sensor_DDR3_LCD_Test.v (700)" removed instance : dff_110/i6
+@ "D:\code\learning\a241111_03\Source\T35_Sensor_DDR3_LCD_Test.v (700)" representative instance : dff_110/i8
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "D:\code\learning\a241111_03\Source\hdmi_ip\tmds_channel.v (167)" removed instance : u_rgb2dvi/enc_0/dff_119/i4
+@ "D:\code\learning\a241111_03\Source\hdmi_ip\tmds_channel.v (167)" representative instance : u_rgb2dvi/enc_0/dff_119/i1
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "D:\code\learning\a241111_03\Source\hdmi_ip\tmds_channel.v (167)" removed instance : u_rgb2dvi/enc_1/dff_119/i4
+@ "D:\code\learning\a241111_03\Source\hdmi_ip\tmds_channel.v (167)" representative instance : u_rgb2dvi/enc_1/dff_119/i1
+FF|OPT : Flip-flop optimization by equivalence checking
+@ "D:\code\learning\a241111_03\Source\hdmi_ip\tmds_channel.v (167)" removed instance : u_rgb2dvi/enc_2/dff_119/i4
+@ "D:\code\learning\a241111_03\Source\hdmi_ip\tmds_channel.v (167)" representative instance : u_rgb2dvi/enc_2/dff_119/i1
+FF Output: axi4_awar_mux/r_reqen(=0)
+FF Output: DdrCtrl_ARADDR_0[0](=0)
+FF Output: DdrCtrl_ARADDR_0[1](=0)
+FF Output: DdrCtrl_ARADDR_0[2](=0)
+FF Output: DdrCtrl_ARADDR_0[3](=0)
+FF Output: DdrCtrl_ARADDR_0[4](=0)
+FF Output: DdrCtrl_ARADDR_0[5](=0)
+FF Output: DdrCtrl_ARADDR_0[6](=0)
+FF Output: DdrCtrl_ARADDR_0[7](=0)
+FF Output: u_axi4_ctrl_0/rs_w[2](=0)
+FF Output: u_axi4_ctrl_0/rs_w[3](=0)
+FF Output: u_state_machine/counter_10s[27](=0)
+FF Output: u_state_machine/counter_10s[28](=0)
+FF Output: u_state_machine/counter_10s[29](=0)
+FF Output: u_state_machine/counter_10s[30](=0)
+FF instance: rc_axi0clk~FF(unreachable)
+FF instance: u_i2c_timing_ctrl_16bit/i2c_capture_en~FF(unreachable)
+FF instance: u_i2c_timing_ctrl_16bit/i2c_ack4~FF(unreachable)
+FF instance: u_i2c_timing_ctrl_16bit/i2c_ack3~FF(unreachable)
+FF instance: u_i2c_timing_ctrl_16bit/i2c_ack2~FF(unreachable)
+FF instance: u_i2c_timing_ctrl_16bit/i2c_ack1~FF(unreachable)
+FF instance: u_i2c_timing_ctrl_16bit/i2c_ack~FF(unreachable)
+FF instance: u_axi4_ctrl_0/r_wfifo_wdata[0]~FF(unreachable)
+FF instance: u_axi4_ctrl_0/read_ddr_delay_cnt[1]~FF(unreachable)
+FF instance: u_axi4_ctrl_0/read_ddr_delay_cnt[0]~FF(unreachable)
+FF instance: u_axi4_ctrl_0/rdata_cnt_dly[0]~FF(unreachable)
+FF instance: u_axi4_ctrl_0/r_wfifo_wdata[1]~FF(unreachable)
+FF instance: u_axi4_ctrl_0/r_wfifo_wdata[2]~FF(unreachable)
+FF instance: u_axi4_ctrl_0/r_wfifo_wdata[3]~FF(unreachable)
+FF instance: u_axi4_ctrl_0/r_wfifo_wdata[4]~FF(unreachable)
+FF instance: u_axi4_ctrl_0/r_wfifo_wdata[5]~FF(unreachable)
+FF instance: u_axi4_ctrl_0/r_wfifo_wdata[6]~FF(unreachable)
+FF instance: u_axi4_ctrl_0/r_wfifo_wdata[7]~FF(unreachable)
+FF instance: u_axi4_ctrl_0/u_W0_FIFO_128/u_efx_fifo_top/xefx_fifo_ctl/genblk1.init_set~FF(unreachable)
+FF instance: u_axi4_ctrl_0/u_R0_FIFO_128/u_efx_fifo_top/xefx_fifo_ctl/genblk1.init_set~FF(unreachable)
+FF instance: u_axi4_ctrl_0/read_ddr_delay_cnt[2]~FF(unreachable)
+FF instance: u_axi4_ctrl_0/read_ddr_delay_cnt[3]~FF(unreachable)
+FF instance: u_axi4_ctrl_0/read_ddr_delay_cnt[4]~FF(unreachable)
+FF instance: u_axi4_ctrl_0/rdata_cnt_dly[1]~FF(unreachable)
+FF instance: u_axi4_ctrl_0/rdata_cnt_dly[2]~FF(unreachable)
+FF instance: u_axi4_ctrl_0/rdata_cnt_dly[3]~FF(unreachable)
+FF instance: u_axi4_ctrl_0/rdata_cnt_dly[4]~FF(unreachable)
+FF instance: u_axi4_ctrl_0/rdata_cnt_dly[5]~FF(unreachable)
+FF instance: u_axi4_ctrl_0/rdata_cnt_dly[6]~FF(unreachable)
+FF instance: u_axi4_ctrl_0/rdata_cnt_dly[7]~FF(unreachable)
+FF instance: u_axi4_ctrl_0/rdata_cnt_dly[8]~FF(unreachable)
+### ### Sequential Elements Trimming Report (end) ### ### ### 
+
+### ### Module Resource Usage Distribution Estimates (begin) ### ###
+
+**Note: some resources maybe grouped under different hierarchy due to optimization and LUT mapping
+
+Module                                                               FFs        ADDs        LUTs      RAMs DSP/MULTs
+------------------------------------------------------------         ---        ----        ----      ---- ---------
+T35_Sensor_DDR3_LCD_Test:T35_Sensor_DDR3_LCD_Test               2344(55)    1532(34)    6682(31)     16(0)      3(3)
+ +U0_DDR_Reset:etx_ddr3_reset_controller                           26(0)       21(0)       32(0)      0(0)      0(0)
+  +u_ddr_reset_sequencer:ddr_reset_sequencer_27c2cfd541fb...      26(26)      21(21)      32(32)      0(0)      0(0)
+ +u_i2c_timing_ctrl_16bit:i2c_timing_ctrl_16bit(I2C_FREQ=...      71(71)      49(49)    556(556)      0(0)      0(0)
+ +u_Sensor_Image_XYCrop_0:Sensor_Image_XYCrop(IMAGE_HSIZE...      36(36)      22(22)      16(16)      0(0)      0(0)
+ +axi4_awar_mux:AXI4_AWARMux(AID_LEN=6)                             6(6)        0(0)      30(30)      0(0)      0(0)
+ +u_axi4_ctrl_0:axi4_ctrl(C_RD_END_ADDR=1843200,C_W_WIDTH...    719(475)     101(27)    638(480)     14(0)      0(0)
+  +u_W0_FIFO_128:W0_FIFO_128                                      122(0)       37(0)       81(0)      7(0)      0(0)
+   +u_efx_fifo_top:efx_fifo_top_95b849c1c5ec4e2aba72f8bac...      122(4)       37(0)       81(0)      7(0)      0(0)
+    +xefx_fifo_ram:efx_fifo_ram_95b849c1c5ec4e2aba72f8bac...        0(0)        0(0)        0(0)      7(7)      0(0)
+    +xefx_fifo_ctl:efx_fifo_ctl_95b849c1c5ec4e2aba72f8bac...     118(64)      37(37)      81(49)      0(0)      0(0)
+     +genblk7.xrd2wr_bin2gray:efx_fifo_bin2gray_95b849c1c...        0(0)        0(0)        8(8)      0(0)      0(0)
+     +genblk7.xrd2wr_addr_sync:efx_fifo_datasync_95b849c1...      27(27)        0(0)        0(0)      0(0)      0(0)
+     +genblk7.xrd2wr_gray2bin:efx_fifo_gray2bin_95b849c1c...        0(0)        0(0)        8(1)      0(0)      0(0)
+      +genblk1.genblk1.u_gray2bin:efx_fifo_gray2bin_95b84...        0(0)        0(0)        7(1)      0(0)      0(0)
+       +genblk1.genblk1.u_gray2bin:efx_fifo_gray2bin_95b8...        0(0)        0(0)        6(1)      0(0)      0(0)
+        +genblk1.genblk1.u_gray2bin:efx_fifo_gray2bin_95b...        0(0)        0(0)        5(1)      0(0)      0(0)
+         +genblk1.genblk1.u_gray2bin:efx_fifo_gray2bin_95...        0(0)        0(0)        4(1)      0(0)      0(0)
+          +genblk1.genblk1.u_gray2bin:efx_fifo_gray2bin_9...        0(0)        0(0)        3(1)      0(0)      0(0)
+           +genblk1.genblk1.u_gray2bin:efx_fifo_gray2bin_...        0(0)        0(0)        2(1)      0(0)      0(0)
+            +genblk1.genblk1.u_gray2bin:efx_fifo_gray2bin...        0(0)        0(0)        1(1)      0(0)      0(0)
+     +genblk7.wr2rd_bin2gray:efx_fifo_bin2gray_95b849c1c5...        0(0)        0(0)        8(8)      0(0)      0(0)
+     +genblk7.wr2rd_addr_sync:efx_fifo_datasync_95b849c1c...      27(27)        0(0)        0(0)      0(0)      0(0)
+     +genblk7.wr2rd_gray2bin:efx_fifo_gray2bin_95b849c1c5...        0(0)        0(0)        8(1)      0(0)      0(0)
+      +genblk1.genblk1.u_gray2bin:efx_fifo_gray2bin_95b84...        0(0)        0(0)        7(1)      0(0)      0(0)
+       +genblk1.genblk1.u_gray2bin:efx_fifo_gray2bin_95b8...        0(0)        0(0)        6(1)      0(0)      0(0)
+        +genblk1.genblk1.u_gray2bin:efx_fifo_gray2bin_95b...        0(0)        0(0)        5(1)      0(0)      0(0)
+         +genblk1.genblk1.u_gray2bin:efx_fifo_gray2bin_95...        0(0)        0(0)        4(1)      0(0)      0(0)
+          +genblk1.genblk1.u_gray2bin:efx_fifo_gray2bin_9...        0(0)        0(0)        3(1)      0(0)      0(0)
+           +genblk1.genblk1.u_gray2bin:efx_fifo_gray2bin_...        0(0)        0(0)        2(1)      0(0)      0(0)
+            +genblk1.genblk1.u_gray2bin:efx_fifo_gray2bin...        0(0)        0(0)        1(1)      0(0)      0(0)
+  +u_R0_FIFO_128:W0_FIFO_128                                      122(0)       37(0)       77(0)      7(0)      0(0)
+   +u_efx_fifo_top:efx_fifo_top_95b849c1c5ec4e2aba72f8bac...      122(4)       37(0)       77(0)      7(0)      0(0)
+    +xefx_fifo_ram:efx_fifo_ram_95b849c1c5ec4e2aba72f8bac...        0(0)        0(0)        0(0)      7(7)      0(0)
+    +xefx_fifo_ctl:efx_fifo_ctl_95b849c1c5ec4e2aba72f8bac...     118(64)      37(37)      77(45)      0(0)      0(0)
+     +genblk7.xrd2wr_bin2gray:efx_fifo_bin2gray_95b849c1c...        0(0)        0(0)        8(8)      0(0)      0(0)
+     +genblk7.xrd2wr_addr_sync:efx_fifo_datasync_95b849c1...      27(27)        0(0)        0(0)      0(0)      0(0)
+     +genblk7.xrd2wr_gray2bin:efx_fifo_gray2bin_95b849c1c...        0(0)        0(0)        8(1)      0(0)      0(0)
+      +genblk1.genblk1.u_gray2bin:efx_fifo_gray2bin_95b84...        0(0)        0(0)        7(1)      0(0)      0(0)
+       +genblk1.genblk1.u_gray2bin:efx_fifo_gray2bin_95b8...        0(0)        0(0)        6(1)      0(0)      0(0)
+        +genblk1.genblk1.u_gray2bin:efx_fifo_gray2bin_95b...        0(0)        0(0)        5(1)      0(0)      0(0)
+         +genblk1.genblk1.u_gray2bin:efx_fifo_gray2bin_95...        0(0)        0(0)        4(1)      0(0)      0(0)
+          +genblk1.genblk1.u_gray2bin:efx_fifo_gray2bin_9...        0(0)        0(0)        3(1)      0(0)      0(0)
+           +genblk1.genblk1.u_gray2bin:efx_fifo_gray2bin_...        0(0)        0(0)        2(1)      0(0)      0(0)
+            +genblk1.genblk1.u_gray2bin:efx_fifo_gray2bin...        0(0)        0(0)        1(1)      0(0)      0(0)
+     +genblk7.wr2rd_bin2gray:efx_fifo_bin2gray_95b849c1c5...        0(0)        0(0)        8(8)      0(0)      0(0)
+     +genblk7.wr2rd_addr_sync:efx_fifo_datasync_95b849c1c...      27(27)        0(0)        0(0)      0(0)      0(0)
+     +genblk7.wr2rd_gray2bin:efx_fifo_gray2bin_95b849c1c5...        0(0)        0(0)        8(1)      0(0)      0(0)
+      +genblk1.genblk1.u_gray2bin:efx_fifo_gray2bin_95b84...        0(0)        0(0)        7(1)      0(0)      0(0)
+       +genblk1.genblk1.u_gray2bin:efx_fifo_gray2bin_95b8...        0(0)        0(0)        6(1)      0(0)      0(0)
+        +genblk1.genblk1.u_gray2bin:efx_fifo_gray2bin_95b...        0(0)        0(0)        5(1)      0(0)      0(0)
+         +genblk1.genblk1.u_gray2bin:efx_fifo_gray2bin_95...        0(0)        0(0)        4(1)      0(0)      0(0)
+          +genblk1.genblk1.u_gray2bin:efx_fifo_gray2bin_9...        0(0)        0(0)        3(1)      0(0)      0(0)
+           +genblk1.genblk1.u_gray2bin:efx_fifo_gray2bin_...        0(0)        0(0)        2(1)      0(0)      0(0)
+            +genblk1.genblk1.u_gray2bin:efx_fifo_gray2bin...        0(0)        0(0)        1(1)      0(0)      0(0)
+ +u_lcd_driver:lcd_driver                                         53(53)      47(47)      58(58)      0(0)      0(0)
+ +u_black_pixel_avg:black_pixel_avg                             216(216)  1149(1149)  3453(3453)      0(0)      0(0)
+ +u_zone_identifier:zone_identifier                                 0(0)        0(0)        7(7)      0(0)      0(0)
+ +u_state_machine:state_machine                                   44(44)        0(0)      64(64)      0(0)      0(0)
+ +u_rgb2dvi:rgb2dvi(ENABLE_OSERDES=0)                              26(0)       37(0)       41(0)      0(0)      0(0)
+  +enc_0:tmds_channel                                               9(9)        9(9)      14(14)      0(0)      0(0)
+  +enc_1:tmds_channel                                               9(9)        5(5)        7(7)      0(0)      0(0)
+  +enc_2:tmds_channel                                               8(8)      23(23)      20(20)      0(0)      0(0)
+ +edb_top_inst:edb_top                                        1092(1092)      72(72)  1756(1756)      2(2)      0(0)
+
+### ### Module Resource Usage Distribution Estimates (end) ### ###
+
+
+### ### Clock Load Distribution Report (begin) ### ###
+
+          Clock     Flip-Flops   Memory Ports    Multipliers
+          -----     ----------   ------------    -----------
+        Axi0Clk            451             14              0
+      cmos_pclk            227              7              0
+   hdmi_clk1x_i            972             11              3
+   hdmi_clk2x_i             29              0              0
+ jtag_inst1_TCK            665              0              0
+
+### ### Clock Load Distribution Report (end) ### ###
+
+### ### Memory Mapping Report (begin) ### ### ###
+
+### ### Memory Mapping Report (end) ### ### ###
+
+### ### EFX Flow Options (begin) ### ### ###
+
+family : Trion
+device : T35F324
+project : T35_Sensor_DDR3_LCD_Test
+root : T35_Sensor_DDR3_LCD_Test
+I,include : D:/code/learning/a241111_03/Efinity
+I,include : D:/code/learning/a241111_03/Efinity/ip/W0_FIFO_128
+output-dir : D:/code/learning/a241111_03/Efinity/outflow
+work-dir : D:/code/learning/a241111_03/Efinity/work_dbg
+write-efx-verilog : D:/code/learning/a241111_03/Efinity/work_dbg/T35_Sensor_DDR3_LCD_Test.dbg.map.v
+binary-db : D:/code/learning/a241111_03/Efinity/work_dbg/T35_Sensor_DDR3_LCD_Test.dbg.vdb
+insert-ios : 0
+max-carry-cascade : 480
+max_mult : -1
+max_ram : -1
+seq_opt : 0
+infer-clk-enable : 0
+mode : speed
+create-onehot-fsms : 1
+
+### ### EFX Flow Options (end) ### ### ###
+
+### ### Resource Summary (begin) ### ### ### 
+INPUT  PORTS    : 	410
+OUTPUT PORTS    : 	317
+
+EFX_ADD         : 	1532
+EFX_LUT4        : 	6682
+   1-2  Inputs  : 	810
+   3    Inputs  : 	2937
+   4    Inputs  : 	2935
+EFX_MULT        : 	3
+EFX_FF          : 	2344
+EFX_RAM_5K      : 	16
+EFX_GBUFCE      : 	5
+### ### Resource Summary (end) ### ### ###
+
+Plain synthesis (without verilog dump and post-map checks) time : 42s
+Elapsed synthesis time : 42s

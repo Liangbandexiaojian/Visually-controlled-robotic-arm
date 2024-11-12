@@ -1,0 +1,676 @@
+
+Efinix FPGA Placement and Routing.
+Version: 2023.2.307.5.10 
+Compiled: May 19 2024.
+
+Copyright (C) 2013 - 2023 Efinix, Inc. All rights reserved.
+
+
+The Tool Is Based on VPR of University of Toronto,
+a free open source code under MIT license.
+
+
+Running Placement and Routing for Family "Trion", Device "T35F324" ...
+
+***** Beginning stage routing graph generation ... *****
+Read ipin pattern from C:/Efinity/2023.2/arch/./ipin_oph.xml
+Finished parsing ipin pattern file 'C:/Efinity/2023.2/arch/./ipin_oph.xdb'.
+Finished parsing switch_block file 'C:/Efinity/2023.2/arch/.\sb_connectivity_subset.xdb'.
+BuildGraph process took 5.76505 seconds.
+	BuildGraph process took 1.21875 seconds (approximately) in total CPU time.
+BuildGraph process virtual memory usage: begin = 197.192 MB, end = 812.416 MB, delta = 615.224 MB
+	BuildGraph process peak virtual memory usage = 820.02 MB
+BuildGraph process resident set memory usage: begin = 199.412 MB, end = 799.624 MB, delta = 600.212 MB
+	BuildGraph process peak resident set memory usage = 806.964 MB
+check rr_graph process took 0.103591 seconds.
+	check rr_graph process took 0 seconds (approximately) in total CPU time.
+check rr_graph process virtual memory usage: begin = 875.888 MB, end = 875.888 MB, delta = 0 MB
+	check rr_graph process peak virtual memory usage = 893.26 MB
+check rr_graph process resident set memory usage: begin = 863.012 MB, end = 863.076 MB, delta = 0.064 MB
+	check rr_graph process peak resident set memory usage = 880.356 MB
+Generated 1965527 RR nodes and 7302635 RR edges
+This design has 0 global control net(s). See D:/code/learning/a241111_03/Efinity/outflow\T35_Sensor_DDR3_LCD_Test.route.rpt for details.
+Routing graph took 5.98575 seconds.
+	Routing graph took 1.21875 seconds (approximately) in total CPU time.
+Routing graph virtual memory usage: begin = 195.912 MB, end = 810.504 MB, delta = 614.592 MB
+	Routing graph peak virtual memory usage = 893.26 MB
+Routing graph resident set memory usage: begin = 198.432 MB, end = 797.888 MB, delta = 599.456 MB
+	Routing graph peak resident set memory usage = 880.356 MB
+***** Ending stage routing graph generation *****
+
+***** Beginning stage routing ... *****
+WARNING(1): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:14] set_clock_groups: Defaulting to -exclusive since none of the required option was specified
+WARNING(2): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:14] No clocks matched 'mipi_clkesc_i'
+WARNING(3): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:14] No clocks matched 'mipi_clkcal_i'
+WARNING(4): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:14] set_clock_groups: No valid clock(s) found for -group 'mipi_clkesc_i mipi_clkcal_i'
+WARNING(5): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:14] set_clock_groups: No valid clock group(s) specified
+WARNING(6): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:14] Unable to run 'set_clock_groups' constraint due to warnings found
+WARNING(7): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:15] set_clock_groups: Defaulting to -exclusive since none of the required option was specified
+WARNING(8): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:15] No clocks matched 'mipi_pixclk_i'
+WARNING(9): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:15] set_clock_groups: No valid clock(s) found for -group 'mipi_pixclk_i'
+WARNING(10): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:15] set_clock_groups: No valid clock group(s) specified
+WARNING(11): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:15] Unable to run 'set_clock_groups' constraint due to warnings found
+WARNING(12): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:16] set_clock_groups: Defaulting to -exclusive since none of the required option was specified
+WARNING(13): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:16] No clocks matched 'Axi0Clk'
+WARNING(14): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:16] set_clock_groups: No valid clock(s) found for -group 'Axi0Clk'
+WARNING(15): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:16] set_clock_groups: No valid clock group(s) specified
+WARNING(16): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:16] Unable to run 'set_clock_groups' constraint due to warnings found
+WARNING(17): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:17] set_clock_groups: Defaulting to -exclusive since none of the required option was specified
+WARNING(18): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:17] No clocks matched 'clk_cmos'
+WARNING(19): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:17] set_clock_groups: No valid clock(s) found for -group 'clk_cmos'
+WARNING(20): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:17] set_clock_groups: No valid clock group(s) specified
+WARNING(21): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:17] Unable to run 'set_clock_groups' constraint due to warnings found
+WARNING(22): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:18] set_clock_groups: Defaulting to -exclusive since none of the required option was specified
+WARNING(23): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:18] No clocks matched 'hdmi_clk1x_i'
+WARNING(24): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:18] No clocks matched 'hdmi_clk2x_i'
+WARNING(25): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:18] No clocks matched 'hdmi_clk5x_i'
+WARNING(26): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:18] set_clock_groups: No valid clock(s) found for -group 'hdmi_clk1x_i hdmi_clk2x_i hdmi_clk5x_i'
+WARNING(27): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:18] set_clock_groups: No valid clock group(s) specified
+WARNING(28): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:18] Unable to run 'set_clock_groups' constraint due to warnings found
+WARNING(29): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:19] set_clock_groups: Defaulting to -exclusive since none of the required option was specified
+WARNING(30): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:19] No clocks matched 'tx_slowclk'
+WARNING(31): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:19] No clocks matched 'tx_fastclk'
+WARNING(32): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:19] set_clock_groups: No valid clock(s) found for -group 'tx_slowclk tx_fastclk'
+WARNING(33): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:19] set_clock_groups: No valid clock group(s) specified
+WARNING(34): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:19] Unable to run 'set_clock_groups' constraint due to warnings found
+WARNING(35): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:20] set_clock_groups: Defaulting to -exclusive since none of the required option was specified
+WARNING(36): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:20] No clocks matched 'cmos_pclk'
+WARNING(37): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:20] set_clock_groups: No valid clock(s) found for -group 'cmos_pclk'
+WARNING(38): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:20] set_clock_groups: No valid clock group(s) specified
+WARNING(39): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:20] Unable to run 'set_clock_groups' constraint due to warnings found
+WARNING(40): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:26] No valid object(s) found for 'mipi_clkesc_i'
+WARNING(41): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:26] No valid pin(s) found for clock
+WARNING(42): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:26] Unable to run 'create_clock' constraint due to warnings found
+WARNING(43): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:29] No valid object(s) found for 'Ddr0Clk'
+WARNING(44): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:29] No valid pin(s) found for clock
+WARNING(45): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:29] Unable to run 'create_clock' constraint due to warnings found
+WARNING(46): No ports matched 'mipi_rx_0_VSYNC_i[3]'
+WARNING(47): No ports matched 'mipi_rx_0_VSYNC_i[2]'
+WARNING(48): No ports matched 'mipi_rx_0_VSYNC_i[1]'
+WARNING(49): No ports matched 'mipi_rx_0_VSYNC_i[0]'
+WARNING(50): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:186] No valid object(s) found for ''
+WARNING(51): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:186] set_input_delay: No valid input port(s) found
+WARNING(52): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:186] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING(53): No ports matched 'mipi_rx_0_VSYNC_i[3]'
+WARNING(54): No ports matched 'mipi_rx_0_VSYNC_i[2]'
+WARNING(55): No ports matched 'mipi_rx_0_VSYNC_i[1]'
+WARNING(56): No ports matched 'mipi_rx_0_VSYNC_i[0]'
+WARNING(57): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:187] No valid object(s) found for ''
+WARNING(58): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:187] set_input_delay: No valid input port(s) found
+WARNING(59): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:187] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING(60): No ports matched 'mipi_rx_0_HSYNC_i[3]'
+WARNING(61): No ports matched 'mipi_rx_0_HSYNC_i[2]'
+WARNING(62): No ports matched 'mipi_rx_0_HSYNC_i[1]'
+WARNING(63): No ports matched 'mipi_rx_0_HSYNC_i[0]'
+WARNING(64): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:188] No valid object(s) found for ''
+WARNING(65): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:188] set_input_delay: No valid input port(s) found
+WARNING(66): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:188] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING(67): No ports matched 'mipi_rx_0_HSYNC_i[3]'
+WARNING(68): No ports matched 'mipi_rx_0_HSYNC_i[2]'
+WARNING(69): No ports matched 'mipi_rx_0_HSYNC_i[1]'
+WARNING(70): No ports matched 'mipi_rx_0_HSYNC_i[0]'
+WARNING(71): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:189] No valid object(s) found for ''
+WARNING(72): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:189] set_input_delay: No valid input port(s) found
+WARNING(73): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:189] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING(74): No ports matched 'mipi_rx_0_VALID_i'
+WARNING(75): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:190] No valid object(s) found for ''
+WARNING(76): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:190] set_input_delay: No valid input port(s) found
+WARNING(77): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:190] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING(78): No ports matched 'mipi_rx_0_VALID_i'
+WARNING(79): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:191] No valid object(s) found for ''
+WARNING(80): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:191] set_input_delay: No valid input port(s) found
+WARNING(81): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:191] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING(82): No ports matched 'mipi_rx_0_CNT_i[3]'
+WARNING(83): No ports matched 'mipi_rx_0_CNT_i[2]'
+WARNING(84): No ports matched 'mipi_rx_0_CNT_i[1]'
+WARNING(85): No ports matched 'mipi_rx_0_CNT_i[0]'
+WARNING(86): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:192] No valid object(s) found for ''
+WARNING(87): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:192] set_input_delay: No valid input port(s) found
+WARNING(88): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:192] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING(89): No ports matched 'mipi_rx_0_CNT_i[3]'
+WARNING(90): No ports matched 'mipi_rx_0_CNT_i[2]'
+WARNING(91): No ports matched 'mipi_rx_0_CNT_i[1]'
+WARNING(92): No ports matched 'mipi_rx_0_CNT_i[0]'
+WARNING(93): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:193] No valid object(s) found for ''
+WARNING(94): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:193] set_input_delay: No valid input port(s) found
+WARNING(95): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:193] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING(96): No ports matched 'mipi_rx_0_DATA_i[*]'
+WARNING(97): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:194] No valid object(s) found for ''
+WARNING(98): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:194] set_input_delay: No valid input port(s) found
+WARNING(99): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:194] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING(100): No ports matched 'mipi_rx_0_DATA_i[*]'
+WARNING(101): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:195] No valid object(s) found for ''
+WARNING(102): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:195] set_input_delay: No valid input port(s) found
+WARNING(103): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:195] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING(104): No ports matched 'mipi_rx_0_ERROR[*]'
+WARNING(105): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:196] No valid object(s) found for ''
+WARNING(106): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:196] set_input_delay: No valid input port(s) found
+WARNING(107): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:196] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING(108): No ports matched 'mipi_rx_0_ERROR[*]'
+WARNING(109): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:197] No valid object(s) found for ''
+WARNING(110): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:197] set_input_delay: No valid input port(s) found
+WARNING(111): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:197] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING(112): No ports matched 'mipi_rx_0_ULPS_CLK'
+WARNING(113): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:198] No valid object(s) found for ''
+WARNING(114): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:198] set_input_delay: No valid input port(s) found
+WARNING(115): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:198] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING(116): No ports matched 'mipi_rx_0_ULPS_CLK'
+WARNING(117): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:199] No valid object(s) found for ''
+WARNING(118): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:199] set_input_delay: No valid input port(s) found
+WARNING(119): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:199] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING(120): No ports matched 'mipi_rx_0_ULPS[3]'
+WARNING(121): No ports matched 'mipi_rx_0_ULPS[2]'
+WARNING(122): No ports matched 'mipi_rx_0_ULPS[1]'
+WARNING(123): No ports matched 'mipi_rx_0_ULPS[0]'
+WARNING(124): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:200] No valid object(s) found for ''
+WARNING(125): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:200] set_input_delay: No valid input port(s) found
+WARNING(126): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:200] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING(127): No ports matched 'mipi_rx_0_ULPS[3]'
+WARNING(128): No ports matched 'mipi_rx_0_ULPS[2]'
+WARNING(129): No ports matched 'mipi_rx_0_ULPS[1]'
+WARNING(130): No ports matched 'mipi_rx_0_ULPS[0]'
+WARNING(131): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:201] No valid object(s) found for ''
+WARNING(132): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:201] set_input_delay: No valid input port(s) found
+WARNING(133): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:201] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING(134): No ports matched 'mipi_rx_1_VSYNC_i[3]'
+WARNING(135): No ports matched 'mipi_rx_1_VSYNC_i[2]'
+WARNING(136): No ports matched 'mipi_rx_1_VSYNC_i[1]'
+WARNING(137): No ports matched 'mipi_rx_1_VSYNC_i[0]'
+WARNING(138): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:206] No valid object(s) found for ''
+WARNING(139): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:206] set_input_delay: No valid input port(s) found
+WARNING(140): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:206] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING(141): No ports matched 'mipi_rx_1_VSYNC_i[3]'
+WARNING(142): No ports matched 'mipi_rx_1_VSYNC_i[2]'
+WARNING(143): No ports matched 'mipi_rx_1_VSYNC_i[1]'
+WARNING(144): No ports matched 'mipi_rx_1_VSYNC_i[0]'
+WARNING(145): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:207] No valid object(s) found for ''
+WARNING(146): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:207] set_input_delay: No valid input port(s) found
+WARNING(147): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:207] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING(148): No ports matched 'mipi_rx_1_HSYNC_i[3]'
+WARNING(149): No ports matched 'mipi_rx_1_HSYNC_i[2]'
+WARNING(150): No ports matched 'mipi_rx_1_HSYNC_i[1]'
+WARNING(151): No ports matched 'mipi_rx_1_HSYNC_i[0]'
+WARNING(152): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:208] No valid object(s) found for ''
+WARNING(153): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:208] set_input_delay: No valid input port(s) found
+WARNING(154): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:208] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING(155): No ports matched 'mipi_rx_1_HSYNC_i[3]'
+WARNING(156): No ports matched 'mipi_rx_1_HSYNC_i[2]'
+WARNING(157): No ports matched 'mipi_rx_1_HSYNC_i[1]'
+WARNING(158): No ports matched 'mipi_rx_1_HSYNC_i[0]'
+WARNING(159): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:209] No valid object(s) found for ''
+WARNING(160): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:209] set_input_delay: No valid input port(s) found
+WARNING(161): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:209] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING(162): No ports matched 'mipi_rx_1_VALID_i'
+WARNING(163): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:210] No valid object(s) found for ''
+WARNING(164): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:210] set_input_delay: No valid input port(s) found
+WARNING(165): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:210] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING(166): No ports matched 'mipi_rx_1_VALID_i'
+WARNING(167): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:211] No valid object(s) found for ''
+WARNING(168): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:211] set_input_delay: No valid input port(s) found
+WARNING(169): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:211] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING(170): No ports matched 'mipi_rx_1_CNT_i[3]'
+WARNING(171): No ports matched 'mipi_rx_1_CNT_i[2]'
+WARNING(172): No ports matched 'mipi_rx_1_CNT_i[1]'
+WARNING(173): No ports matched 'mipi_rx_1_CNT_i[0]'
+WARNING(174): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:212] No valid object(s) found for ''
+WARNING(175): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:212] set_input_delay: No valid input port(s) found
+WARNING(176): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:212] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING(177): No ports matched 'mipi_rx_1_CNT_i[3]'
+WARNING(178): No ports matched 'mipi_rx_1_CNT_i[2]'
+WARNING(179): No ports matched 'mipi_rx_1_CNT_i[1]'
+WARNING(180): No ports matched 'mipi_rx_1_CNT_i[0]'
+WARNING(181): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:213] No valid object(s) found for ''
+WARNING(182): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:213] set_input_delay: No valid input port(s) found
+WARNING(183): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:213] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING(184): No ports matched 'mipi_rx_1_DATA_i[*]'
+WARNING(185): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:214] No valid object(s) found for ''
+WARNING(186): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:214] set_input_delay: No valid input port(s) found
+WARNING(187): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:214] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING(188): No ports matched 'mipi_rx_1_DATA_i[*]'
+WARNING(189): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:215] No valid object(s) found for ''
+WARNING(190): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:215] set_input_delay: No valid input port(s) found
+WARNING(191): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:215] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING(192): No ports matched 'mipi_rx_1_ERROR[*]'
+WARNING(193): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:216] No valid object(s) found for ''
+WARNING(194): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:216] set_input_delay: No valid input port(s) found
+WARNING(195): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:216] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING(196): No ports matched 'mipi_rx_1_ERROR[*]'
+WARNING(197): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:217] No valid object(s) found for ''
+WARNING(198): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:217] set_input_delay: No valid input port(s) found
+WARNING(199): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:217] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING(200): No ports matched 'mipi_rx_1_ULPS_CLK'
+WARNING(201): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:218] No valid object(s) found for ''
+WARNING(202): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:218] set_input_delay: No valid input port(s) found
+WARNING(203): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:218] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING(204): No ports matched 'mipi_rx_1_ULPS_CLK'
+WARNING(205): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:219] No valid object(s) found for ''
+WARNING(206): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:219] set_input_delay: No valid input port(s) found
+WARNING(207): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:219] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING(208): No ports matched 'mipi_rx_1_ULPS[3]'
+WARNING(209): No ports matched 'mipi_rx_1_ULPS[2]'
+WARNING(210): No ports matched 'mipi_rx_1_ULPS[1]'
+WARNING(211): No ports matched 'mipi_rx_1_ULPS[0]'
+WARNING(212): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:220] No valid object(s) found for ''
+WARNING(213): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:220] set_input_delay: No valid input port(s) found
+WARNING(214): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:220] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING(215): No ports matched 'mipi_rx_1_ULPS[3]'
+WARNING(216): No ports matched 'mipi_rx_1_ULPS[2]'
+WARNING(217): No ports matched 'mipi_rx_1_ULPS[1]'
+WARNING(218): No ports matched 'mipi_rx_1_ULPS[0]'
+WARNING(219): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:221] No valid object(s) found for ''
+WARNING(220): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:221] set_input_delay: No valid input port(s) found
+WARNING(221): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:221] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING(222): No ports matched 'DdrCtrl_BID_0[*]'
+WARNING(223): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:257] No valid object(s) found for ''
+WARNING(224): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:257] set_input_delay: No valid input port(s) found
+WARNING(225): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:257] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING(226): No ports matched 'DdrCtrl_BID_0[*]'
+WARNING(227): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:258] No valid object(s) found for ''
+WARNING(228): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:258] set_input_delay: No valid input port(s) found
+WARNING(229): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:258] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING(230): No ports matched 'DdrCtrl_BVALID_0'
+WARNING(231): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:259] No valid object(s) found for ''
+WARNING(232): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:259] set_input_delay: No valid input port(s) found
+WARNING(233): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:259] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING(234): No ports matched 'DdrCtrl_BVALID_0'
+WARNING(235): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:260] No valid object(s) found for ''
+WARNING(236): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:260] set_input_delay: No valid input port(s) found
+WARNING(237): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:260] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING(238): No ports matched 'DdrCtrl_RID_0[*]'
+WARNING(239): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:263] No valid object(s) found for ''
+WARNING(240): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:263] set_input_delay: No valid input port(s) found
+WARNING(241): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:263] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING(242): No ports matched 'DdrCtrl_RID_0[*]'
+WARNING(243): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:264] No valid object(s) found for ''
+WARNING(244): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:264] set_input_delay: No valid input port(s) found
+WARNING(245): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:264] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING(246): No ports matched 'DdrCtrl_RRESP_0[1]'
+WARNING(247): No ports matched 'DdrCtrl_RRESP_0[0]'
+WARNING(248): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:267] No valid object(s) found for ''
+WARNING(249): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:267] set_input_delay: No valid input port(s) found
+WARNING(250): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:267] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING(251): No ports matched 'DdrCtrl_RRESP_0[1]'
+WARNING(252): No ports matched 'DdrCtrl_RRESP_0[0]'
+WARNING(253): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:268] No valid object(s) found for ''
+WARNING(254): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:268] set_input_delay: No valid input port(s) found
+WARNING(255): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:268] Unable to run 'set_input_delay' constraint due to warnings found
+
+SDC file 'D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc' parsed successfully.
+10 clocks (including virtual clocks), 142 inputs and 278 outputs were constrained.
+
+
+ ---------      -------     --------------      -------------
+ Iteration      Overuse     Crit Path (ns)      Calc Time (s)
+ ---------      -------     --------------      -------------
+         1        36067                101                4.8
+         2        10138                102               3.69
+         3         7473              101.6               3.29
+         4         6000              101.6               4.99
+         5         5280              101.6               9.87
+         6         4742              101.4               13.8
+         7         4373              101.4               17.3
+         8         3975              101.4               20.4
+         9         3743              101.5               23.7
+        10         3499              100.8               23.8
+        11         3163              100.9               27.8
+        12         2955                101               29.7
+        13         2735              101.3               27.2
+        14         2420              101.5               25.5
+        15         2248              101.9               27.6
+        16         2029              102.7               36.3
+        17         1763              103.3               29.8
+        18         1570              104.4               25.9
+        19         1245              108.7               24.7
+        20         1015              111.6               24.7
+        21          812              113.5               21.1
+        22          591              115.9               18.4
+        23          492              113.9               15.7
+        24          393              116.4               14.4
+        25          316              114.5               12.8
+        26          227              115.8               8.32
+        27          184                113               2.86
+        28          138              115.4               4.64
+        29           93              112.7               4.65
+        30           72              113.5               7.26
+        31           40              112.9               4.93
+        32           43              114.6               2.95
+        33           16              114.2               1.15
+        34           10              114.8               1.09
+        35            2                115               1.05
+        36            2              115.2               5.16
+        37            3              115.4               2.37
+        38            0              115.4               2.22
+
+Successfully routed netlist after 38 routing iterations and 1035873574 heapops
+Completed net delay value cross check successfully.
+
+***** Beginning stage routing check ... *****
+***** Ending stage routing check *****
+
+
+Serial number (magic cookie) for the routing is: 33068898
+Netlist fully routed.
+
+Successfully created FPGA route file 'D:/code/learning/a241111_03/Efinity/outflow/T35_Sensor_DDR3_LCD_Test.route'
+Routing took 541.855 seconds.
+	Routing took 142.594 seconds (approximately) in total CPU time.
+Routing virtual memory usage: begin = 810.504 MB, end = 1107.3 MB, delta = 296.796 MB
+	Routing peak virtual memory usage = 1305.81 MB
+Routing resident set memory usage: begin = 797.896 MB, end = 1086.86 MB, delta = 288.964 MB
+	Routing peak resident set memory usage = 1252.21 MB
+***** Ending stage routing *****
+
+***** Beginning stage final timing analysis ... *****
+WARNING(256): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:14] set_clock_groups: Defaulting to -exclusive since none of the required option was specified
+WARNING(257): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:14] No clocks matched 'mipi_clkesc_i'
+WARNING(258): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:14] No clocks matched 'mipi_clkcal_i'
+WARNING(259): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:14] set_clock_groups: No valid clock(s) found for -group 'mipi_clkesc_i mipi_clkcal_i'
+WARNING(260): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:14] set_clock_groups: No valid clock group(s) specified
+WARNING(261): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:14] Unable to run 'set_clock_groups' constraint due to warnings found
+WARNING(262): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:15] set_clock_groups: Defaulting to -exclusive since none of the required option was specified
+WARNING(263): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:15] No clocks matched 'mipi_pixclk_i'
+WARNING(264): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:15] set_clock_groups: No valid clock(s) found for -group 'mipi_pixclk_i'
+WARNING(265): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:15] set_clock_groups: No valid clock group(s) specified
+WARNING(266): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:15] Unable to run 'set_clock_groups' constraint due to warnings found
+WARNING(267): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:16] set_clock_groups: Defaulting to -exclusive since none of the required option was specified
+WARNING(268): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:16] No clocks matched 'Axi0Clk'
+WARNING(269): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:16] set_clock_groups: No valid clock(s) found for -group 'Axi0Clk'
+WARNING(270): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:16] set_clock_groups: No valid clock group(s) specified
+WARNING(271): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:16] Unable to run 'set_clock_groups' constraint due to warnings found
+WARNING(272): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:17] set_clock_groups: Defaulting to -exclusive since none of the required option was specified
+WARNING(273): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:17] No clocks matched 'clk_cmos'
+WARNING(274): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:17] set_clock_groups: No valid clock(s) found for -group 'clk_cmos'
+WARNING(275): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:17] set_clock_groups: No valid clock group(s) specified
+WARNING(276): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:17] Unable to run 'set_clock_groups' constraint due to warnings found
+WARNING(277): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:18] set_clock_groups: Defaulting to -exclusive since none of the required option was specified
+WARNING(278): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:18] No clocks matched 'hdmi_clk1x_i'
+WARNING(279): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:18] No clocks matched 'hdmi_clk2x_i'
+WARNING(280): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:18] No clocks matched 'hdmi_clk5x_i'
+WARNING(281): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:18] set_clock_groups: No valid clock(s) found for -group 'hdmi_clk1x_i hdmi_clk2x_i hdmi_clk5x_i'
+WARNING(282): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:18] set_clock_groups: No valid clock group(s) specified
+WARNING(283): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:18] Unable to run 'set_clock_groups' constraint due to warnings found
+WARNING(284): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:19] set_clock_groups: Defaulting to -exclusive since none of the required option was specified
+WARNING(285): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:19] No clocks matched 'tx_slowclk'
+WARNING(286): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:19] No clocks matched 'tx_fastclk'
+WARNING(287): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:19] set_clock_groups: No valid clock(s) found for -group 'tx_slowclk tx_fastclk'
+WARNING(288): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:19] set_clock_groups: No valid clock group(s) specified
+WARNING(289): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:19] Unable to run 'set_clock_groups' constraint due to warnings found
+WARNING(290): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:20] set_clock_groups: Defaulting to -exclusive since none of the required option was specified
+WARNING(291): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:20] No clocks matched 'cmos_pclk'
+WARNING(292): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:20] set_clock_groups: No valid clock(s) found for -group 'cmos_pclk'
+WARNING(293): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:20] set_clock_groups: No valid clock group(s) specified
+WARNING(294): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:20] Unable to run 'set_clock_groups' constraint due to warnings found
+WARNING(295): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:26] No valid object(s) found for 'mipi_clkesc_i'
+WARNING(296): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:26] No valid pin(s) found for clock
+WARNING(297): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:26] Unable to run 'create_clock' constraint due to warnings found
+WARNING(298): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:29] No valid object(s) found for 'Ddr0Clk'
+WARNING(299): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:29] No valid pin(s) found for clock
+WARNING(300): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:29] Unable to run 'create_clock' constraint due to warnings found
+WARNING(301): No ports matched 'mipi_rx_0_VSYNC_i[3]'
+WARNING(302): No ports matched 'mipi_rx_0_VSYNC_i[2]'
+WARNING(303): No ports matched 'mipi_rx_0_VSYNC_i[1]'
+WARNING(304): No ports matched 'mipi_rx_0_VSYNC_i[0]'
+WARNING(305): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:186] No valid object(s) found for ''
+WARNING(306): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:186] set_input_delay: No valid input port(s) found
+WARNING(307): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:186] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING(308): No ports matched 'mipi_rx_0_VSYNC_i[3]'
+WARNING(309): No ports matched 'mipi_rx_0_VSYNC_i[2]'
+WARNING(310): No ports matched 'mipi_rx_0_VSYNC_i[1]'
+WARNING(311): No ports matched 'mipi_rx_0_VSYNC_i[0]'
+WARNING(312): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:187] No valid object(s) found for ''
+WARNING(313): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:187] set_input_delay: No valid input port(s) found
+WARNING(314): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:187] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING(315): No ports matched 'mipi_rx_0_HSYNC_i[3]'
+WARNING(316): No ports matched 'mipi_rx_0_HSYNC_i[2]'
+WARNING(317): No ports matched 'mipi_rx_0_HSYNC_i[1]'
+WARNING(318): No ports matched 'mipi_rx_0_HSYNC_i[0]'
+WARNING(319): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:188] No valid object(s) found for ''
+WARNING(320): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:188] set_input_delay: No valid input port(s) found
+WARNING(321): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:188] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING(322): No ports matched 'mipi_rx_0_HSYNC_i[3]'
+WARNING(323): No ports matched 'mipi_rx_0_HSYNC_i[2]'
+WARNING(324): No ports matched 'mipi_rx_0_HSYNC_i[1]'
+WARNING(325): No ports matched 'mipi_rx_0_HSYNC_i[0]'
+WARNING(326): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:189] No valid object(s) found for ''
+WARNING(327): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:189] set_input_delay: No valid input port(s) found
+WARNING(328): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:189] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING(329): No ports matched 'mipi_rx_0_VALID_i'
+WARNING(330): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:190] No valid object(s) found for ''
+WARNING(331): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:190] set_input_delay: No valid input port(s) found
+WARNING(332): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:190] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING(333): No ports matched 'mipi_rx_0_VALID_i'
+WARNING(334): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:191] No valid object(s) found for ''
+WARNING(335): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:191] set_input_delay: No valid input port(s) found
+WARNING(336): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:191] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING(337): No ports matched 'mipi_rx_0_CNT_i[3]'
+WARNING(338): No ports matched 'mipi_rx_0_CNT_i[2]'
+WARNING(339): No ports matched 'mipi_rx_0_CNT_i[1]'
+WARNING(340): No ports matched 'mipi_rx_0_CNT_i[0]'
+WARNING(341): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:192] No valid object(s) found for ''
+WARNING(342): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:192] set_input_delay: No valid input port(s) found
+WARNING(343): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:192] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING(344): No ports matched 'mipi_rx_0_CNT_i[3]'
+WARNING(345): No ports matched 'mipi_rx_0_CNT_i[2]'
+WARNING(346): No ports matched 'mipi_rx_0_CNT_i[1]'
+WARNING(347): No ports matched 'mipi_rx_0_CNT_i[0]'
+WARNING(348): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:193] No valid object(s) found for ''
+WARNING(349): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:193] set_input_delay: No valid input port(s) found
+WARNING(350): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:193] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING(351): No ports matched 'mipi_rx_0_DATA_i[*]'
+WARNING(352): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:194] No valid object(s) found for ''
+WARNING(353): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:194] set_input_delay: No valid input port(s) found
+WARNING(354): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:194] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING(355): No ports matched 'mipi_rx_0_DATA_i[*]'
+WARNING(356): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:195] No valid object(s) found for ''
+WARNING(357): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:195] set_input_delay: No valid input port(s) found
+WARNING(358): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:195] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING(359): No ports matched 'mipi_rx_0_ERROR[*]'
+WARNING(360): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:196] No valid object(s) found for ''
+WARNING(361): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:196] set_input_delay: No valid input port(s) found
+WARNING(362): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:196] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING(363): No ports matched 'mipi_rx_0_ERROR[*]'
+WARNING(364): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:197] No valid object(s) found for ''
+WARNING(365): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:197] set_input_delay: No valid input port(s) found
+WARNING(366): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:197] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING(367): No ports matched 'mipi_rx_0_ULPS_CLK'
+WARNING(368): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:198] No valid object(s) found for ''
+WARNING(369): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:198] set_input_delay: No valid input port(s) found
+WARNING(370): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:198] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING(371): No ports matched 'mipi_rx_0_ULPS_CLK'
+WARNING(372): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:199] No valid object(s) found for ''
+WARNING(373): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:199] set_input_delay: No valid input port(s) found
+WARNING(374): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:199] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING(375): No ports matched 'mipi_rx_0_ULPS[3]'
+WARNING(376): No ports matched 'mipi_rx_0_ULPS[2]'
+WARNING(377): No ports matched 'mipi_rx_0_ULPS[1]'
+WARNING(378): No ports matched 'mipi_rx_0_ULPS[0]'
+WARNING(379): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:200] No valid object(s) found for ''
+WARNING(380): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:200] set_input_delay: No valid input port(s) found
+WARNING(381): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:200] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING(382): No ports matched 'mipi_rx_0_ULPS[3]'
+WARNING(383): No ports matched 'mipi_rx_0_ULPS[2]'
+WARNING(384): No ports matched 'mipi_rx_0_ULPS[1]'
+WARNING(385): No ports matched 'mipi_rx_0_ULPS[0]'
+WARNING(386): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:201] No valid object(s) found for ''
+WARNING(387): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:201] set_input_delay: No valid input port(s) found
+WARNING(388): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:201] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING(389): No ports matched 'mipi_rx_1_VSYNC_i[3]'
+WARNING(390): No ports matched 'mipi_rx_1_VSYNC_i[2]'
+WARNING(391): No ports matched 'mipi_rx_1_VSYNC_i[1]'
+WARNING(392): No ports matched 'mipi_rx_1_VSYNC_i[0]'
+WARNING(393): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:206] No valid object(s) found for ''
+WARNING(394): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:206] set_input_delay: No valid input port(s) found
+WARNING(395): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:206] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING(396): No ports matched 'mipi_rx_1_VSYNC_i[3]'
+WARNING(397): No ports matched 'mipi_rx_1_VSYNC_i[2]'
+WARNING(398): No ports matched 'mipi_rx_1_VSYNC_i[1]'
+WARNING(399): No ports matched 'mipi_rx_1_VSYNC_i[0]'
+WARNING(400): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:207] No valid object(s) found for ''
+WARNING(401): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:207] set_input_delay: No valid input port(s) found
+WARNING(402): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:207] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING(403): No ports matched 'mipi_rx_1_HSYNC_i[3]'
+WARNING(404): No ports matched 'mipi_rx_1_HSYNC_i[2]'
+WARNING(405): No ports matched 'mipi_rx_1_HSYNC_i[1]'
+WARNING(406): No ports matched 'mipi_rx_1_HSYNC_i[0]'
+WARNING(407): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:208] No valid object(s) found for ''
+WARNING(408): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:208] set_input_delay: No valid input port(s) found
+WARNING(409): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:208] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING(410): No ports matched 'mipi_rx_1_HSYNC_i[3]'
+WARNING(411): No ports matched 'mipi_rx_1_HSYNC_i[2]'
+WARNING(412): No ports matched 'mipi_rx_1_HSYNC_i[1]'
+WARNING(413): No ports matched 'mipi_rx_1_HSYNC_i[0]'
+WARNING(414): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:209] No valid object(s) found for ''
+WARNING(415): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:209] set_input_delay: No valid input port(s) found
+WARNING(416): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:209] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING(417): No ports matched 'mipi_rx_1_VALID_i'
+WARNING(418): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:210] No valid object(s) found for ''
+WARNING(419): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:210] set_input_delay: No valid input port(s) found
+WARNING(420): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:210] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING(421): No ports matched 'mipi_rx_1_VALID_i'
+WARNING(422): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:211] No valid object(s) found for ''
+WARNING(423): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:211] set_input_delay: No valid input port(s) found
+WARNING(424): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:211] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING(425): No ports matched 'mipi_rx_1_CNT_i[3]'
+WARNING(426): No ports matched 'mipi_rx_1_CNT_i[2]'
+WARNING(427): No ports matched 'mipi_rx_1_CNT_i[1]'
+WARNING(428): No ports matched 'mipi_rx_1_CNT_i[0]'
+WARNING(429): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:212] No valid object(s) found for ''
+WARNING(430): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:212] set_input_delay: No valid input port(s) found
+WARNING(431): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:212] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING(432): No ports matched 'mipi_rx_1_CNT_i[3]'
+WARNING(433): No ports matched 'mipi_rx_1_CNT_i[2]'
+WARNING(434): No ports matched 'mipi_rx_1_CNT_i[1]'
+WARNING(435): No ports matched 'mipi_rx_1_CNT_i[0]'
+WARNING(436): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:213] No valid object(s) found for ''
+WARNING(437): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:213] set_input_delay: No valid input port(s) found
+WARNING(438): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:213] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING(439): No ports matched 'mipi_rx_1_DATA_i[*]'
+WARNING(440): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:214] No valid object(s) found for ''
+WARNING(441): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:214] set_input_delay: No valid input port(s) found
+WARNING(442): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:214] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING(443): No ports matched 'mipi_rx_1_DATA_i[*]'
+WARNING(444): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:215] No valid object(s) found for ''
+WARNING(445): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:215] set_input_delay: No valid input port(s) found
+WARNING(446): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:215] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING(447): No ports matched 'mipi_rx_1_ERROR[*]'
+WARNING(448): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:216] No valid object(s) found for ''
+WARNING(449): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:216] set_input_delay: No valid input port(s) found
+WARNING(450): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:216] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING(451): No ports matched 'mipi_rx_1_ERROR[*]'
+WARNING(452): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:217] No valid object(s) found for ''
+WARNING(453): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:217] set_input_delay: No valid input port(s) found
+WARNING(454): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:217] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING(455): No ports matched 'mipi_rx_1_ULPS_CLK'
+WARNING(456): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:218] No valid object(s) found for ''
+WARNING(457): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:218] set_input_delay: No valid input port(s) found
+WARNING(458): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:218] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING(459): No ports matched 'mipi_rx_1_ULPS_CLK'
+WARNING(460): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:219] No valid object(s) found for ''
+WARNING(461): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:219] set_input_delay: No valid input port(s) found
+WARNING(462): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:219] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING(463): No ports matched 'mipi_rx_1_ULPS[3]'
+WARNING(464): No ports matched 'mipi_rx_1_ULPS[2]'
+WARNING(465): No ports matched 'mipi_rx_1_ULPS[1]'
+WARNING(466): No ports matched 'mipi_rx_1_ULPS[0]'
+WARNING(467): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:220] No valid object(s) found for ''
+WARNING(468): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:220] set_input_delay: No valid input port(s) found
+WARNING(469): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:220] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING(470): No ports matched 'mipi_rx_1_ULPS[3]'
+WARNING(471): No ports matched 'mipi_rx_1_ULPS[2]'
+WARNING(472): No ports matched 'mipi_rx_1_ULPS[1]'
+WARNING(473): No ports matched 'mipi_rx_1_ULPS[0]'
+WARNING(474): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:221] No valid object(s) found for ''
+WARNING(475): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:221] set_input_delay: No valid input port(s) found
+WARNING(476): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:221] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING(477): No ports matched 'DdrCtrl_BID_0[*]'
+WARNING(478): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:257] No valid object(s) found for ''
+WARNING(479): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:257] set_input_delay: No valid input port(s) found
+WARNING(480): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:257] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING(481): No ports matched 'DdrCtrl_BID_0[*]'
+WARNING(482): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:258] No valid object(s) found for ''
+WARNING(483): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:258] set_input_delay: No valid input port(s) found
+WARNING(484): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:258] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING(485): No ports matched 'DdrCtrl_BVALID_0'
+WARNING(486): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:259] No valid object(s) found for ''
+WARNING(487): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:259] set_input_delay: No valid input port(s) found
+WARNING(488): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:259] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING(489): No ports matched 'DdrCtrl_BVALID_0'
+WARNING(490): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:260] No valid object(s) found for ''
+WARNING(491): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:260] set_input_delay: No valid input port(s) found
+WARNING(492): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:260] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING(493): No ports matched 'DdrCtrl_RID_0[*]'
+WARNING(494): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:263] No valid object(s) found for ''
+WARNING(495): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:263] set_input_delay: No valid input port(s) found
+WARNING(496): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:263] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING(497): No ports matched 'DdrCtrl_RID_0[*]'
+WARNING(498): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:264] No valid object(s) found for ''
+WARNING(499): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:264] set_input_delay: No valid input port(s) found
+WARNING(500): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:264] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING(501): No ports matched 'DdrCtrl_RRESP_0[1]'
+WARNING(502): No ports matched 'DdrCtrl_RRESP_0[0]'
+WARNING(503): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:267] No valid object(s) found for ''
+WARNING(504): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:267] set_input_delay: No valid input port(s) found
+WARNING(505): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:267] Unable to run 'set_input_delay' constraint due to warnings found
+WARNING(506): No ports matched 'DdrCtrl_RRESP_0[1]'
+WARNING(507): No ports matched 'DdrCtrl_RRESP_0[0]'
+WARNING(508): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:268] No valid object(s) found for ''
+WARNING(509): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:268] set_input_delay: No valid input port(s) found
+WARNING(510): [SDC D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc:268] Unable to run 'set_input_delay' constraint due to warnings found
+
+SDC file 'D:/code/learning/a241111_03/Efinity/T35_Sensor_DDR3_LCD_Test.sdc' parsed successfully.
+10 clocks (including virtual clocks), 142 inputs and 278 outputs were constrained.
+
+Maximum possible analyzed clocks frequency
+ Clock Name  Period (ns)  Frequency (MHz)     Edge
+hdmi_clk1x_i   115.490         8.659         (R-R)
+hdmi_clk2x_i     6.509       153.633         (R-R)
+Axi0Clk          9.561       104.592         (R-R)
+cmos_pclk        7.292       137.137         (R-R)
+
+Geomean max period: 15.130
+
+Setup (Max) Clock Relationship
+  Launch Clock    Capture Clock   Constraint (ns)     Slack (ns)          Edge
+  hdmi_clk1x_i     hdmi_clk1x_i        13.441          -102.049          (R-R)
+  hdmi_clk1x_i     hdmi_clk2x_i         6.700             3.983          (R-R)
+  hdmi_clk2x_i     hdmi_clk2x_i         6.720             0.211          (R-R)
+  Axi0Clk          Axi0Clk             10.417             0.856          (R-R)
+  cmos_pclk        cmos_pclk           10.000             2.708          (R-R)
+
+Hold (Min) Clock Relationship
+  Launch Clock    Capture Clock   Constraint (ns)     Slack (ns)          Edge
+  hdmi_clk1x_i     hdmi_clk1x_i        0.000            0.119            (R-R)
+  hdmi_clk1x_i     hdmi_clk2x_i        0.000            0.430            (R-R)
+  hdmi_clk2x_i     hdmi_clk2x_i        0.000            0.306            (R-R)
+  Axi0Clk          Axi0Clk             0.000            0.119            (R-R)
+  cmos_pclk        cmos_pclk           0.000            0.119            (R-R)
+
+WARNING(511): Clock domain between hdmi_clk1x_i (rising) and hdmi_clk1x_i (rising) may not meet (slack: -102.049 ns) the setup (max) timing requirement
+
+Write Timing Report to "D:/code/learning/a241111_03/Efinity/outflow\T35_Sensor_DDR3_LCD_Test.timing.rpt" ...
+final timing analysis took 5.31764 seconds.
+	final timing analysis took 1.51562 seconds (approximately) in total CPU time.
+final timing analysis virtual memory usage: begin = 1106.25 MB, end = 1113.75 MB, delta = 7.5 MB
+	final timing analysis peak virtual memory usage = 1305.81 MB
+final timing analysis resident set memory usage: begin = 1085.86 MB, end = 1089.76 MB, delta = 3.904 MB
+	final timing analysis peak resident set memory usage = 1252.21 MB
+***** Ending stage final timing analysis *****
+
+***** Beginning stage bitstream generation ... *****
+Reading core interface constraints from 'D:/code/learning/a241111_03/Efinity/outflow/T35_Sensor_DDR3_LCD_Test.interface.csv'.
+Successfully processed interface constraints file "D:/code/learning/a241111_03/Efinity/outflow/T35_Sensor_DDR3_LCD_Test.interface.csv".
+Finished writing bitstream file D:/code/learning/a241111_03/Efinity/work_pnr\T35_Sensor_DDR3_LCD_Test.lbf.
+Bitstream generation took 0.745877 seconds.
+	Bitstream generation took 0.15625 seconds (approximately) in total CPU time.
+Bitstream generation virtual memory usage: begin = 1113.75 MB, end = 1160.17 MB, delta = 46.42 MB
+	Bitstream generation peak virtual memory usage = 1305.81 MB
+Bitstream generation resident set memory usage: begin = 1089.79 MB, end = 1134.75 MB, delta = 44.964 MB
+	Bitstream generation peak resident set memory usage = 1252.21 MB
+***** Ending stage bitstream generation *****
+
+The entire flow of EFX_PNR took 1296.32 seconds.
+	The entire flow of EFX_PNR took 366.422 seconds (approximately) in total CPU time.
+The entire flow of EFX_PNR virtual memory usage: begin = 5.652 MB, end = 123.696 MB, delta = 118.044 MB
+	The entire flow of EFX_PNR peak virtual memory usage = 1305.81 MB
+The entire flow of EFX_PNR resident set memory usage: begin = 13.32 MB, end = 121.728 MB, delta = 108.408 MB
+	The entire flow of EFX_PNR peak resident set memory usage = 1252.21 MB

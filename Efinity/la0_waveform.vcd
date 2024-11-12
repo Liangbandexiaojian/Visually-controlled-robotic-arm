@@ -1,0 +1,40 @@
+#0 $dumpon
+$date today $end
+$timescale 1 ns $end
+$scope module top $end
+$var wire 1 0 key0 $end
+$var wire 8 1 u_state_machine/led $end
+$var wire 12 2 u_zone_identifier/y_avg_black $end
+$var wire 12 3 u_zone_identifier/x_avg_black $end
+$var wire 3 4 u_zone_identifier/zone $end
+$var wire 1 5 u_state_machine/zone_bit0 $end
+$var wire 1 6 u_state_machine/zone_bit1 $end
+$var wire 1 7 u_state_machine/zone_bit2 $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+10
+b00000000 1
+b000111101110 2
+b001010001010 3
+b110 4
+05
+06
+07
+$end
+#128
+00
+#130
+b01000000 1
+16
+17
+#255
+00
+b01000000 1
+b000111101110 2
+b001010001010 3
+b110 4
+05
+16
+17

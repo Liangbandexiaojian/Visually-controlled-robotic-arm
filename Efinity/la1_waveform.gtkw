@@ -1,0 +1,12 @@
+[dumpfile] "C:\Users\Landon\AppData\Local\Temp\tmp6p3gy3m_\tmp_continous.vcd"
+[dumpfile_mtime] "Mon Nov 11 07:03:42 2024"
+[dumpfile_size] 183
+[savefile] "D:\code\learning\a241111\Efinity\la1_waveform.gtkw"
+[timestart] 0
+[size] 1000 600
+[pos] -1 -1
+*0.000000 c 128 384 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[signals_width] 126
+[sst_expanded] 1
+@22
+top.key1
